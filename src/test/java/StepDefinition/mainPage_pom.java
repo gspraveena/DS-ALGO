@@ -5,6 +5,7 @@ import java.io.IOException;
 
  import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -16,9 +17,9 @@ public class mainPage_pom
 	
  
 //	public static
-//	WebDriver driver=new FirefoxDriver();
+	WebDriver driver=new FirefoxDriver();
 	
-//	String URl="https://dsportalapp.herokuapp.com";
+	String URl="https://dsportalapp.herokuapp.com";
 	
 	mainPage mp=new mainPage(driver);
 	
