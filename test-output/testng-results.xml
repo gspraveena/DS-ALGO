@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-02-01T16:49:40 CST" name="Default suite" finished-at="2023-02-01T16:49:42 CST" duration-ms="2002">
+    <groups>
+    </groups>
+    <test started-at="2023-02-01T16:49:40 CST" name="Default test" finished-at="2023-02-01T16:49:42 CST" duration-ms="2002">
+      <class name="StepDefinition.mainPage">
+        <test-method signature="page1()[pri:1, instance:StepDefinition.mainPage@5ba745bc]" started-at="2023-02-01T16:49:40 CST" name="page1" finished-at="2023-02-01T16:49:41 CST" duration-ms="1252" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- page1 -->
+        <test-method signature="registerPage()[pri:2, instance:StepDefinition.mainPage@5ba745bc]" started-at="2023-02-01T16:49:41 CST" name="registerPage" finished-at="2023-02-01T16:49:42 CST" duration-ms="734" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerPage -->
+      </class> <!-- StepDefinition.mainPage -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
