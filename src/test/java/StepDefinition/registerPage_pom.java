@@ -1,6 +1,7 @@
 package StepDefinition;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import io.cucumber.java.en.Given;
@@ -11,7 +12,7 @@ import pages.mainPage;
 
 public class registerPage_pom {
 
-	WebDriver driver = new FirefoxDriver();
+	WebDriver driver = new ChromeDriver();
 
 //	String url = "https://dsportalapp.herokuapp.com/register";
 

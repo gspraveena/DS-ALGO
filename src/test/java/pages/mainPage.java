@@ -2,15 +2,16 @@ package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 
 public class mainPage {
 
 	
-	public static WebDriver driver=new FirefoxDriver();
+	public static WebDriver driver=new ChromeDriver();
  	
-//	String URl="https://dsportalapp.herokuapp.com";
+	String URl="https://dsportalapp.herokuapp.com";
 	
 	By getStarted=By.xpath("//body/div[1]/div/div/a/button");
 	By dropDownDS=By.xpath("//body/div[1]/nav/div/div[1]/div/a");
@@ -23,10 +24,11 @@ public class mainPage {
 	{
 		this.driver=driver;
 	}
-//	 public void getPage()
-//	 {
-//		driver.get(URl); 
-//	 }
+	
+	public void getPage()
+	 {
+		driver.get(URl); 
+	 }
 	public void clickOngetStarted()
 	{
 		
