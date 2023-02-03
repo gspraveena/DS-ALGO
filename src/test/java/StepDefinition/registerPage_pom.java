@@ -39,5 +39,6 @@ public class registerPage_pom {
 	public void it_should_go_to_homepage_and_get_message(String string)
 	{
 		rp.getRegisterAlert();
+		rp.getSignIn();
 	}
 }

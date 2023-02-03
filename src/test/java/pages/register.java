@@ -42,8 +42,8 @@ public class register
 		driver.findElement(registeredmsg).getText();
 	}
 
-//	public void getSignIn()
-//	{
-//		driver.findElement(password1).click();
-//	}
+	public void getSignIn()
+	{
+		driver.findElement(password1).click();
+	}
 }
