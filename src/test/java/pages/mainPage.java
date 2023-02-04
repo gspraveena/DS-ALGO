@@ -1,33 +1,43 @@
 package pages;
 
+import java.io.IOException;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.PageFactory;
+
+import crossBrowser.driverFactory;
+import utilities.ConfigReader;
 
 public class mainPage {
 
+	public static WebDriver driver=driverFactory.getdriver();	
+	//public static WebDriver driver=new ChromeDriver();
+	//String URL=ConfigReader.getHomePage();
+	//String URl="https://dsportalapp.herokuapp.com";
 	
-	public static WebDriver driver=new ChromeDriver();
- 	
-	String URl="https://dsportalapp.herokuapp.com";
-	
-	By getStarted=By.xpath("//body/div[1]/div/div/a/button");
+	By getStarted=By.xpath("//a[@href='/home']");
 	By dropDownDS=By.xpath("//body/div[1]/nav/div/div[1]/div/a");
-//			
+			
 	By alertMsg1=By.xpath("//body/div[2]");
 	By DSgetStarted=By.xpath("//body/div[2]/div[1]/div/div/a");
 	By registerBut=By.linkText("Register");
 	
-	public mainPage(WebDriver driver)
+	public mainPage()
 	{
-		this.driver=driver;
+		PageFactory.initElements(driver, this);
+		//this.driver=driver;
 	}
 	
-	public void getPage()
+	public void getPage() throws IOException
 	 {
-		driver.get(URl); 
+		ConfigReader.loadConfig();				
+		String URL=ConfigReader.getApplicationUrl();
+		driver.get(URL);
+		
 	 }
 	public void clickOngetStarted()
 	{

@@ -11,12 +11,16 @@ public class ConfigReader {
 		try 
 		{FileInputStream stream = new FileInputStream(propertyFilePath);
 		properties = new Properties();
-		properties.load(stream);
-		stream.close();		
-		} catch (FileNotFoundException e) {
+		try {
+			properties.load(stream);
+			stream.close();
+		} catch (IOException e) {
 			e.printStackTrace();
-			throw new RuntimeException("Configuration.properties not found at " + propertyFilePath);
 		}
+	} catch (FileNotFoundException e) {
+		e.printStackTrace();
+		throw new RuntimeException("Configuration.properties not found at " + propertyFilePath);
+	}
 	}
 	
 	public static String getBrowserType() {

@@ -1,1 +1,42 @@
-[INFO ] 2023-02-03 09:22:31.603 [main] Loggerload - Loading Config file
+[INFO ] 2023-02-03 18:20:00.118 [main] Loggerload - Loading Config file
+[INFO ] 2023-02-03 18:20:00.132 [main] Loggerload - Get property BrowserType
+[INFO ] 2023-02-03 18:20:00.135 [main] Loggerload - Testing on chrome
+[INFO ] 2023-02-03 18:20:12.804 [main] Loggerload - Initializing driver for : chrome
+[INFO ] 2023-02-03 18:20:13.774 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-02-03 18:20:13.775 [main] Loggerload - [@tag, @tag1] : Opeing DS Algo portal link
+[INFO ] 2023-02-03 18:20:13.775 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[INFO ] 2023-02-03 18:20:13.887 [main] Loggerload - opening DS ALGO portal link
+[INFO ] 2023-02-03 18:20:14.499 [main] Loggerload - user get into the homepage
+[INFO ] 2023-02-03 18:20:15.347 [main] Loggerload - user click on the dropdownDS arrow
+[INFO ] 2023-02-03 18:20:15.577 [main] Loggerload - user get alert message
+[INFO ] 2023-02-03 18:20:15.727 [main] Loggerload - user click on datastructure getstarted button
+[INFO ] 2023-02-03 18:20:17.006 [main] Loggerload - user get alert message
+[INFO ] 2023-02-03 18:20:17.084 [main] Loggerload - user click on register
+[INFO ] 2023-02-03 18:35:29.066 [main] Loggerload - Loading Config file
+[INFO ] 2023-02-03 18:35:29.081 [main] Loggerload - Get property BrowserType
+[INFO ] 2023-02-03 18:35:29.084 [main] Loggerload - Testing on chrome
+[INFO ] 2023-02-03 18:35:41.457 [main] Loggerload - Initializing driver for : chrome
+[INFO ] 2023-02-03 18:35:41.944 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-02-03 18:35:41.944 [main] Loggerload - [@tag, @tag1] : Opeing DS Algo portal link
+[INFO ] 2023-02-03 18:35:41.945 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[INFO ] 2023-02-03 18:35:41.971 [main] Loggerload - opening DS ALGO portal link
+[INFO ] 2023-02-03 18:35:42.620 [main] Loggerload - user get into the homepage
+[INFO ] 2023-02-03 18:35:44.192 [main] Loggerload - user click on the dropdownDS arrow
+[INFO ] 2023-02-03 18:35:44.351 [main] Loggerload - user get alert message
+[INFO ] 2023-02-03 18:35:44.478 [main] Loggerload - user click on datastructure getstarted button
+[INFO ] 2023-02-03 18:35:45.075 [main] Loggerload - user get alert message
+[INFO ] 2023-02-03 18:35:45.120 [main] Loggerload - user click on register
+[INFO ] 2023-02-03 18:48:06.449 [main] Loggerload - Loading Config file
+[INFO ] 2023-02-03 18:48:06.468 [main] Loggerload - Get property BrowserType
+[INFO ] 2023-02-03 18:48:06.471 [main] Loggerload - Testing on chrome
+[INFO ] 2023-02-03 18:48:21.638 [main] Loggerload - Initializing driver for : chrome
+[INFO ] 2023-02-03 18:48:22.421 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-02-03 18:48:22.422 [main] Loggerload - [@tag, @tag1] : Opeing DS Algo portal link
+[INFO ] 2023-02-03 18:48:22.422 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[INFO ] 2023-02-03 18:48:22.480 [main] Loggerload - opening DS ALGO portal link
+[INFO ] 2023-02-03 18:48:23.855 [main] Loggerload - user get into the homepage
+[INFO ] 2023-02-03 18:48:26.574 [main] Loggerload - user click on the dropdownDS arrow
+[INFO ] 2023-02-03 18:48:26.993 [main] Loggerload - user get alert message
+[INFO ] 2023-02-03 18:48:27.150 [main] Loggerload - user click on datastructure getstarted button
+[INFO ] 2023-02-03 18:48:28.880 [main] Loggerload - user get alert message
+[INFO ] 2023-02-03 18:48:28.991 [main] Loggerload - user click on register

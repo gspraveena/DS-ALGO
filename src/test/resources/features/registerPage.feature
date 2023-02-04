@@ -16,32 +16,20 @@
 #""
 ## (Comments)
 #Sample Feature Definition Template
- 
 Feature: user registration page
- 
 
- 
-  Scenario: Getting register into page with username and password
+  Scenario Outline:: Getting register into page with username and password
   
      Given user open the register page
      
      When The user clicks "Register" button after entering <Username>, <Password> and <confirm_Password>
-     Then User get message "Username is not correct"
-       
+     Then User get message "Username is not correct"       
      And It should go to homepage and get message  "New account created.You are logged in as Username"
      
-      
-    
-      
+  	 Examples:
    
-   Examples:
-   
-      | Username       | Password    | confirm_Password | status |
-       
-      
+      | Username       | Password    | confirm_Password | status |       
       | username       | sdet94batch | sdet94batch      | Fail   |
-      
-      
       | Numpysdet94    | sdet94batch | sdet94batch      | pass   |
      
   

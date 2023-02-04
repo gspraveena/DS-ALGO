@@ -22,31 +22,37 @@ public class driverFactory {
 	//private static final Logger logger= (Logger) LogManager.getLogger(Loggerload.class);
 	public WebDriver initializeDrivers(String browser) throws IOException {
 		// TODO Auto-generated method stub
-		WebDriver driver = null;
-		FileInputStream stream=new FileInputStream("C:\\Users\\Reka\\eclipse-workspace\\DS_ALGO_NN\\src\\test\\resources\\config.properties");
-		Properties properties=new Properties();
-		properties.load(stream);		
-		//String browser=properties.getProperty("BROWSER");
-		String driverLocation=properties.getProperty("CHROME_DRIVER_LOCATION");	 
+//      WebDriver driver = null;
+//		FileInputStream stream=new FileInputStream("C:\\Users\\Reka\\eclipse-workspace\\DS_ALGO_NN\\src\\test\\resources\\config.properties");
+//		Properties properties=new Properties();
+//		properties.load(stream);		
+//		//String browser=properties.getProperty("BROWSER");
+//		String driverLocation=properties.getProperty("CHROME_DRIVER_LOCATION");	 
 		if(browser.equalsIgnoreCase("chrome"))
 		{
 			Loggerload.info("Testing on chrome");
-			System.setProperty("webdriver.chrome.driver", driverLocation);
+			//System.setProperty("webdriver.chrome.driver", driverLocation);
+			WebDriverManager.chromedriver().browserVersion("108.0.0").setup();
 			driver =new ChromeDriver();
+			
+			//WebDriverManager.chromedriver().browserVersion("108.0.0").setup();
+			//System.setProperty("webdriver.chrome.driver", driverLocation);
+			
 		}
 		else if(browser.equalsIgnoreCase("firefox")){
 			Loggerload.info("Testing on firefox");
-			System.setProperty("webdriver.gecko.driver", driverLocation);
+			WebDriverManager.firefoxdriver().setup();
+			//System.setProperty("webdriver.gecko.driver", driverLocation);
 			driver =new FirefoxDriver();	
 		}
 		 else if (browser.equalsIgnoreCase("safari")) {
 			 Loggerload.info("Testing on safari");
-			//WebDriverManager.safaridriver().setup();
+			WebDriverManager.safaridriver().setup();
 			driver = new SafariDriver();	
 		}
 		 else if (browser.equalsIgnoreCase("edge")) {
 			 Loggerload.info("Testing on Edge");
-			//WebDriverManager.edgedriver().setup();
+			WebDriverManager.edgedriver().setup();
 			driver = new EdgeDriver();
 		}
 		// Set Page load timeout

@@ -16,7 +16,7 @@ public class registerPage_pom {
 
 //	String url = "https://dsportalapp.herokuapp.com/register";
 
-	register rp=new register(driver);
+	register rp=new register();
 
 //	@Given("user open the register page")
 //	public void user_open_the_register_page() {
