@@ -32,7 +32,8 @@ public class driverFactory {
 		{
 			Loggerload.info("Testing on chrome");
 			//System.setProperty("webdriver.chrome.driver", driverLocation);
-			WebDriverManager.chromedriver().browserVersion("108.0.0").setup();
+			WebDriverManager.chromedriver().setup();
+			//WebDriverManager.chromedriver().browserVersion("110.0.0").setup();
 			driver =new ChromeDriver();
 			
 			//WebDriverManager.chromedriver().browserVersion("108.0.0").setup();
@@ -57,12 +58,12 @@ public class driverFactory {
 		}
 		// Set Page load timeout
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
-		driver.manage().window().maximize();		
+		//driver.manage().window().maximize();		    ************
 		return driver;	
 	}
 	
 	public void closeallDriver() {
-		driver.close();	
+		//driver.close();	  *************************
 	}
 
 	public static WebDriver getdriver() {

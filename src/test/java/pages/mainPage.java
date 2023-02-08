@@ -1,12 +1,13 @@
 package pages;
-
 import java.io.IOException;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import crossBrowser.driverFactory;
@@ -25,7 +26,8 @@ public class mainPage {
 	By alertMsg1=By.xpath("//body/div[2]");
 	By DSgetStarted=By.xpath("//body/div[2]/div[1]/div/div/a");
 	By registerBut=By.linkText("Register");
-	
+	//alert 
+	@FindBy (xpath="//*[@class='alert alert-primary']")WebElement alert_msg;
 	public mainPage()
 	{
 		PageFactory.initElements(driver, this);
@@ -36,20 +38,16 @@ public class mainPage {
 	 {
 		ConfigReader.loadConfig();				
 		String URL=ConfigReader.getApplicationUrl();
-		driver.get(URL);
-		
+		driver.get(URL);		
 	 }
 	public void clickOngetStarted()
-	{
-		
+	{	
 		driver.findElement(getStarted).click();
 	}
 	public void clickOndropDownDS()
 	{
 		driver.findElement(dropDownDS).click();
 	}
-	
-	
 	public void msg()
 	{
 		driver.findElement(alertMsg1).getText();
@@ -63,6 +61,15 @@ public class mainPage {
 	{
 		driver.findElement(registerBut).click();
 			
+	}
+	public String getPageTitle() {
+		String title = driver.getTitle();
+		return title; 
+	}
+
+	public String alert() {
+		String msg = alert_msg.getText();
+		return msg;
 	}
  
 }

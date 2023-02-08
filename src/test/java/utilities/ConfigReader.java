@@ -66,6 +66,14 @@ public class ConfigReader {
 	}
 
 	// Array
+	
+	public static String getArrayUrl() {
+		String url = properties.getProperty("Arraypage");
+		if (url != null)
+			return url;
+		else
+			throw new RuntimeException("url not specified in the Configuration.properties file.");
+	}
 	public static String tryEditorURL() {
 		String tryeditorurl = properties.getProperty("tryeditorurl");
 		if (tryeditorurl != null)

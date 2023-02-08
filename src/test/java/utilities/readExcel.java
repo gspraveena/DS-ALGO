@@ -1,31 +1,71 @@
 package utilities;
-import java.io.FileInputStream;
+import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
+import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
-import org.apache.poi.xssf.usermodel.XSSFSheet;
-import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-import org.openqa.selenium.WebDriver;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.ss.usermodel.WorkbookFactory;
+public class readExcel {	
+	public static int totalRow;
 
-public class readExcel {
-	String[][] data=null;
-	WebDriver driver;
-	public String[][] getExcelData() throws IOException
-	{
-		FileInputStream excel=new FileInputStream("C:\\Users\\Reka\\Desktop\\New\\Eclipse\\loginData1.xlsx");
-		XSSFWorkbook workBook= new XSSFWorkbook(excel);
-		XSSFSheet sheet=workBook.getSheetAt(0);
-		int noOfRows = sheet.getLastRowNum()+1;
-	    int noOfColumns = sheet.getRow(0).getLastCellNum();
-	    String[][] dataTable = new String[noOfRows][noOfColumns];
-	    Loggerload.info(" reading excel file");
-	    for (int i = sheet.getFirstRowNum(); i < sheet.getLastRowNum() + 1; i++) {
-	        Row row = sheet.getRow(i);
-	        for (int j = row.getFirstCellNum(); j < row.getLastCellNum(); j++) {
-	            Cell cell = row.getCell(j);
-	            dataTable[i][j] = cell.getStringCellValue();
-	        }
-	    }
-	    return dataTable;
+	public List<Map<String, String>> getData(String excelFilePath, int sheetNumber)
+			throws InvalidFormatException, IOException {
+		Workbook workbook = WorkbookFactory.create(new File(excelFilePath));
+		Sheet sheet = workbook.getSheetAt(sheetNumber);
+		workbook.close();
+		return readSheet(sheet);
+	}
+
+	public List<Map<String, String>> getData(String excelFilePath, String sheetName)
+			throws InvalidFormatException,IOException {
+		Workbook workbook = WorkbookFactory.create(new File(excelFilePath));
+		Sheet sheet = workbook.getSheet( sheetName);
+		workbook.close();
+		return readSheet(sheet);
+	}
+	
+
+	private List<Map<String, String>> readSheet(Sheet sheet) {
+
+		Row row;
+		Cell cell;
+
+		totalRow = sheet.getLastRowNum();
+
+		List<Map<String, String>> excelRows = new ArrayList<Map<String, String>>();
+
+		for (int currentRow = 1; currentRow <= totalRow; currentRow++) {
+
+			row = sheet.getRow(currentRow);
+
+			int totalColumn = row.getLastCellNum();
+
+			LinkedHashMap<String, String> columnMapdata = new LinkedHashMap<String, String>();
+
+			for (int currentColumn = 0; currentColumn < totalColumn; currentColumn++) {
+
+				cell = row.getCell(currentColumn);
+
+				String columnHeaderName = sheet.getRow(sheet.getFirstRowNum()).getCell(currentColumn)
+						.getStringCellValue();
+
+				columnMapdata.put(columnHeaderName, cell.getStringCellValue());
+			}
+
+			excelRows.add(columnMapdata);
+		}
+
+		return excelRows;
+	}
+
+	public int countRow() {
+
+		return totalRow;
 	}
 }
