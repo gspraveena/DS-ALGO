@@ -20,7 +20,8 @@ Feature: user registration page
 
   Scenario Outline: Getting register into page with username and password
   
-     Given user open the register page     
+     Given user open the register page
+          
      When The user clicks Register button after entering "<username>", "<password>" and "<confirm_password>"     
      Then It should go to homepage and get message  "New account created.You are logged in as Username"
    

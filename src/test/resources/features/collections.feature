@@ -18,13 +18,27 @@
 ## (Comments)
 #Sample Feature Definition Template
 @tag
-Feature:  sign in page
+Feature:  DS ALGO Collections Project
+
+    @homePage
+ 	 Scenario: Opeing DS Algo portal link
+  
+    Given  The user opens DS Algo portal link
+    When   user clicks "Get Started" button
+    Then   user should be redirected to the homepage and see 6 different collections
+    Then   user click on the "Data Structures" dropdown arrow and sees 6 different collections
+    And    user clicks any one collection from dropdown 
+    And    user get alert message "you are not logged in"
+    Then   user click on Data Structure "getstarted" button 
+    And    user get alert message "you are not logged in"
+    When   user clicks "Sign In" in homePage 
+    Then  user is redirected to Sign In page 
+    Then  user click on register 
 
 	@signIn
     Scenario Outline: user navigate to sign in  page
   	Given user launches login page 
-  	When user login using username and password from given "<SheetName>" and <rownumber> 
-   	
+  	When user login using username and password from given "<SheetName>" and <rownumber>    	
     Examples:
 	|sheetName  |rownumber|
 	|Sheet1		|0		  |
@@ -47,12 +61,11 @@ Feature:  sign in page
     When  user click "Arrays in Python" 
     Then  user clicks "Try here"   
     Then  user enters code in tryEditor from "<sheetName>" and <rownumber>  then click run , output is printed    
-    And   user navigate to homepage
-    
+    And   user navigate to homepage   
     Examples:  
 	|sheetName      |rownumber|
-	|pythonCode		|2 		  |
-	|pythonCode	    |3        |
+	|pythonCode		|0 		  |
+	|pythonCode	    |1        |
      
 
 	

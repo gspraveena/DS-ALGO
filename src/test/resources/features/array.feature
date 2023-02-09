@@ -10,5 +10,5 @@ Scenario Outline: user navigate to array page
     
     Examples:  
 	|sheetName      |rownumber|
-	|pythonCode		|2 		  |
-	|pythonCode	    |3        |
+	|pythonCode		|0 		  |
+	|pythonCode	    |1        |

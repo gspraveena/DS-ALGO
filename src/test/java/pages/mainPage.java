@@ -21,10 +21,10 @@ public class mainPage {
 	//String URl="https://dsportalapp.herokuapp.com";
 	
 	By getStarted=By.xpath("//a[@href='/home']");
-	By dropDownDS=By.xpath("//body/div[1]/nav/div/div[1]/div/a");
-			
-	By alertMsg1=By.xpath("//body/div[2]");
-	By DSgetStarted=By.xpath("//body/div[2]/div[1]/div/div/a");
+	@FindBy (xpath="//a[contains(text(),'Data Structures')]")WebElement dropDown;
+	@FindBy (linkText ="Stack")WebElement dropDown_stack;
+	@FindBy (linkText ="Sign in")WebElement sign_In;
+	@FindBy (xpath="//a[contains(@href,'data-structures-introduction')]")WebElement dataStructureDropDown;
 	By registerBut=By.linkText("Register");
 	//alert 
 	@FindBy (xpath="//*[@class='alert alert-primary']")WebElement alert_msg;
@@ -46,16 +46,19 @@ public class mainPage {
 	}
 	public void clickOndropDownDS()
 	{
-		driver.findElement(dropDownDS).click();
+		dropDown.click();
 	}
-	public void msg()
-	{
-		driver.findElement(alertMsg1).getText();
+	public void clickOneFromDropDown() {
+		dropDown_stack.click();
 	}
+	
 	public void clickondataStructureGetstarted()
 	{
-		driver.findElement(DSgetStarted).click();
-		driver.findElement(alertMsg1).isDisplayed();
+	dataStructureDropDown.click();
+		
+	}
+	public void signIn() {
+		sign_In.click();
 	}
 	public void clickonRegister()
 	{
@@ -67,9 +70,9 @@ public class mainPage {
 		return title; 
 	}
 
-	public String alert() {
-		String msg = alert_msg.getText();
-		return msg;
+	public String errorMessage() {
+		String error_Message = alert_msg.getText();
+		return error_Message;
 	}
  
 }

@@ -9,13 +9,13 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 	@CucumberOptions(
 
 			//features = "src/test/resources/features/mainPage.feature",
-			//features = "src/test/resources/features/registerPage.feature",
-			features = "src/test/resources/features/collections.feature",
+			features = "src/test/resources/features/registerPage.feature",
+			//features = "src/test/resources/features/collections.feature",
 			//features = "src/test/resources/features/dataStructure.feature",
 			//features = "src/test/resources/features/array.feature",
 			glue =  { "StepDefinition", "hooks" },
 			plugin = { "pretty",
-//					  "html:target/cucumber-reports/mainPage.html",
+            // "html:target/cucumber-reports/mainPage.html",
 					 },
 			dryRun=false,
 			monochrome = true			 

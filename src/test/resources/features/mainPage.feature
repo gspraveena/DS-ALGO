@@ -17,19 +17,22 @@
 ## (Comments)
 #Sample Feature Definition Template
 @tag
-Feature: Title of your feature
-  I want to use this template for my feature file
+Feature: DS ALGO Project
 
-  @tag1
+  @mainPage
   Scenario: Opeing DS Algo portal link
   
     Given  The user opens DS Algo portal link
-    And user get into the homepage
-    Then user click on the dropdownDS arrow
-    And user get alert message
-    Then user click on datastructure getstarted button
-    And user get alert message
-    Then user click on register 
+    When   user clicks "Get Started" button
+    Then   user should be redirected to the homepage and see 6 different collections
+    Then   user click on the "Data Structures" dropdown arrow and sees 6 different collections
+    And    user clicks any one collection from dropdown 
+    And    user get alert message "you are not logged in"
+    Then   user click on Data Structure "getstarted" button 
+    And    user get alert message "you are not logged in"
+    When   user clicks "Sign In" in homePage 
+    Then  user is redirected to Sign In page 
+    Then  user click on register 
     
     
 
