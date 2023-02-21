@@ -1,4 +1,4 @@
-@tag
+@dataStructure
 Feature: DataStructure page
 
 	@dataStructure

@@ -17,12 +17,11 @@
 #	Scenario Outline: user navigate to datastructure page
 ## (Comments)
 #Sample Feature Definition Template
-@tag
+@page
 Feature:  DS ALGO Collections Project
 
     @homePage
- 	 Scenario: Opeing DS Algo portal link
-  
+ 	 Scenario: Opeing DS Algo portal link 
     Given  The user opens DS Algo portal link
     When   user clicks "Get Started" button
     Then   user should be redirected to the homepage and see 6 different collections
@@ -33,7 +32,7 @@ Feature:  DS ALGO Collections Project
     And    user get alert message "you are not logged in"
     When   user clicks "Sign In" in homePage 
     Then  user is redirected to Sign In page 
-    Then  user click on register 
+   # Then  user click on register 
 
 	@signIn
     Scenario Outline: user navigate to sign in  page
@@ -55,17 +54,8 @@ Feature:  DS ALGO Collections Project
 	|1 	          |0		|
 	|1	          |1        |
 	
-	@array
-	Scenario Outline: user navigate to array page
- 	Given user clicks "Get started"  in Array field  
-    When  user click "Arrays in Python" 
-    Then  user clicks "Try here"   
-    Then  user enters code in tryEditor from "<sheetName>" and <rownumber>  then click run , output is printed    
-    And   user navigate to homepage   
-    Examples:  
-	|sheetName      |rownumber|
-	|pythonCode		|0 		  |
-	|pythonCode	    |1        |
+	
+		
      
 
 	

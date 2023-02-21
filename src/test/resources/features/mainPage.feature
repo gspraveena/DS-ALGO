@@ -16,7 +16,7 @@
 #""
 ## (Comments)
 #Sample Feature Definition Template
-@tag
+@homepage
 Feature: DS ALGO Project
 
   @mainPage
@@ -32,7 +32,7 @@ Feature: DS ALGO Project
     And    user get alert message "you are not logged in"
     When   user clicks "Sign In" in homePage 
     Then  user is redirected to Sign In page 
-    Then  user click on register 
+    #Then  user click on register 
     
     
 

@@ -47,6 +47,15 @@ public class ConfigReader {
 		else
 			throw new RuntimeException("Homeurl not specified in the Configuration.properties file.");
 	}
+	
+	// Register
+	public static String registerPageURL() {
+		String url = properties.getProperty("registerurl");
+		if (url != null)
+			return url;
+		else
+			throw new RuntimeException("url not specified in the Configuration.properties file.");
+	}
 
 	// Signin
 	public static String getLoginPage() {
@@ -166,15 +175,6 @@ public class ConfigReader {
 		else
 			throw new RuntimeException(
 					"Implementation using array url is not specified in the Configuration.properties file.");
-	}
-
-	// Register
-	public static String registerPageURL() {
-		String url = properties.getProperty("registerurl");
-		if (url != null)
-			return url;
-		else
-			throw new RuntimeException("url not specified in the Configuration.properties file.");
 	}
 
 	// Graph
