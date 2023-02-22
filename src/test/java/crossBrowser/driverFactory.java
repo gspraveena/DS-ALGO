@@ -28,6 +28,7 @@ public class driverFactory {
 //		properties.load(stream);		
 //		//String browser=properties.getProperty("BROWSER");
 //		String driverLocation=properties.getProperty("CHROME_DRIVER_LOCATION");	 
+		//testing
 		if(browser.equalsIgnoreCase("chrome"))
 		{
 			Loggerload.info("Testing on chrome");
