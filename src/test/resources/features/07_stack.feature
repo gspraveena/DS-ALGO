@@ -1,3 +1,4 @@
+#USING DATA DRIVEN BY EXCEL FILE  AND HARCODED USERNAME AND PASSWORD
 @stack
 Feature:  Stack page
 Scenario Outline: user navigate to Stack page and works on Operations in Stack

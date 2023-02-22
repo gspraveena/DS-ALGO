@@ -98,6 +98,7 @@ public class registerPage
 	}
 	
 	*/
+//USING DATATABLE TO READ USERNAME AND PASSWORD  [DATADRIVEN ] 
 	public void enterUsername(DataTable dataTable) {
 		List<Map<String, String>> userdetail = dataTable.asMaps(String.class, String.class);	
 		for (Map<String, String> mapData : userdetail) {
@@ -124,7 +125,7 @@ public class registerPage
 			confirm_pwd.sendKeys(cfmpwd);
 		}
 	}	
-	
+//DATA DRIVEN USING EXAMPLES FOR REGISTER 08	
 	public void register_link(String username, String password, String confirm_password) throws InterruptedException {
 		// TODO Auto-generated method stub
 		driver.findElement(registerLink).click();

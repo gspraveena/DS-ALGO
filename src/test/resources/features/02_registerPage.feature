@@ -18,7 +18,7 @@
 #Sample Feature Definition Template
 @register
 Feature: user registration page
-  
+#USING DATATABLE TO READ USERNAME AND PASSWORD  [DATADRIVEN ]  , DATA DRIVEN USING EXAMPLES FOR REGISTER 08
    @TS_register_01
    Scenario: The user is presented with error message for empty fields below Username textbox
     Given The user opens Register Page
@@ -73,7 +73,7 @@ Feature: user registration page
       | Numphysdet94NN | 12345678 |   12345678       |
     Then It should display an error message "Password can’t be entirely numeric."
 
-     @TS_register_8 
+   @TS_register_08 
    Scenario Outline: Getting register into page with username and password 
      Given The user opens Register Page
      When The user clicks Register button after entering "<username>", "<password>" and "<confirm_password>"     
@@ -83,7 +83,7 @@ Feature: user registration page
       | user94name      | sdet		    | sdet94batch      |              
       | Numphysdet94NN  | sdet94batchNN | sdet94batchNN    | 
 
-  @TS_register_9
+  @TS_register_09
   Scenario: The user is presented with error message for existing username
     Given The user opens Register Page
     When The user enters a valid existing "username" with "password" and "confirm_password"

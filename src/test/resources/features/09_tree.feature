@@ -1,3 +1,4 @@
+#USING HARDCODED USERNAME AND PASSWORD , DATA DRIVEN USING EXCEL FILE 
 @tree
 Feature:  Tree page
 	Scenario Outline: user navigate to Tree page and works on Overview of Trees 1st link in the Tree

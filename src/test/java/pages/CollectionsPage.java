@@ -16,12 +16,14 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import constants.Constants;
 import crossBrowser.driverFactory;
 import utilities.ConfigReader;
 import utilities.ElementsUtils;
 
 public class CollectionsPage {
 	public static WebDriver driver=driverFactory.getdriver();
+	private final static String propertyFilePath = "./src/test/resources/config.properties";
   //******************************  Main Page  ***************************************
 	By getStarted=By.xpath("//a[@href='/home']");
 	@FindBy (xpath="//a[contains(text(),'Data Structures')]")WebElement dropDown;
@@ -319,6 +321,22 @@ public class CollectionsPage {
 		String URL=ConfigReader.getGraphGraphUrl();
 		driver.get(URL);		
 	}
+	
+	public void loginWithUernamePwd(String string, String string2) throws InterruptedException, IOException {
+		//ConfigReader.loadConfig();
+		FileInputStream stream = new FileInputStream(propertyFilePath);
+		properties = new Properties();		
+			properties.load(stream);
+			//stream.close();
+		//properties.load(getClass().getResourceAsStream("/config.properties"));
+		//PageFactory.initElements(driver, CollectionsPage.class);
+		Constants.user_name=properties.getProperty("USERNAME");
+		Constants.pass_word=properties.getProperty("PASSWORD");
+		driver.findElement(login_Username).sendKeys(Constants.user_name);	
+		driver.findElement(login_Password).sendKeys(Constants.pass_word);
+		driver.findElement(login_Button).click();
+	}
+	
 	
 	public void clickGraph() {
 		graph.click();

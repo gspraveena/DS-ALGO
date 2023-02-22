@@ -1,7 +1,8 @@
+# USING CONFIG READER TO READ USERNAME AND PASSWORD  FROM CONFIG.PROPERTIES, CONSTANTS  
 @graph
 Feature:  Graph page
 Scenario Outline: user navigate to Graph page and works on  Graph 
-	Given user login with username "Numphysdet94NN" and password "sdet94batchNN"
+	Given user login with username "USERNAME" and password "PASSWORD" given through config
 	Given user clicks "Get started"  in Graph field  
     When  user click "Graph" first link  in the Graph
     Then  user clicks "Try here"   

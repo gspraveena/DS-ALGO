@@ -6,8 +6,10 @@ import java.time.Duration;
 import java.util.Properties;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.core.Logger;
+import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
@@ -34,7 +36,13 @@ public class driverFactory {
 			//System.setProperty("webdriver.chrome.driver", driverLocation);
 			WebDriverManager.chromedriver().setup();
 			//WebDriverManager.chromedriver().browserVersion("110.0.0").setup();
-			driver =new ChromeDriver();
+			ChromeOptions chromeOptions = new ChromeOptions();
+			chromeOptions.setPageLoadStrategy(PageLoadStrategy.NORMAL);
+			chromeOptions.setAcceptInsecureCerts(true);
+			chromeOptions.setScriptTimeout(Duration.ofSeconds(30));
+			chromeOptions.setPageLoadTimeout(Duration.ofMillis(30000));
+			chromeOptions.setImplicitWaitTimeout(Duration.ofSeconds(20));
+			driver =new ChromeDriver(chromeOptions);
 			
 			//WebDriverManager.chromedriver().browserVersion("108.0.0").setup();
 			//System.setProperty("webdriver.chrome.driver", driverLocation);
@@ -56,8 +64,10 @@ public class driverFactory {
 			WebDriverManager.edgedriver().setup();
 			driver = new EdgeDriver();
 		}
+		
+		
 		// Set Page load timeout
-		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
+		//driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
 		//driver.manage().window().maximize();		    ************
 		return driver;	
 	}

@@ -1,3 +1,4 @@
+#USING DATA DRIVEN THROUGH EXCEL FILE  AND HARDCODED USERNAME AND PASSSOWRD
 @array
 Feature:  Array page
 Scenario Outline: user navigate to array page and works on Arrays in Python

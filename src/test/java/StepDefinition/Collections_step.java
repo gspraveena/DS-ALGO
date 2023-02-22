@@ -9,6 +9,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.PageFactory;
+import constants.Constants;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -20,7 +22,7 @@ import utilities.Loggerload;
 import utilities.readExcel;
 
 public class Collections_step {
-	
+	 WebDriver driver;
 	//WebDriver driver=new FirefoxDriver();
 	CollectionsPage collection=new CollectionsPage();
 	String Excelpath = ConfigReader.getexcelfilepath();
@@ -295,6 +297,12 @@ public class Collections_step {
 	}
 	
 	//*************************** Graph *************************************
+	
+	@Given("user login with username {string} and password {string} given through config")
+	public void user_login_with_username_and_password_given_through_config(String string, String string2) throws InterruptedException, IOException {
+		collection.LoginPage();
+		collection.loginWithUernamePwd(string, string2);
+	}
 	
 	@Given("user clicks {string}  in Graph field")
 	public void user_clicks_in_graph_field(String string) throws IOException {	   
