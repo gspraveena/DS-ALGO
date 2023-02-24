@@ -16,7 +16,7 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
  *DONE EXCEPTION HANDLING 
  *USED CONFIG.PROPERTIES FILE,CONFIG READER, EXCEL READER, CONSTANTS, LOG4J, HOOKS,CROSS BROWSER
  *GENERATED EXTENT PDF REPORT , EXTENT SPARK HTML REPORT AND CUCUMBER HTML REPORT    */
-//	@RunWith(Cucumber.class)
+	@RunWith(Cucumber.class)
 	@CucumberOptions(
 			//features = "src/test/resources/features/01_mainPage.feature",
 			//features = "src/test/resources/features/02_registerPage.feature",
@@ -27,11 +27,11 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 			//features = "src/test/resources/features/06_linkedList.feature",
 			//features = "src/test/resources/features/07_stack.feature",
 			//features = "src/test/resources/features/08_queue.feature",
-			features = "src/test/resources/features/10_graph.feature",
+			//features = "src/test/resources/features/10_graph.feature",
 			//features = "src/test/resources/features/09_tree.feature",
 	       
 		    //tags=  "@homepage,@signIn,@dataStructure,@array ,@graph",
-			//features = "src/test/resources/features/",
+			features = "src/test/resources/features/",
 			glue =  { "StepDefinition", "hooks" },
 			plugin = { "pretty",
              "html:target/cucumber-reports/dsalgo.html",

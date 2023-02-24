@@ -1,76 +1,12 @@
-[INFO ] 2023-02-23 21:26:02.471 [main] Loggerload - Loading Config file
-[INFO ] 2023-02-23 21:26:02.490 [main] Loggerload - Get property BrowserType
-[INFO ] 2023-02-23 21:26:02.496 [main] Loggerload - Testing on chrome
-[INFO ] 2023-02-23 21:26:39.149 [main] Loggerload - Initializing driver for : chrome
-[INFO ] 2023-02-23 21:26:41.871 [main] Loggerload - ===============================================================================================
-[INFO ] 2023-02-23 21:26:41.871 [main] Loggerload - [@graph] : user navigate to Graph page and works on  Graph
-[INFO ] 2023-02-23 21:26:41.872 [main] Loggerload - -----------------------------------------------------------------------------------------------
-[INFO ] 2023-02-23 21:27:01.161 [main] Loggerload - Expected result from Excel sheetname pythonCode and 0 : hello
-[INFO ] 2023-02-23 21:27:01.259 [main] Loggerload - ===============================================================================================
-[INFO ] 2023-02-23 21:27:01.259 [main] Loggerload - [@graph] : user does Graph Representations
-[INFO ] 2023-02-23 21:27:01.260 [main] Loggerload - -----------------------------------------------------------------------------------------------
-[INFO ] 2023-02-23 21:27:04.905 [main] Loggerload - Expected result from Excel sheetname pythonCode and 0 : hello
-[INFO ] 2023-02-24 11:13:50.923 [main] Loggerload - Loading Config file
-[INFO ] 2023-02-24 11:13:50.943 [main] Loggerload - Get property BrowserType
-[INFO ] 2023-02-24 11:13:50.956 [main] Loggerload - Testing on chrome
-[INFO ] 2023-02-24 11:15:54.686 [main] Loggerload - Loading Config file
-[INFO ] 2023-02-24 11:15:54.700 [main] Loggerload - Get property BrowserType
-[INFO ] 2023-02-24 11:15:54.703 [main] Loggerload - Testing on chrome
-[INFO ] 2023-02-24 11:16:27.236 [main] Loggerload - Initializing driver for : chrome
-[INFO ] 2023-02-24 11:16:32.997 [main] Loggerload - ===============================================================================================
-[INFO ] 2023-02-24 11:16:32.998 [main] Loggerload - [@graph] : user navigate to Graph page and works on  Graph
-[INFO ] 2023-02-24 11:16:32.999 [main] Loggerload - -----------------------------------------------------------------------------------------------
-[INFO ] 2023-02-24 11:16:41.333 [main] Loggerload - Expected result from Excel sheetname pythonCode and 0 : hello
-[INFO ] 2023-02-24 11:20:25.153 [main] Loggerload - Loading Config file
-[INFO ] 2023-02-24 11:20:25.183 [main] Loggerload - Get property BrowserType
-[INFO ] 2023-02-24 11:20:25.197 [main] Loggerload - Testing on chrome
-[INFO ] 2023-02-24 11:20:45.183 [main] Loggerload - Initializing driver for : chrome
-[INFO ] 2023-02-24 11:20:46.730 [main] Loggerload - ===============================================================================================
-[INFO ] 2023-02-24 11:20:46.731 [main] Loggerload - [@graph] : user navigate to Graph page and works on  Graph
-[INFO ] 2023-02-24 11:20:46.731 [main] Loggerload - -----------------------------------------------------------------------------------------------
-[INFO ] 2023-02-24 11:21:07.653 [main] Loggerload - Expected result from Excel sheetname pythonCode and 0 : hello
-[INFO ] 2023-02-24 11:21:07.875 [main] Loggerload - ===============================================================================================
-[INFO ] 2023-02-24 11:21:07.876 [main] Loggerload - [@graph] : user does Graph Representations
-[INFO ] 2023-02-24 11:21:07.876 [main] Loggerload - -----------------------------------------------------------------------------------------------
-[ERROR] 2023-02-24 11:21:41.182 [main] Loggerload - Steps Failed
-[ERROR] 2023-02-24 11:21:41.218 [main] Loggerload - Steps Failed , Taking Screenshot
-[INFO ] 2023-02-24 11:28:18.701 [main] Loggerload - Loading Config file
-[INFO ] 2023-02-24 11:28:18.717 [main] Loggerload - Get property BrowserType
-[INFO ] 2023-02-24 11:28:18.723 [main] Loggerload - Testing on chrome
-[INFO ] 2023-02-24 11:29:12.412 [main] Loggerload - Initializing driver for : chrome
-[INFO ] 2023-02-24 11:29:16.486 [main] Loggerload - ===============================================================================================
-[INFO ] 2023-02-24 11:29:16.487 [main] Loggerload - [@graph] : user navigate to Graph page and works on  Graph
-[INFO ] 2023-02-24 11:29:16.487 [main] Loggerload - -----------------------------------------------------------------------------------------------
-[ERROR] 2023-02-24 11:29:48.319 [main] Loggerload - Steps Failed
-[ERROR] 2023-02-24 11:29:48.342 [main] Loggerload - Steps Failed , Taking Screenshot
-[INFO ] 2023-02-24 11:30:22.420 [main] Loggerload - ===============================================================================================
-[INFO ] 2023-02-24 11:30:22.438 [main] Loggerload - [@graph] : user does Graph Representations
-[INFO ] 2023-02-24 11:30:22.439 [main] Loggerload - -----------------------------------------------------------------------------------------------
-[ERROR] 2023-02-24 11:30:26.729 [main] Loggerload - Steps Failed
-[ERROR] 2023-02-24 11:30:26.730 [main] Loggerload - Steps Failed , Taking Screenshot
-[INFO ] 2023-02-24 11:31:25.717 [main] Loggerload - Loading Config file
-[INFO ] 2023-02-24 11:31:25.745 [main] Loggerload - Get property BrowserType
-[INFO ] 2023-02-24 11:31:25.752 [main] Loggerload - Testing on chrome
-[INFO ] 2023-02-24 11:31:47.741 [main] Loggerload - Initializing driver for : chrome
-[INFO ] 2023-02-24 11:31:50.118 [main] Loggerload - ===============================================================================================
-[INFO ] 2023-02-24 11:31:50.118 [main] Loggerload - [@graph] : user navigate to Graph page and works on  Graph
-[INFO ] 2023-02-24 11:31:50.119 [main] Loggerload - -----------------------------------------------------------------------------------------------
-[ERROR] 2023-02-24 11:33:07.183 [main] Loggerload - Steps Failed
-[ERROR] 2023-02-24 11:33:07.220 [main] Loggerload - Steps Failed , Taking Screenshot
-[INFO ] 2023-02-24 11:33:44.188 [main] Loggerload - ===============================================================================================
-[INFO ] 2023-02-24 11:33:44.199 [main] Loggerload - [@graph] : user does Graph Representations
-[INFO ] 2023-02-24 11:33:44.200 [main] Loggerload - -----------------------------------------------------------------------------------------------
-[INFO ] 2023-02-24 11:34:03.007 [main] Loggerload - Expected result from Excel sheetname pythonCode and 0 : hello
-[INFO ] 2023-02-24 11:41:43.747 [main] Loggerload - Loading Config file
-[INFO ] 2023-02-24 11:41:43.759 [main] Loggerload - Get property BrowserType
-[INFO ] 2023-02-24 11:41:43.806 [main] Loggerload - Testing on chrome
-[INFO ] 2023-02-24 11:42:12.683 [main] Loggerload - Initializing driver for : chrome
-[INFO ] 2023-02-24 11:42:16.266 [main] Loggerload - ===============================================================================================
-[INFO ] 2023-02-24 11:42:16.267 [main] Loggerload - [@graph] : user navigate to Graph page and works on  Graph
-[INFO ] 2023-02-24 11:42:16.267 [main] Loggerload - -----------------------------------------------------------------------------------------------
-[INFO ] 2023-02-24 11:42:39.814 [main] Loggerload - Expected result from Excel sheetname pythonCode and 0 : hello
-[INFO ] 2023-02-24 11:42:39.925 [main] Loggerload - ===============================================================================================
-[INFO ] 2023-02-24 11:42:39.925 [main] Loggerload - [@graph] : user does Graph Representations
-[INFO ] 2023-02-24 11:42:39.925 [main] Loggerload - -----------------------------------------------------------------------------------------------
-[ERROR] 2023-02-24 11:43:14.013 [main] Loggerload - Steps Failed
-[ERROR] 2023-02-24 11:43:14.016 [main] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-02-24 15:05:40.440 [main] Loggerload - Loading Config file
+[INFO ] 2023-02-24 15:05:40.451 [main] Loggerload - Get property BrowserType
+[INFO ] 2023-02-24 15:05:40.458 [main] Loggerload - Testing on chrome
+[INFO ] 2023-02-24 15:05:52.920 [main] Loggerload - Initializing driver for : chrome
+[INFO ] 2023-02-24 15:05:53.889 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-02-24 15:05:53.891 [main] Loggerload - [@graph] : user navigate to Graph page and works on  Graph
+[INFO ] 2023-02-24 15:05:53.892 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[INFO ] 2023-02-24 15:06:00.385 [main] Loggerload - Expected result from Excel sheetname pythonCode and 0 : hello
+[INFO ] 2023-02-24 15:06:00.437 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-02-24 15:06:00.438 [main] Loggerload - [@graph] : user does Graph Representations
+[INFO ] 2023-02-24 15:06:00.438 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[INFO ] 2023-02-24 15:06:02.667 [main] Loggerload - Expected result from Excel sheetname pythonCode and 0 : hello
