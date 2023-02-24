@@ -11,7 +11,7 @@ import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
-public class readExcel {	
+public class ReadExcelNOTUSED {	
 	public static int totalRow;
 
 	public List<Map<String, String>> getData(String excelFilePath, int sheetNumber)

@@ -3,7 +3,8 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
  <classes>
-  <class name="mainPage">
+ <!--   <class name="mainPage">   -->
+   <class name="runner.testRunner">  
   <methods>
   <include name="page1">
   </include>
@@ -11,7 +12,7 @@
   </include>
     </methods>
   </class>
-  </classes>
+ </classes>
  
   </test> <!-- Test -->
 </suite> <!-- Suite -->

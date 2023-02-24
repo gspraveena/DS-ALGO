@@ -5,7 +5,8 @@ import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 /*DONE DATA DRIVEN USING EXAMPLES SECNARIO OUTLINE,  EXCEL FILE,   DATATABLE  
- *DONE READING DATA FROM EXCEL FILE USING SHEET NUMBER ,SHEET NAME   
+ *DONE READING DATA FROM EXCEL FILE STORED IN SYSTEM USING SHEET NUMBER ,SHEET NAME 
+ *DONE READING DATA FROM EXCEL FILE STORED IN  RESOURCE FOLDER USING SHEET NUMBER ,SHEET NAME  
  *DONE READING USERNAME AND PASSWORD FROM CONFIG.PROPERTIES FILE
  *DONE READING USERNAME AND PASSWORD WITH HARDCODED VALUES IN FEATURE FILE 
  *DONE NEGATIVE TESTING   
@@ -26,11 +27,11 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 			//features = "src/test/resources/features/06_linkedList.feature",
 			//features = "src/test/resources/features/07_stack.feature",
 			//features = "src/test/resources/features/08_queue.feature",
-			//features = "src/test/resources/features/10_graph.feature",
+			features = "src/test/resources/features/10_graph.feature",
 			//features = "src/test/resources/features/09_tree.feature",
 	       
-		   //tags=  "@homepage,@signIn,@dataStructure,@array ,@graph",
-			features = "src/test/resources/features/",
+		    //tags=  "@homepage,@signIn,@dataStructure,@array ,@graph",
+			//features = "src/test/resources/features/",
 			glue =  { "StepDefinition", "hooks" },
 			plugin = { "pretty",
              "html:target/cucumber-reports/dsalgo.html",
@@ -38,7 +39,7 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 			dryRun=false,
 			monochrome = true			 
 	)
-
+// allure serve C:\Users\Reka\git\DS-ALGO-94NN\allure-results
 	public class testRunner extends AbstractTestNGCucumberTests {
 		@Override
 		@DataProvider(parallel = false)

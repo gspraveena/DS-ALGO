@@ -67,7 +67,8 @@ public class ConfigReader {
 	}
 
 	public static String getexcelfilepath() {
-		String excelfilelpath = properties.getProperty("excelfilepath");
+		//String excelfilelpath = properties.getProperty("excelfilepath");
+		String excelfilelpath = properties.getProperty("excelfilepathCode");
 		if (excelfilelpath != null)
 			return excelfilelpath;
 		else

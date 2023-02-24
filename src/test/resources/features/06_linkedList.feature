@@ -11,7 +11,7 @@ Scenario Outline: user navigate to Linked List page and works on Introduction on
 	|sheetName      |rownumber|
 	|pythonCode		|0 		  |
 	
-Scenario Outline: user does Creating Linked List	
+    Scenario Outline: user does Creating Linked List	
 	Given user is in Linked List homepage 
 	When  user click "Creating Linked List" second link  in the Linked list
     Then  user clicks "Try here"   

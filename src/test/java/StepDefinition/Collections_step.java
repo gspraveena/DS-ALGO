@@ -19,7 +19,7 @@ import pages.CollectionsPage;
 import utilities.ConfigReader;
 import utilities.ExcelReader;
 import utilities.Loggerload;
-import utilities.readExcel;
+import utilities.ReadExcelNOTUSED;
 
 public class Collections_step {
 	 WebDriver driver;

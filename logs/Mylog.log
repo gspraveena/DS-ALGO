@@ -1,174 +1,76 @@
-[INFO ] 2023-02-21 08:54:38.310 [main] Loggerload - Loading Config file
-[INFO ] 2023-02-21 08:54:38.337 [main] Loggerload - Get property BrowserType
-[INFO ] 2023-02-21 08:54:38.343 [main] Loggerload - Testing on chrome
-[INFO ] 2023-02-21 08:54:58.459 [main] Loggerload - Initializing driver for : chrome
-[INFO ] 2023-02-21 08:54:59.150 [main] Loggerload - ===============================================================================================
-[INFO ] 2023-02-21 08:54:59.151 [main] Loggerload - [@array] : user navigate to array page and works on Arrays in Python
-[INFO ] 2023-02-21 08:54:59.151 [main] Loggerload - -----------------------------------------------------------------------------------------------
-[INFO ] 2023-02-21 08:55:13.792 [main] Loggerload - Expected result from Excel sheetname pythonCode and 0 : hello
-[INFO ] 2023-02-21 08:55:13.893 [main] Loggerload - ===============================================================================================
-[INFO ] 2023-02-21 08:55:13.893 [main] Loggerload - [@array] : user navigate to array page and works on Arrays in Python
-[INFO ] 2023-02-21 08:55:13.897 [main] Loggerload - -----------------------------------------------------------------------------------------------
-[INFO ] 2023-02-21 08:55:21.955 [main] Loggerload - Expected result from Excel sheetname pythonCode and 1 : Hello World
-[INFO ] 2023-02-21 08:55:22.020 [main] Loggerload - ===============================================================================================
-[INFO ] 2023-02-21 08:55:22.020 [main] Loggerload - [@array] : user does Arrays Using List
-[INFO ] 2023-02-21 08:55:22.020 [main] Loggerload - -----------------------------------------------------------------------------------------------
-[INFO ] 2023-02-21 08:55:24.480 [main] Loggerload - Expected result from Excel sheetname pythonCode and 0 : hello
-[INFO ] 2023-02-21 08:55:24.808 [main] Loggerload - ===============================================================================================
-[INFO ] 2023-02-21 08:55:24.809 [main] Loggerload - [@array] : user does Arrays Using List
-[INFO ] 2023-02-21 08:55:24.810 [main] Loggerload - -----------------------------------------------------------------------------------------------
-[INFO ] 2023-02-21 08:55:29.497 [main] Loggerload - Expected result from Excel sheetname pythonCode and 1 : Hello World
-[INFO ] 2023-02-21 08:55:29.626 [main] Loggerload - ===============================================================================================
-[INFO ] 2023-02-21 08:55:29.626 [main] Loggerload - [@array] : user does Basic operations in Lists
-[INFO ] 2023-02-21 08:55:29.626 [main] Loggerload - -----------------------------------------------------------------------------------------------
-[INFO ] 2023-02-21 08:55:33.238 [main] Loggerload - Expected result from Excel sheetname pythonCode and 0 : hello
-[INFO ] 2023-02-21 08:55:33.260 [main] Loggerload - ===============================================================================================
-[INFO ] 2023-02-21 08:55:33.261 [main] Loggerload - [@array] : user does Basic operations in Lists
-[INFO ] 2023-02-21 08:55:33.261 [main] Loggerload - -----------------------------------------------------------------------------------------------
-[INFO ] 2023-02-21 08:55:37.379 [main] Loggerload - Expected result from Excel sheetname pythonCode and 1 : Hello World
-[INFO ] 2023-02-21 08:55:37.399 [main] Loggerload - ===============================================================================================
-[INFO ] 2023-02-21 08:55:37.399 [main] Loggerload - [@array] : user does Applications of Array
-[INFO ] 2023-02-21 08:55:37.399 [main] Loggerload - -----------------------------------------------------------------------------------------------
-[INFO ] 2023-02-21 08:55:40.644 [main] Loggerload - Expected result from Excel sheetname pythonCode and 0 : hello
-[INFO ] 2023-02-21 08:55:41.070 [main] Loggerload - ===============================================================================================
-[INFO ] 2023-02-21 08:55:41.070 [main] Loggerload - [@array] : user does Applications of Array
-[INFO ] 2023-02-21 08:55:41.070 [main] Loggerload - -----------------------------------------------------------------------------------------------
-[INFO ] 2023-02-21 08:55:44.096 [main] Loggerload - Expected result from Excel sheetname pythonCode and 1 : Hello World
-[INFO ] 2023-02-21 08:55:45.009 [main] Loggerload - ===============================================================================================
-[INFO ] 2023-02-21 08:55:45.010 [main] Loggerload - [@dataStructure, @dataStructure] : user navigate to datastructure page
-[INFO ] 2023-02-21 08:55:45.010 [main] Loggerload - -----------------------------------------------------------------------------------------------
-[INFO ] 2023-02-21 08:55:49.128 [main] Loggerload - Expected result from Excel sheetname 1 and 0 : hello
-[INFO ] 2023-02-21 08:55:49.651 [main] Loggerload - ===============================================================================================
-[INFO ] 2023-02-21 08:55:49.652 [main] Loggerload - [@dataStructure, @dataStructure] : user navigate to datastructure page
-[INFO ] 2023-02-21 08:55:49.652 [main] Loggerload - -----------------------------------------------------------------------------------------------
-[INFO ] 2023-02-21 08:55:54.204 [main] Loggerload - Expected result from Excel sheetname 1 and 1 : Hello World
-[INFO ] 2023-02-21 08:55:55.059 [main] Loggerload - ===============================================================================================
-[INFO ] 2023-02-21 08:55:55.059 [main] Loggerload - [@graph] : user navigate to Graph page and works on  Graph
-[INFO ] 2023-02-21 08:55:55.059 [main] Loggerload - -----------------------------------------------------------------------------------------------
-[INFO ] 2023-02-21 08:55:59.836 [main] Loggerload - Expected result from Excel sheetname pythonCode and 0 : hello
-[INFO ] 2023-02-21 08:55:59.876 [main] Loggerload - ===============================================================================================
-[INFO ] 2023-02-21 08:55:59.876 [main] Loggerload - [@graph] : user does Graph Representations
-[INFO ] 2023-02-21 08:55:59.876 [main] Loggerload - -----------------------------------------------------------------------------------------------
-[INFO ] 2023-02-21 08:56:03.301 [main] Loggerload - Expected result from Excel sheetname pythonCode and 0 : hello
-[INFO ] 2023-02-21 08:56:03.761 [main] Loggerload - ===============================================================================================
-[INFO ] 2023-02-21 08:56:03.761 [main] Loggerload - [@tag] : user navigate to Linked List page and works on Introduction on Linked List
-[INFO ] 2023-02-21 08:56:03.762 [main] Loggerload - -----------------------------------------------------------------------------------------------
-[INFO ] 2023-02-21 08:56:07.706 [main] Loggerload - Expected result from Excel sheetname pythonCode and 0 : hello
-[INFO ] 2023-02-21 08:56:07.757 [main] Loggerload - ===============================================================================================
-[INFO ] 2023-02-21 08:56:07.757 [main] Loggerload - [@tag] : user does Creating Linked List
-[INFO ] 2023-02-21 08:56:07.757 [main] Loggerload - -----------------------------------------------------------------------------------------------
-[INFO ] 2023-02-21 08:56:10.925 [main] Loggerload - Expected result from Excel sheetname pythonCode and 0 : hello
-[INFO ] 2023-02-21 08:56:10.957 [main] Loggerload - ===============================================================================================
-[INFO ] 2023-02-21 08:56:10.957 [main] Loggerload - [@tag] : user does Types of Linked Lists
-[INFO ] 2023-02-21 08:56:10.957 [main] Loggerload - -----------------------------------------------------------------------------------------------
-[INFO ] 2023-02-21 08:56:13.860 [main] Loggerload - Expected result from Excel sheetname pythonCode and 0 : hello
-[INFO ] 2023-02-21 08:56:13.928 [main] Loggerload - ===============================================================================================
-[INFO ] 2023-02-21 08:56:13.929 [main] Loggerload - [@tag] : user does Implement Linked List in Python
-[INFO ] 2023-02-21 08:56:13.929 [main] Loggerload - -----------------------------------------------------------------------------------------------
-[INFO ] 2023-02-21 08:56:16.872 [main] Loggerload - Expected result from Excel sheetname pythonCode and 0 : hello
-[INFO ] 2023-02-21 08:56:16.916 [main] Loggerload - ===============================================================================================
-[INFO ] 2023-02-21 08:56:16.916 [main] Loggerload - [@tag] : user does Traversal
-[INFO ] 2023-02-21 08:56:16.916 [main] Loggerload - -----------------------------------------------------------------------------------------------
-[INFO ] 2023-02-21 08:56:20.434 [main] Loggerload - Expected result from Excel sheetname pythonCode and 0 : hello
-[INFO ] 2023-02-21 08:56:20.470 [main] Loggerload - ===============================================================================================
-[INFO ] 2023-02-21 08:56:20.471 [main] Loggerload - [@tag] : user does Insertion
-[INFO ] 2023-02-21 08:56:20.471 [main] Loggerload - -----------------------------------------------------------------------------------------------
-[INFO ] 2023-02-21 08:56:23.306 [main] Loggerload - Expected result from Excel sheetname pythonCode and 0 : hello
-[INFO ] 2023-02-21 08:56:23.320 [main] Loggerload - ===============================================================================================
-[INFO ] 2023-02-21 08:56:23.320 [main] Loggerload - [@tag] : user does Deletion
-[INFO ] 2023-02-21 08:56:23.320 [main] Loggerload - -----------------------------------------------------------------------------------------------
-[INFO ] 2023-02-21 08:56:26.568 [main] Loggerload - Expected result from Excel sheetname pythonCode and 0 : hello
-[INFO ] 2023-02-21 08:56:26.973 [main] Loggerload - ===============================================================================================
-[INFO ] 2023-02-21 08:56:26.973 [main] Loggerload - [@tag] : user navigate to Queue page and works on Implementation Queue in Python
-[INFO ] 2023-02-21 08:56:26.973 [main] Loggerload - -----------------------------------------------------------------------------------------------
-[INFO ] 2023-02-21 08:56:30.686 [main] Loggerload - Expected result from Excel sheetname pythonCode and 0 : hello
-[INFO ] 2023-02-21 08:56:30.724 [main] Loggerload - ===============================================================================================
-[INFO ] 2023-02-21 08:56:30.726 [main] Loggerload - [@tag] : user does Implementation Using Collection.deque
-[INFO ] 2023-02-21 08:56:30.726 [main] Loggerload - -----------------------------------------------------------------------------------------------
-[INFO ] 2023-02-21 08:56:32.991 [main] Loggerload - Expected result from Excel sheetname pythonCode and 0 : hello
-[INFO ] 2023-02-21 08:56:33.072 [main] Loggerload - ===============================================================================================
-[INFO ] 2023-02-21 08:56:33.072 [main] Loggerload - [@tag] : user does Implementation Using Array
-[INFO ] 2023-02-21 08:56:33.073 [main] Loggerload - -----------------------------------------------------------------------------------------------
-[INFO ] 2023-02-21 08:56:35.228 [main] Loggerload - Expected result from Excel sheetname pythonCode and 0 : hello
-[INFO ] 2023-02-21 08:56:35.718 [main] Loggerload - ===============================================================================================
-[INFO ] 2023-02-21 08:56:35.718 [main] Loggerload - [@tag] : user does Queue Operations
-[INFO ] 2023-02-21 08:56:35.718 [main] Loggerload - -----------------------------------------------------------------------------------------------
-[INFO ] 2023-02-21 08:56:37.506 [main] Loggerload - Expected result from Excel sheetname pythonCode and 0 : hello
-[INFO ] 2023-02-21 08:56:37.993 [main] Loggerload - ===============================================================================================
-[INFO ] 2023-02-21 08:56:37.993 [main] Loggerload - [@signIn, @signIn] : user navigate to sign in  page
-[INFO ] 2023-02-21 08:56:37.993 [main] Loggerload - -----------------------------------------------------------------------------------------------
-[INFO ] 2023-02-21 08:56:37.995 [main] Loggerload - User launches login page 
-[INFO ] 2023-02-21 08:56:38.408 [main] Loggerload - User enter login credentials 
-[INFO ] 2023-02-21 08:56:39.604 [main] Loggerload - User redirected to login page 
-[INFO ] 2023-02-21 08:56:39.658 [main] Loggerload - Title of current page is : Login
-[INFO ] 2023-02-21 08:56:39.854 [main] Loggerload - ===============================================================================================
-[INFO ] 2023-02-21 08:56:39.859 [main] Loggerload - [@signIn, @signIn] : user navigate to sign in  page
-[INFO ] 2023-02-21 08:56:39.860 [main] Loggerload - -----------------------------------------------------------------------------------------------
-[INFO ] 2023-02-21 08:56:39.878 [main] Loggerload - User launches login page 
-[INFO ] 2023-02-21 08:56:40.088 [main] Loggerload - User enter login credentials 
-[INFO ] 2023-02-21 08:56:41.189 [main] Loggerload - User redirected to login page 
-[INFO ] 2023-02-21 08:56:41.257 [main] Loggerload - Title of current page is : NumpyNinja
-[INFO ] 2023-02-21 08:56:41.336 [main] Loggerload - ===============================================================================================
-[INFO ] 2023-02-21 08:56:41.336 [main] Loggerload - [@tag] : user navigate to Stack page and works on Operations in Stack
-[INFO ] 2023-02-21 08:56:41.336 [main] Loggerload - -----------------------------------------------------------------------------------------------
-[INFO ] 2023-02-21 08:56:46.704 [main] Loggerload - Expected result from Excel sheetname pythonCode and 0 : hello
-[INFO ] 2023-02-21 08:56:46.749 [main] Loggerload - ===============================================================================================
-[INFO ] 2023-02-21 08:56:46.751 [main] Loggerload - [@tag] : user does Implementation Stack
-[INFO ] 2023-02-21 08:56:46.752 [main] Loggerload - -----------------------------------------------------------------------------------------------
-[INFO ] 2023-02-21 08:56:49.677 [main] Loggerload - Expected result from Excel sheetname pythonCode and 0 : hello
-[INFO ] 2023-02-21 08:56:50.076 [main] Loggerload - ===============================================================================================
-[INFO ] 2023-02-21 08:56:50.077 [main] Loggerload - [@tag] : user does Applications
-[INFO ] 2023-02-21 08:56:50.077 [main] Loggerload - -----------------------------------------------------------------------------------------------
-[INFO ] 2023-02-21 08:56:54.305 [main] Loggerload - Expected result from Excel sheetname pythonCode and 0 : hello
-[INFO ] 2023-02-21 08:56:55.457 [main] Loggerload - ===============================================================================================
-[INFO ] 2023-02-21 08:56:55.458 [main] Loggerload - [@tag] : user navigate to Tree page and works on Overview of Trees 1st link in the Tree
-[INFO ] 2023-02-21 08:56:55.458 [main] Loggerload - -----------------------------------------------------------------------------------------------
-[INFO ] 2023-02-21 08:57:00.516 [main] Loggerload - Expected result from Excel sheetname pythonCode and 0 : hello
-[INFO ] 2023-02-21 08:57:00.649 [main] Loggerload - ===============================================================================================
-[INFO ] 2023-02-21 08:57:00.654 [main] Loggerload - [@tag] : user does Terminologies in Trees
-[INFO ] 2023-02-21 08:57:00.655 [main] Loggerload - -----------------------------------------------------------------------------------------------
-[INFO ] 2023-02-21 08:57:03.090 [main] Loggerload - Expected result from Excel sheetname pythonCode and 0 : hello
-[INFO ] 2023-02-21 08:57:03.122 [main] Loggerload - ===============================================================================================
-[INFO ] 2023-02-21 08:57:03.123 [main] Loggerload - [@tag] : user does Types of Trees
-[INFO ] 2023-02-21 08:57:03.123 [main] Loggerload - -----------------------------------------------------------------------------------------------
-[INFO ] 2023-02-21 08:57:06.445 [main] Loggerload - Expected result from Excel sheetname pythonCode and 0 : hello
-[INFO ] 2023-02-21 08:57:06.474 [main] Loggerload - ===============================================================================================
-[INFO ] 2023-02-21 08:57:06.476 [main] Loggerload - [@tag] : user does Tree Traversals
-[INFO ] 2023-02-21 08:57:06.476 [main] Loggerload - -----------------------------------------------------------------------------------------------
-[INFO ] 2023-02-21 08:57:09.787 [main] Loggerload - Expected result from Excel sheetname pythonCode and 0 : hello
-[INFO ] 2023-02-21 08:57:09.805 [main] Loggerload - ===============================================================================================
-[INFO ] 2023-02-21 08:57:09.805 [main] Loggerload - [@tag] : user does Traversal-Illustration
-[INFO ] 2023-02-21 08:57:09.805 [main] Loggerload - -----------------------------------------------------------------------------------------------
-[INFO ] 2023-02-21 08:57:12.059 [main] Loggerload - Expected result from Excel sheetname pythonCode and 0 : hello
-[INFO ] 2023-02-21 08:57:12.108 [main] Loggerload - ===============================================================================================
-[INFO ] 2023-02-21 08:57:12.108 [main] Loggerload - [@tag] : user does Binary Trees
-[INFO ] 2023-02-21 08:57:12.108 [main] Loggerload - -----------------------------------------------------------------------------------------------
-[INFO ] 2023-02-21 08:57:15.031 [main] Loggerload - Expected result from Excel sheetname pythonCode and 0 : hello
-[INFO ] 2023-02-21 08:57:15.317 [main] Loggerload - ===============================================================================================
-[INFO ] 2023-02-21 08:57:15.318 [main] Loggerload - [@tag] : user does Types of Binary Trees
-[INFO ] 2023-02-21 08:57:15.318 [main] Loggerload - -----------------------------------------------------------------------------------------------
-[INFO ] 2023-02-21 08:57:18.890 [main] Loggerload - Expected result from Excel sheetname pythonCode and 0 : hello
-[INFO ] 2023-02-21 08:57:18.967 [main] Loggerload - ===============================================================================================
-[INFO ] 2023-02-21 08:57:18.968 [main] Loggerload - [@tag] : user does Implementation in Python
-[INFO ] 2023-02-21 08:57:18.968 [main] Loggerload - -----------------------------------------------------------------------------------------------
-[INFO ] 2023-02-21 08:57:21.463 [main] Loggerload - Expected result from Excel sheetname pythonCode and 0 : hello
-[INFO ] 2023-02-21 08:57:21.555 [main] Loggerload - ===============================================================================================
-[INFO ] 2023-02-21 08:57:21.555 [main] Loggerload - [@tag] : user does Binary Tree Traversals
-[INFO ] 2023-02-21 08:57:21.555 [main] Loggerload - -----------------------------------------------------------------------------------------------
-[INFO ] 2023-02-21 08:57:24.977 [main] Loggerload - Expected result from Excel sheetname pythonCode and 0 : hello
-[INFO ] 2023-02-21 08:57:25.034 [main] Loggerload - ===============================================================================================
-[INFO ] 2023-02-21 08:57:25.034 [main] Loggerload - [@tag] : user does Implementation of Binary Trees
-[INFO ] 2023-02-21 08:57:25.034 [main] Loggerload - -----------------------------------------------------------------------------------------------
-[INFO ] 2023-02-21 08:57:27.654 [main] Loggerload - Expected result from Excel sheetname pythonCode and 0 : hello
-[INFO ] 2023-02-21 08:57:28.435 [main] Loggerload - ===============================================================================================
-[INFO ] 2023-02-21 08:57:28.435 [main] Loggerload - [@tag] : user does Applications of Binary Trees
-[INFO ] 2023-02-21 08:57:28.435 [main] Loggerload - -----------------------------------------------------------------------------------------------
-[INFO ] 2023-02-21 08:57:31.279 [main] Loggerload - Expected result from Excel sheetname pythonCode and 0 : hello
-[INFO ] 2023-02-21 08:57:31.328 [main] Loggerload - ===============================================================================================
-[INFO ] 2023-02-21 08:57:31.329 [main] Loggerload - [@tag] : user does Binary Search Trees
-[INFO ] 2023-02-21 08:57:31.329 [main] Loggerload - -----------------------------------------------------------------------------------------------
-[INFO ] 2023-02-21 08:57:33.898 [main] Loggerload - Expected result from Excel sheetname pythonCode and 0 : hello
-[INFO ] 2023-02-21 08:57:33.916 [main] Loggerload - ===============================================================================================
-[INFO ] 2023-02-21 08:57:33.916 [main] Loggerload - [@tag] : user does Implementation of BST
-[INFO ] 2023-02-21 08:57:33.917 [main] Loggerload - -----------------------------------------------------------------------------------------------
-[INFO ] 2023-02-21 08:57:35.940 [main] Loggerload - Expected result from Excel sheetname pythonCode and 0 : hello
+[INFO ] 2023-02-23 21:26:02.471 [main] Loggerload - Loading Config file
+[INFO ] 2023-02-23 21:26:02.490 [main] Loggerload - Get property BrowserType
+[INFO ] 2023-02-23 21:26:02.496 [main] Loggerload - Testing on chrome
+[INFO ] 2023-02-23 21:26:39.149 [main] Loggerload - Initializing driver for : chrome
+[INFO ] 2023-02-23 21:26:41.871 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-02-23 21:26:41.871 [main] Loggerload - [@graph] : user navigate to Graph page and works on  Graph
+[INFO ] 2023-02-23 21:26:41.872 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[INFO ] 2023-02-23 21:27:01.161 [main] Loggerload - Expected result from Excel sheetname pythonCode and 0 : hello
+[INFO ] 2023-02-23 21:27:01.259 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-02-23 21:27:01.259 [main] Loggerload - [@graph] : user does Graph Representations
+[INFO ] 2023-02-23 21:27:01.260 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[INFO ] 2023-02-23 21:27:04.905 [main] Loggerload - Expected result from Excel sheetname pythonCode and 0 : hello
+[INFO ] 2023-02-24 11:13:50.923 [main] Loggerload - Loading Config file
+[INFO ] 2023-02-24 11:13:50.943 [main] Loggerload - Get property BrowserType
+[INFO ] 2023-02-24 11:13:50.956 [main] Loggerload - Testing on chrome
+[INFO ] 2023-02-24 11:15:54.686 [main] Loggerload - Loading Config file
+[INFO ] 2023-02-24 11:15:54.700 [main] Loggerload - Get property BrowserType
+[INFO ] 2023-02-24 11:15:54.703 [main] Loggerload - Testing on chrome
+[INFO ] 2023-02-24 11:16:27.236 [main] Loggerload - Initializing driver for : chrome
+[INFO ] 2023-02-24 11:16:32.997 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-02-24 11:16:32.998 [main] Loggerload - [@graph] : user navigate to Graph page and works on  Graph
+[INFO ] 2023-02-24 11:16:32.999 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[INFO ] 2023-02-24 11:16:41.333 [main] Loggerload - Expected result from Excel sheetname pythonCode and 0 : hello
+[INFO ] 2023-02-24 11:20:25.153 [main] Loggerload - Loading Config file
+[INFO ] 2023-02-24 11:20:25.183 [main] Loggerload - Get property BrowserType
+[INFO ] 2023-02-24 11:20:25.197 [main] Loggerload - Testing on chrome
+[INFO ] 2023-02-24 11:20:45.183 [main] Loggerload - Initializing driver for : chrome
+[INFO ] 2023-02-24 11:20:46.730 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-02-24 11:20:46.731 [main] Loggerload - [@graph] : user navigate to Graph page and works on  Graph
+[INFO ] 2023-02-24 11:20:46.731 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[INFO ] 2023-02-24 11:21:07.653 [main] Loggerload - Expected result from Excel sheetname pythonCode and 0 : hello
+[INFO ] 2023-02-24 11:21:07.875 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-02-24 11:21:07.876 [main] Loggerload - [@graph] : user does Graph Representations
+[INFO ] 2023-02-24 11:21:07.876 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-02-24 11:21:41.182 [main] Loggerload - Steps Failed
+[ERROR] 2023-02-24 11:21:41.218 [main] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-02-24 11:28:18.701 [main] Loggerload - Loading Config file
+[INFO ] 2023-02-24 11:28:18.717 [main] Loggerload - Get property BrowserType
+[INFO ] 2023-02-24 11:28:18.723 [main] Loggerload - Testing on chrome
+[INFO ] 2023-02-24 11:29:12.412 [main] Loggerload - Initializing driver for : chrome
+[INFO ] 2023-02-24 11:29:16.486 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-02-24 11:29:16.487 [main] Loggerload - [@graph] : user navigate to Graph page and works on  Graph
+[INFO ] 2023-02-24 11:29:16.487 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-02-24 11:29:48.319 [main] Loggerload - Steps Failed
+[ERROR] 2023-02-24 11:29:48.342 [main] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-02-24 11:30:22.420 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-02-24 11:30:22.438 [main] Loggerload - [@graph] : user does Graph Representations
+[INFO ] 2023-02-24 11:30:22.439 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-02-24 11:30:26.729 [main] Loggerload - Steps Failed
+[ERROR] 2023-02-24 11:30:26.730 [main] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-02-24 11:31:25.717 [main] Loggerload - Loading Config file
+[INFO ] 2023-02-24 11:31:25.745 [main] Loggerload - Get property BrowserType
+[INFO ] 2023-02-24 11:31:25.752 [main] Loggerload - Testing on chrome
+[INFO ] 2023-02-24 11:31:47.741 [main] Loggerload - Initializing driver for : chrome
+[INFO ] 2023-02-24 11:31:50.118 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-02-24 11:31:50.118 [main] Loggerload - [@graph] : user navigate to Graph page and works on  Graph
+[INFO ] 2023-02-24 11:31:50.119 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-02-24 11:33:07.183 [main] Loggerload - Steps Failed
+[ERROR] 2023-02-24 11:33:07.220 [main] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-02-24 11:33:44.188 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-02-24 11:33:44.199 [main] Loggerload - [@graph] : user does Graph Representations
+[INFO ] 2023-02-24 11:33:44.200 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[INFO ] 2023-02-24 11:34:03.007 [main] Loggerload - Expected result from Excel sheetname pythonCode and 0 : hello
+[INFO ] 2023-02-24 11:41:43.747 [main] Loggerload - Loading Config file
+[INFO ] 2023-02-24 11:41:43.759 [main] Loggerload - Get property BrowserType
+[INFO ] 2023-02-24 11:41:43.806 [main] Loggerload - Testing on chrome
+[INFO ] 2023-02-24 11:42:12.683 [main] Loggerload - Initializing driver for : chrome
+[INFO ] 2023-02-24 11:42:16.266 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-02-24 11:42:16.267 [main] Loggerload - [@graph] : user navigate to Graph page and works on  Graph
+[INFO ] 2023-02-24 11:42:16.267 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[INFO ] 2023-02-24 11:42:39.814 [main] Loggerload - Expected result from Excel sheetname pythonCode and 0 : hello
+[INFO ] 2023-02-24 11:42:39.925 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-02-24 11:42:39.925 [main] Loggerload - [@graph] : user does Graph Representations
+[INFO ] 2023-02-24 11:42:39.925 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-02-24 11:43:14.013 [main] Loggerload - Steps Failed
+[ERROR] 2023-02-24 11:43:14.016 [main] Loggerload - Steps Failed , Taking Screenshot

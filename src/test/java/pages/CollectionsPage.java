@@ -32,7 +32,8 @@ public class CollectionsPage {
 	@FindBy (xpath="//a[contains(@href,'data-structures-introduction')]")WebElement dataStructureDropDown;
 	By registerBut=By.linkText("Register");
 	//alert 	
-	@FindBy (xpath="//*[@class='alert alert-primary']")WebElement alert_msg;
+	@FindBy (xpath="//*[@class='alert alert-primary']")
+	static WebElement alert_msg;
   //******************************  Login  ***************************************
     By login_Username=By.name("username");
     By login_Password=By.name("password");;
@@ -144,7 +145,7 @@ public class CollectionsPage {
 		return title; 
 	}
 
-	public String errorMessage() {	
+	public static String errorMessage() {	
 			String error_Message = alert_msg.getText();
 			return error_Message;	
 	
@@ -239,6 +240,47 @@ public class CollectionsPage {
 		return expectedResult;
 	}
 //******************************  Linked List  ***************************************
+//	public String getOutput() {
+//		util.waitForElement(outputText);
+//		String output=outputText.getText();
+//		
+//		return output;
+//	}
+	
+//	@When("The user Enter valid python code")
+//	public void the_user_enter_valid_python_code(io.cucumber.datatable.DataTable pythonCode)
+//			throws InterruptedException {
+//		List<List<String>> data = pythonCode.cells();
+//		ll.Enter_PythonCode(data.get(0).get(0));
+//	}
+	
+//	@Then("The user should get the Run output")
+//	public void the_user_should_get_the_run_output() {
+//		String output = ll.Get_OutputString();
+//		LoggerLoad.info("The output is:" + output);
+//
+//	}
+	
+//	@When("The user Enter invalid python code")
+//	public void the_user_enter_invalid_python_code(io.cucumber.datatable.DataTable invalidCode)
+//			throws InterruptedException {
+//		List<List<String>> data = invalidCode.cells();
+//		ll.Enter_PythonCode(data.get(0).get(0));
+//	}
+//
+//	@Then("The user get the error message")
+//	public void the_user_get_the_error_message() {
+//		ll.Get_Errormsg();
+//	}
+	
+	
+//	public String getErrorText() {
+//		String errorMsg = driver.switchTo().alert().getText();
+//		//LoggerLoad.info("The Error Message is:" +errorMsg);
+//		driver.switchTo().alert().accept();
+//		return errorMsg;
+//	}
+	
 	public void clickLinkedList() throws IOException {
 		ConfigReader.loadConfig();				
 		String URL=ConfigReader.getLinkedListUrl();
