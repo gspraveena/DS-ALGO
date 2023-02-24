@@ -389,3 +389,28 @@
 [ERROR] 2023-02-24 16:38:12.181 [TestNG-PoolService-1] Loggerload - Steps Failed
 [ERROR] 2023-02-24 16:38:12.181 [TestNG-PoolService-1] Loggerload - Steps Failed , Taking Screenshot
 [INFO ] 2023-02-24 16:38:18.144 [TestNG-PoolService-0] Loggerload - Expected result from Excel sheetname pythonCode and 0 : hello
+[INFO ] 2023-02-24 16:42:52.023 [main] Loggerload - Loading Config file
+[INFO ] 2023-02-24 16:42:52.040 [main] Loggerload - Get property BrowserType
+[INFO ] 2023-02-24 16:42:52.048 [main] Loggerload - Testing on chrome
+[INFO ] 2023-02-24 16:43:04.035 [main] Loggerload - Initializing driver for : chrome
+[INFO ] 2023-02-24 16:43:05.238 [TestNG-PoolService-0] Loggerload - ===============================================================================================
+[INFO ] 2023-02-24 16:43:05.240 [TestNG-PoolService-1] Loggerload - ===============================================================================================
+[INFO ] 2023-02-24 16:43:05.240 [TestNG-PoolService-0] Loggerload - [@graph] : user navigate to Graph page and works on  Graph
+[INFO ] 2023-02-24 16:43:05.245 [TestNG-PoolService-0] Loggerload - -----------------------------------------------------------------------------------------------
+[INFO ] 2023-02-24 16:43:05.245 [TestNG-PoolService-1] Loggerload - [@graph] : user does Graph Representations
+[INFO ] 2023-02-24 16:43:05.246 [TestNG-PoolService-1] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-02-24 16:43:05.422 [TestNG-PoolService-0] Loggerload - Steps Failed
+[ERROR] 2023-02-24 16:43:05.423 [TestNG-PoolService-0] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-02-24 16:43:10.803 [TestNG-PoolService-1] Loggerload - Expected result from Excel sheetname pythonCode and 0 : hello
+[INFO ] 2023-02-24 16:48:19.387 [main] Loggerload - Loading Config file
+[INFO ] 2023-02-24 16:48:19.399 [main] Loggerload - Get property BrowserType
+[INFO ] 2023-02-24 16:48:19.405 [main] Loggerload - Testing on chrome
+[INFO ] 2023-02-24 16:48:28.066 [main] Loggerload - Initializing driver for : chrome
+[INFO ] 2023-02-24 16:48:28.992 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-02-24 16:48:28.992 [main] Loggerload - [@graph] : user navigate to Graph page and works on  Graph
+[INFO ] 2023-02-24 16:48:28.993 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[INFO ] 2023-02-24 16:48:35.196 [main] Loggerload - Expected result from Excel sheetname pythonCode and 0 : hello
+[INFO ] 2023-02-24 16:48:35.277 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-02-24 16:48:35.277 [main] Loggerload - [@graph] : user does Graph Representations
+[INFO ] 2023-02-24 16:48:35.278 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[INFO ] 2023-02-24 16:48:37.556 [main] Loggerload - Expected result from Excel sheetname pythonCode and 0 : hello

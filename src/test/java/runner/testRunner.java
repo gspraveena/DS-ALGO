@@ -2,8 +2,8 @@ package runner;
 import org.junit.runner.RunWith;
 import org.testng.annotations.DataProvider;
 import io.cucumber.junit.Cucumber;
-//import io.cucumber.junit.CucumberOptions;  //***************  junit
-import io.cucumber.testng.CucumberOptions;   //***************  testng
+import io.cucumber.junit.CucumberOptions;  //***************  junit
+//import io.cucumber.testng.CucumberOptions;   //***************  testng
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 /*DONE DATA DRIVEN USING EXAMPLES SECNARIO OUTLINE,  EXCEL FILE,   DATATABLE  
  *DONE READING DATA FROM EXCEL FILE STORED IN SYSTEM USING SHEET NUMBER ,SHEET NAME 
@@ -17,7 +17,7 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
  *DONE EXCEPTION HANDLING 
  *USED CONFIG.PROPERTIES FILE,CONFIG READER, EXCEL READER, CONSTANTS, LOG4J, HOOKS,CROSS BROWSER
  *GENERATED EXTENT PDF REPORT , EXTENT SPARK HTML REPORT AND CUCUMBER HTML REPORT    */
-//	@RunWith(Cucumber.class)    //***************  junit
+	@RunWith(Cucumber.class)    //***************  junit
 //	@CucumberOptions(           //***************  junit
       @CucumberOptions(            //***************  testng
 			//features = "src/test/resources/features/01_mainPage.feature",
