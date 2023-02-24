@@ -1,12 +1,391 @@
-[INFO ] 2023-02-24 15:05:40.440 [main] Loggerload - Loading Config file
-[INFO ] 2023-02-24 15:05:40.451 [main] Loggerload - Get property BrowserType
-[INFO ] 2023-02-24 15:05:40.458 [main] Loggerload - Testing on chrome
-[INFO ] 2023-02-24 15:05:52.920 [main] Loggerload - Initializing driver for : chrome
-[INFO ] 2023-02-24 15:05:53.889 [main] Loggerload - ===============================================================================================
-[INFO ] 2023-02-24 15:05:53.891 [main] Loggerload - [@graph] : user navigate to Graph page and works on  Graph
-[INFO ] 2023-02-24 15:05:53.892 [main] Loggerload - -----------------------------------------------------------------------------------------------
-[INFO ] 2023-02-24 15:06:00.385 [main] Loggerload - Expected result from Excel sheetname pythonCode and 0 : hello
-[INFO ] 2023-02-24 15:06:00.437 [main] Loggerload - ===============================================================================================
-[INFO ] 2023-02-24 15:06:00.438 [main] Loggerload - [@graph] : user does Graph Representations
-[INFO ] 2023-02-24 15:06:00.438 [main] Loggerload - -----------------------------------------------------------------------------------------------
-[INFO ] 2023-02-24 15:06:02.667 [main] Loggerload - Expected result from Excel sheetname pythonCode and 0 : hello
+[INFO ] 2023-02-24 15:43:01.411 [main] Loggerload - Loading Config file
+[INFO ] 2023-02-24 15:43:01.426 [main] Loggerload - Get property BrowserType
+[INFO ] 2023-02-24 15:43:01.431 [main] Loggerload - Testing on chrome
+[INFO ] 2023-02-24 15:43:11.217 [main] Loggerload - Initializing driver for : chrome
+[INFO ] 2023-02-24 15:43:12.076 [TestNG-PoolService-0] Loggerload - ===============================================================================================
+[INFO ] 2023-02-24 15:43:12.076 [TestNG-PoolService-1] Loggerload - ===============================================================================================
+[INFO ] 2023-02-24 15:43:12.078 [TestNG-PoolService-0] Loggerload - [@graph] : user navigate to Graph page and works on  Graph
+[INFO ] 2023-02-24 15:43:12.078 [TestNG-PoolService-1] Loggerload - [@graph] : user does Graph Representations
+[INFO ] 2023-02-24 15:43:12.079 [TestNG-PoolService-0] Loggerload - -----------------------------------------------------------------------------------------------
+[INFO ] 2023-02-24 15:43:12.079 [TestNG-PoolService-1] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-02-24 15:43:33.137 [TestNG-PoolService-0] Loggerload - Steps Failed
+[ERROR] 2023-02-24 15:43:33.138 [TestNG-PoolService-0] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-02-24 15:43:39.649 [TestNG-PoolService-1] Loggerload - Expected result from Excel sheetname pythonCode and 0 : hello
+[INFO ] 2023-02-24 16:05:37.165 [main] Loggerload - Loading Config file
+[INFO ] 2023-02-24 16:05:37.182 [main] Loggerload - Get property BrowserType
+[INFO ] 2023-02-24 16:05:37.191 [main] Loggerload - Testing on chrome
+[INFO ] 2023-02-24 16:05:45.157 [main] Loggerload - Initializing driver for : chrome
+[INFO ] 2023-02-24 16:05:46.378 [TestNG-PoolService-0] Loggerload - ===============================================================================================
+[INFO ] 2023-02-24 16:05:46.377 [TestNG-PoolService-1] Loggerload - ===============================================================================================
+[INFO ] 2023-02-24 16:05:46.379 [TestNG-PoolService-0] Loggerload - [@graph] : user navigate to Graph page and works on  Graph
+[INFO ] 2023-02-24 16:05:46.379 [TestNG-PoolService-1] Loggerload - [@graph] : user does Graph Representations
+[INFO ] 2023-02-24 16:05:46.379 [TestNG-PoolService-0] Loggerload - -----------------------------------------------------------------------------------------------
+[INFO ] 2023-02-24 16:05:46.379 [TestNG-PoolService-1] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-02-24 16:06:07.405 [TestNG-PoolService-0] Loggerload - Steps Failed
+[ERROR] 2023-02-24 16:06:07.405 [TestNG-PoolService-0] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-02-24 16:06:11.249 [TestNG-PoolService-1] Loggerload - Expected result from Excel sheetname pythonCode and 0 : hello
+[INFO ] 2023-02-24 16:08:51.752 [main] Loggerload - Loading Config file
+[INFO ] 2023-02-24 16:08:51.763 [main] Loggerload - Get property BrowserType
+[INFO ] 2023-02-24 16:08:51.768 [main] Loggerload - Testing on chrome
+[INFO ] 2023-02-24 16:09:02.617 [main] Loggerload - Initializing driver for : chrome
+[INFO ] 2023-02-24 16:09:03.493 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-02-24 16:09:03.493 [main] Loggerload - [@graph] : user navigate to Graph page and works on  Graph
+[INFO ] 2023-02-24 16:09:03.494 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[INFO ] 2023-02-24 16:09:09.320 [main] Loggerload - Expected result from Excel sheetname pythonCode and 0 : hello
+[INFO ] 2023-02-24 16:09:09.358 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-02-24 16:09:09.358 [main] Loggerload - [@graph] : user does Graph Representations
+[INFO ] 2023-02-24 16:09:09.358 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[INFO ] 2023-02-24 16:09:11.679 [main] Loggerload - Expected result from Excel sheetname pythonCode and 0 : hello
+[INFO ] 2023-02-24 16:15:29.004 [main] Loggerload - Loading Config file
+[INFO ] 2023-02-24 16:15:29.016 [main] Loggerload - Get property BrowserType
+[INFO ] 2023-02-24 16:15:29.025 [main] Loggerload - Testing on chrome
+[INFO ] 2023-02-24 16:15:38.727 [main] Loggerload - Initializing driver for : chrome
+[INFO ] 2023-02-24 16:15:40.136 [TestNG-PoolService-6] Loggerload - ===============================================================================================
+[INFO ] 2023-02-24 16:15:40.138 [TestNG-PoolService-6] Loggerload - [@register, @TS_register_06] : The user is presented with error message for password with characters less than 8
+[INFO ] 2023-02-24 16:15:40.138 [TestNG-PoolService-6] Loggerload - -----------------------------------------------------------------------------------------------
+[INFO ] 2023-02-24 16:15:40.140 [TestNG-PoolService-7] Loggerload - ===============================================================================================
+[INFO ] 2023-02-24 16:15:40.141 [TestNG-PoolService-7] Loggerload - [@register, @TS_register_07] : The user is presented with error message for password with only numbers
+[INFO ] 2023-02-24 16:15:40.142 [TestNG-PoolService-7] Loggerload - -----------------------------------------------------------------------------------------------
+[INFO ] 2023-02-24 16:15:40.153 [TestNG-PoolService-3] Loggerload - ===============================================================================================
+[INFO ] 2023-02-24 16:15:40.155 [TestNG-PoolService-3] Loggerload - [@register, @TS_register_03] : The user is presented with error message for empty fields below confirm Password textbox
+[INFO ] 2023-02-24 16:15:40.155 [TestNG-PoolService-3] Loggerload - -----------------------------------------------------------------------------------------------
+[INFO ] 2023-02-24 16:15:40.193 [TestNG-PoolService-0] Loggerload - ===============================================================================================
+[INFO ] 2023-02-24 16:15:40.195 [TestNG-PoolService-0] Loggerload - [@homepage, @mainPage] : Opeing DS Algo portal link
+[INFO ] 2023-02-24 16:15:40.195 [TestNG-PoolService-0] Loggerload - -----------------------------------------------------------------------------------------------
+[INFO ] 2023-02-24 16:15:40.195 [TestNG-PoolService-9] Loggerload - ===============================================================================================
+[INFO ] 2023-02-24 16:15:40.196 [TestNG-PoolService-9] Loggerload - [@register, @TS_register_08] : Getting register into page with username and password
+[INFO ] 2023-02-24 16:15:40.196 [TestNG-PoolService-9] Loggerload - -----------------------------------------------------------------------------------------------
+[INFO ] 2023-02-24 16:15:40.206 [TestNG-PoolService-8] Loggerload - ===============================================================================================
+[INFO ] 2023-02-24 16:15:40.207 [TestNG-PoolService-8] Loggerload - [@register, @TS_register_08] : Getting register into page with username and password
+[INFO ] 2023-02-24 16:15:40.207 [TestNG-PoolService-8] Loggerload - -----------------------------------------------------------------------------------------------
+[INFO ] 2023-02-24 16:15:40.207 [TestNG-PoolService-2] Loggerload - ===============================================================================================
+[INFO ] 2023-02-24 16:15:40.208 [TestNG-PoolService-2] Loggerload - [@register, @TS_register_02] : The user is presented with error message for empty fields below Password textbox
+[INFO ] 2023-02-24 16:15:40.208 [TestNG-PoolService-2] Loggerload - -----------------------------------------------------------------------------------------------
+[INFO ] 2023-02-24 16:15:40.209 [TestNG-PoolService-4] Loggerload - ===============================================================================================
+[INFO ] 2023-02-24 16:15:40.215 [TestNG-PoolService-4] Loggerload - [@register, @TS_register_04] : The user is presented with error message for invalid username
+[INFO ] 2023-02-24 16:15:40.216 [TestNG-PoolService-4] Loggerload - -----------------------------------------------------------------------------------------------
+[INFO ] 2023-02-24 16:15:40.224 [TestNG-PoolService-5] Loggerload - ===============================================================================================
+[INFO ] 2023-02-24 16:15:40.224 [TestNG-PoolService-1] Loggerload - ===============================================================================================
+[INFO ] 2023-02-24 16:15:40.224 [TestNG-PoolService-5] Loggerload - [@register, @TS_register_05] : The user is presented with error message for password mismatch
+[INFO ] 2023-02-24 16:15:40.225 [TestNG-PoolService-5] Loggerload - -----------------------------------------------------------------------------------------------
+[INFO ] 2023-02-24 16:15:40.225 [TestNG-PoolService-1] Loggerload - [@register, @TS_register_01] : The user is presented with error message for empty fields below Username textbox
+[INFO ] 2023-02-24 16:15:40.225 [TestNG-PoolService-1] Loggerload - -----------------------------------------------------------------------------------------------
+[INFO ] 2023-02-24 16:15:40.303 [TestNG-PoolService-0] Loggerload - opening DS ALGO portal link
+[INFO ] 2023-02-24 16:15:41.303 [TestNG-PoolService-7] Loggerload - user get into the Register page
+[INFO ] 2023-02-24 16:15:41.757 [TestNG-PoolService-1] Loggerload - user get into the Register page
+[INFO ] 2023-02-24 16:15:42.026 [TestNG-PoolService-9] Loggerload - user get into the Register page
+[INFO ] 2023-02-24 16:15:42.260 [TestNG-PoolService-2] Loggerload - user get into the Register page
+[INFO ] 2023-02-24 16:15:42.653 [TestNG-PoolService-3] Loggerload - user get into the Register page
+[INFO ] 2023-02-24 16:15:43.012 [TestNG-PoolService-4] Loggerload - user get into the Register page
+[INFO ] 2023-02-24 16:15:43.352 [TestNG-PoolService-8] Loggerload - user get into the Register page
+[INFO ] 2023-02-24 16:15:44.030 [TestNG-PoolService-6] Loggerload - user get into the Register page
+[INFO ] 2023-02-24 16:15:44.217 [TestNG-PoolService-5] Loggerload - user get into the Register page
+[INFO ] 2023-02-24 16:15:44.802 [TestNG-PoolService-7] Loggerload -  The user enters username and   password with only numbers and confirm_password 
+[INFO ] 2023-02-24 16:15:44.815 [TestNG-PoolService-7] Loggerload - The user enter username as : Numphysdet94NN
+[ERROR] 2023-02-24 16:15:44.923 [TestNG-PoolService-1] Loggerload - Steps Failed
+[ERROR] 2023-02-24 16:15:44.923 [TestNG-PoolService-1] Loggerload - Steps Failed , Taking Screenshot
+[ERROR] 2023-02-24 16:15:44.935 [TestNG-PoolService-9] Loggerload - Steps Failed
+[ERROR] 2023-02-24 16:15:44.935 [TestNG-PoolService-9] Loggerload - Steps Failed , Taking Screenshot
+[ERROR] 2023-02-24 16:15:44.939 [TestNG-PoolService-2] Loggerload - Steps Failed
+[ERROR] 2023-02-24 16:15:44.940 [TestNG-PoolService-2] Loggerload - Steps Failed , Taking Screenshot
+[ERROR] 2023-02-24 16:15:45.012 [TestNG-PoolService-4] Loggerload - Steps Failed
+[ERROR] 2023-02-24 16:15:45.012 [TestNG-PoolService-4] Loggerload - Steps Failed , Taking Screenshot
+[ERROR] 2023-02-24 16:15:45.045 [TestNG-PoolService-0] Loggerload - Steps Failed
+[ERROR] 2023-02-24 16:15:45.046 [TestNG-PoolService-0] Loggerload - Steps Failed , Taking Screenshot
+[ERROR] 2023-02-24 16:15:45.055 [TestNG-PoolService-8] Loggerload - Steps Failed
+[ERROR] 2023-02-24 16:15:45.055 [TestNG-PoolService-8] Loggerload - Steps Failed , Taking Screenshot
+[ERROR] 2023-02-24 16:15:45.073 [TestNG-PoolService-3] Loggerload - Steps Failed
+[ERROR] 2023-02-24 16:15:45.074 [TestNG-PoolService-3] Loggerload - Steps Failed , Taking Screenshot
+[ERROR] 2023-02-24 16:15:45.103 [TestNG-PoolService-5] Loggerload - Steps Failed
+[ERROR] 2023-02-24 16:15:45.103 [TestNG-PoolService-5] Loggerload - Steps Failed , Taking Screenshot
+[ERROR] 2023-02-24 16:15:45.104 [TestNG-PoolService-6] Loggerload - Steps Failed
+[ERROR] 2023-02-24 16:15:45.134 [TestNG-PoolService-6] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-02-24 16:15:47.379 [TestNG-PoolService-7] Loggerload - The user enter password as : 12345678
+[INFO ] 2023-02-24 16:15:48.214 [TestNG-PoolService-9] Loggerload - ===============================================================================================
+[INFO ] 2023-02-24 16:15:48.214 [TestNG-PoolService-9] Loggerload - [@signIn, @signIn] : user navigate to sign in  page
+[INFO ] 2023-02-24 16:15:48.214 [TestNG-PoolService-9] Loggerload - -----------------------------------------------------------------------------------------------
+[INFO ] 2023-02-24 16:15:48.226 [TestNG-PoolService-9] Loggerload - User launches login page 
+[INFO ] 2023-02-24 16:15:48.240 [TestNG-PoolService-2] Loggerload - ===============================================================================================
+[INFO ] 2023-02-24 16:15:48.241 [TestNG-PoolService-2] Loggerload - [@register, @TS_register_09] : The user is presented with error message for existing username
+[INFO ] 2023-02-24 16:15:48.241 [TestNG-PoolService-2] Loggerload - -----------------------------------------------------------------------------------------------
+[INFO ] 2023-02-24 16:15:48.371 [TestNG-PoolService-1] Loggerload - ===============================================================================================
+[INFO ] 2023-02-24 16:15:48.371 [TestNG-PoolService-1] Loggerload - [@signIn, @signIn] : user navigate to sign in  page
+[INFO ] 2023-02-24 16:15:48.372 [TestNG-PoolService-1] Loggerload - -----------------------------------------------------------------------------------------------
+[INFO ] 2023-02-24 16:15:48.382 [TestNG-PoolService-1] Loggerload - User launches login page 
+[INFO ] 2023-02-24 16:15:48.624 [TestNG-PoolService-4] Loggerload - ===============================================================================================
+[INFO ] 2023-02-24 16:15:48.625 [TestNG-PoolService-4] Loggerload - [@signIn, @signIn] : user navigate to sign in  page
+[INFO ] 2023-02-24 16:15:48.625 [TestNG-PoolService-4] Loggerload - -----------------------------------------------------------------------------------------------
+[INFO ] 2023-02-24 16:15:48.628 [TestNG-PoolService-4] Loggerload - User launches login page 
+[INFO ] 2023-02-24 16:15:49.728 [TestNG-PoolService-5] Loggerload - ===============================================================================================
+[INFO ] 2023-02-24 16:15:49.730 [TestNG-PoolService-5] Loggerload - [@signIn, @signIn] : user navigate to sign in  page
+[INFO ] 2023-02-24 16:15:49.731 [TestNG-PoolService-5] Loggerload - -----------------------------------------------------------------------------------------------
+[INFO ] 2023-02-24 16:15:49.771 [TestNG-PoolService-8] Loggerload - ===============================================================================================
+[INFO ] 2023-02-24 16:15:49.771 [TestNG-PoolService-8] Loggerload - [@signIn, @signIn] : user navigate to sign in  page
+[INFO ] 2023-02-24 16:15:49.775 [TestNG-PoolService-5] Loggerload - User launches login page 
+[INFO ] 2023-02-24 16:15:49.773 [TestNG-PoolService-8] Loggerload - -----------------------------------------------------------------------------------------------
+[INFO ] 2023-02-24 16:15:49.786 [TestNG-PoolService-0] Loggerload - ===============================================================================================
+[INFO ] 2023-02-24 16:15:49.792 [TestNG-PoolService-0] Loggerload - [@signIn, @signIn] : user navigate to sign in  page
+[INFO ] 2023-02-24 16:15:49.792 [TestNG-PoolService-0] Loggerload - -----------------------------------------------------------------------------------------------
+[INFO ] 2023-02-24 16:15:49.793 [TestNG-PoolService-8] Loggerload - User launches login page 
+[INFO ] 2023-02-24 16:15:49.798 [TestNG-PoolService-3] Loggerload - ===============================================================================================
+[INFO ] 2023-02-24 16:15:49.798 [TestNG-PoolService-3] Loggerload - [@signIn, @signIn] : user navigate to sign in  page
+[INFO ] 2023-02-24 16:15:49.799 [TestNG-PoolService-3] Loggerload - -----------------------------------------------------------------------------------------------
+[INFO ] 2023-02-24 16:15:49.806 [TestNG-PoolService-3] Loggerload - User launches login page 
+[INFO ] 2023-02-24 16:15:49.810 [TestNG-PoolService-0] Loggerload - User launches login page 
+[INFO ] 2023-02-24 16:15:49.949 [TestNG-PoolService-6] Loggerload - ===============================================================================================
+[INFO ] 2023-02-24 16:15:49.949 [TestNG-PoolService-6] Loggerload - [@signIn, @signIn] : user navigate to sign in  page
+[INFO ] 2023-02-24 16:15:49.949 [TestNG-PoolService-6] Loggerload - -----------------------------------------------------------------------------------------------
+[INFO ] 2023-02-24 16:15:49.953 [TestNG-PoolService-6] Loggerload - User launches login page 
+[INFO ] 2023-02-24 16:15:50.196 [TestNG-PoolService-9] Loggerload - User enter login credentials 
+[INFO ] 2023-02-24 16:15:50.531 [TestNG-PoolService-2] Loggerload - user get into the Register page
+[INFO ] 2023-02-24 16:15:50.876 [TestNG-PoolService-1] Loggerload - User enter login credentials 
+[INFO ] 2023-02-24 16:15:51.191 [TestNG-PoolService-4] Loggerload - User enter login credentials 
+[ERROR] 2023-02-24 16:15:51.245 [TestNG-PoolService-7] Loggerload - Steps Failed
+[ERROR] 2023-02-24 16:15:51.246 [TestNG-PoolService-7] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-02-24 16:15:51.591 [TestNG-PoolService-5] Loggerload - User enter login credentials 
+[INFO ] 2023-02-24 16:15:51.943 [TestNG-PoolService-8] Loggerload - User enter login credentials 
+[INFO ] 2023-02-24 16:15:52.175 [TestNG-PoolService-3] Loggerload - User enter login credentials 
+[INFO ] 2023-02-24 16:15:52.433 [TestNG-PoolService-0] Loggerload - User enter login credentials 
+[INFO ] 2023-02-24 16:15:52.829 [TestNG-PoolService-6] Loggerload - User enter login credentials 
+[INFO ] 2023-02-24 16:15:53.958 [TestNG-PoolService-2] Loggerload - The user enters a valid existing username with password and confirm_password
+[INFO ] 2023-02-24 16:15:53.958 [TestNG-PoolService-2] Loggerload - The user enter username as : Numphysdet94NN
+[INFO ] 2023-02-24 16:15:54.293 [TestNG-PoolService-7] Loggerload - ===============================================================================================
+[INFO ] 2023-02-24 16:15:54.293 [TestNG-PoolService-7] Loggerload - [@dataStructure, @dataStructure] : user navigate to datastructure page
+[INFO ] 2023-02-24 16:15:54.294 [TestNG-PoolService-7] Loggerload - -----------------------------------------------------------------------------------------------
+[INFO ] 2023-02-24 16:15:54.478 [TestNG-PoolService-2] Loggerload - The user enter password as : sdet94batchNN
+[ERROR] 2023-02-24 16:16:14.925 [TestNG-PoolService-2] Loggerload - Steps Failed
+[ERROR] 2023-02-24 16:16:14.926 [TestNG-PoolService-2] Loggerload - Steps Failed , Taking Screenshot
+[ERROR] 2023-02-24 16:16:14.947 [TestNG-PoolService-8] Loggerload - Steps Failed
+[ERROR] 2023-02-24 16:16:14.947 [TestNG-PoolService-8] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-02-24 16:16:16.332 [TestNG-PoolService-2] Loggerload - ===============================================================================================
+[INFO ] 2023-02-24 16:16:16.333 [TestNG-PoolService-2] Loggerload - [@dataStructure, @dataStructure] : user navigate to datastructure page
+[INFO ] 2023-02-24 16:16:16.333 [TestNG-PoolService-2] Loggerload - -----------------------------------------------------------------------------------------------
+[INFO ] 2023-02-24 16:16:16.464 [TestNG-PoolService-8] Loggerload - ===============================================================================================
+[INFO ] 2023-02-24 16:16:16.464 [TestNG-PoolService-8] Loggerload - [@array] : user navigate to array page and works on Arrays in Python
+[INFO ] 2023-02-24 16:16:16.465 [TestNG-PoolService-8] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-02-24 16:16:17.415 [TestNG-PoolService-7] Loggerload - Steps Failed
+[ERROR] 2023-02-24 16:16:17.415 [TestNG-PoolService-7] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-02-24 16:16:17.583 [TestNG-PoolService-5] Loggerload - User redirected to login page 
+[INFO ] 2023-02-24 16:16:18.337 [TestNG-PoolService-6] Loggerload - User redirected to login page 
+[INFO ] 2023-02-24 16:16:18.418 [TestNG-PoolService-4] Loggerload - User redirected to login page 
+[INFO ] 2023-02-24 16:16:18.497 [TestNG-PoolService-0] Loggerload - User redirected to login page 
+[INFO ] 2023-02-24 16:16:18.601 [TestNG-PoolService-1] Loggerload - User redirected to login page 
+[INFO ] 2023-02-24 16:16:18.677 [TestNG-PoolService-3] Loggerload - User redirected to login page 
+[INFO ] 2023-02-24 16:16:18.769 [TestNG-PoolService-9] Loggerload - User redirected to login page 
+[INFO ] 2023-02-24 16:16:19.074 [TestNG-PoolService-5] Loggerload - Title of current page is : Login
+[INFO ] 2023-02-24 16:16:19.100 [TestNG-PoolService-5] Loggerload - ===============================================================================================
+[INFO ] 2023-02-24 16:16:19.101 [TestNG-PoolService-5] Loggerload - [@array] : user navigate to array page and works on Arrays in Python
+[INFO ] 2023-02-24 16:16:19.101 [TestNG-PoolService-5] Loggerload - -----------------------------------------------------------------------------------------------
+[INFO ] 2023-02-24 16:16:19.271 [TestNG-PoolService-6] Loggerload - Title of current page is : Login
+[INFO ] 2023-02-24 16:16:19.281 [TestNG-PoolService-4] Loggerload - Title of current page is : Login
+[INFO ] 2023-02-24 16:16:19.298 [TestNG-PoolService-6] Loggerload - ===============================================================================================
+[INFO ] 2023-02-24 16:16:19.298 [TestNG-PoolService-6] Loggerload - [@array] : user does Arrays Using List
+[INFO ] 2023-02-24 16:16:19.298 [TestNG-PoolService-6] Loggerload - -----------------------------------------------------------------------------------------------
+[INFO ] 2023-02-24 16:16:19.310 [TestNG-PoolService-7] Loggerload - ===============================================================================================
+[INFO ] 2023-02-24 16:16:19.310 [TestNG-PoolService-7] Loggerload - [@array] : user does Arrays Using List
+[INFO ] 2023-02-24 16:16:19.310 [TestNG-PoolService-7] Loggerload - -----------------------------------------------------------------------------------------------
+[INFO ] 2023-02-24 16:16:19.323 [TestNG-PoolService-4] Loggerload - ===============================================================================================
+[INFO ] 2023-02-24 16:16:19.323 [TestNG-PoolService-4] Loggerload - [@array] : user does Basic operations in Lists
+[INFO ] 2023-02-24 16:16:19.324 [TestNG-PoolService-4] Loggerload - -----------------------------------------------------------------------------------------------
+[INFO ] 2023-02-24 16:16:19.329 [TestNG-PoolService-0] Loggerload - Title of current page is : Login
+[INFO ] 2023-02-24 16:16:19.344 [TestNG-PoolService-1] Loggerload - Title of current page is : Login
+[INFO ] 2023-02-24 16:16:19.355 [TestNG-PoolService-0] Loggerload - ===============================================================================================
+[INFO ] 2023-02-24 16:16:19.356 [TestNG-PoolService-0] Loggerload - [@array] : user does Basic operations in Lists
+[INFO ] 2023-02-24 16:16:19.356 [TestNG-PoolService-0] Loggerload - -----------------------------------------------------------------------------------------------
+[INFO ] 2023-02-24 16:16:19.358 [TestNG-PoolService-3] Loggerload - Title of current page is : Login
+[INFO ] 2023-02-24 16:16:19.369 [TestNG-PoolService-1] Loggerload - ===============================================================================================
+[INFO ] 2023-02-24 16:16:19.369 [TestNG-PoolService-1] Loggerload - [@array] : user does Applications of Array
+[INFO ] 2023-02-24 16:16:19.370 [TestNG-PoolService-1] Loggerload - -----------------------------------------------------------------------------------------------
+[INFO ] 2023-02-24 16:16:19.377 [TestNG-PoolService-3] Loggerload - ===============================================================================================
+[INFO ] 2023-02-24 16:16:19.377 [TestNG-PoolService-3] Loggerload - [@array] : user does Applications of Array
+[INFO ] 2023-02-24 16:16:19.377 [TestNG-PoolService-3] Loggerload - -----------------------------------------------------------------------------------------------
+[INFO ] 2023-02-24 16:16:19.402 [TestNG-PoolService-9] Loggerload - Title of current page is : Login
+[INFO ] 2023-02-24 16:16:19.432 [TestNG-PoolService-9] Loggerload - ===============================================================================================
+[INFO ] 2023-02-24 16:16:19.433 [TestNG-PoolService-9] Loggerload - [@linkedlist] : user navigate to Linked List page and works on Introduction on Linked List
+[INFO ] 2023-02-24 16:16:19.433 [TestNG-PoolService-9] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-02-24 16:16:21.317 [TestNG-PoolService-2] Loggerload - Steps Failed
+[ERROR] 2023-02-24 16:16:21.318 [TestNG-PoolService-2] Loggerload - Steps Failed , Taking Screenshot
+[ERROR] 2023-02-24 16:16:21.579 [TestNG-PoolService-8] Loggerload - Steps Failed
+[ERROR] 2023-02-24 16:16:21.579 [TestNG-PoolService-8] Loggerload - Steps Failed , Taking Screenshot
+[ERROR] 2023-02-24 16:16:41.643 [TestNG-PoolService-6] Loggerload - Steps Failed
+[ERROR] 2023-02-24 16:16:41.643 [TestNG-PoolService-6] Loggerload - Steps Failed , Taking Screenshot
+[ERROR] 2023-02-24 16:17:01.693 [TestNG-PoolService-7] Loggerload - Steps Failed
+[ERROR] 2023-02-24 16:17:01.694 [TestNG-PoolService-7] Loggerload - Steps Failed , Taking Screenshot
+[ERROR] 2023-02-24 16:17:21.727 [TestNG-PoolService-4] Loggerload - Steps Failed
+[ERROR] 2023-02-24 16:17:21.727 [TestNG-PoolService-4] Loggerload - Steps Failed , Taking Screenshot
+[ERROR] 2023-02-24 16:17:41.759 [TestNG-PoolService-0] Loggerload - Steps Failed
+[ERROR] 2023-02-24 16:17:41.759 [TestNG-PoolService-0] Loggerload - Steps Failed , Taking Screenshot
+[ERROR] 2023-02-24 16:17:51.396 [TestNG-PoolService-3] Loggerload - Steps Failed
+[ERROR] 2023-02-24 16:17:51.397 [TestNG-PoolService-3] Loggerload - Steps Failed , Taking Screenshot
+[ERROR] 2023-02-24 16:17:51.412 [TestNG-PoolService-1] Loggerload - Steps Failed
+[ERROR] 2023-02-24 16:17:51.413 [TestNG-PoolService-1] Loggerload - Steps Failed , Taking Screenshot
+[ERROR] 2023-02-24 16:17:51.451 [TestNG-PoolService-9] Loggerload - Steps Failed
+[ERROR] 2023-02-24 16:17:51.452 [TestNG-PoolService-9] Loggerload - Steps Failed , Taking Screenshot
+[ERROR] 2023-02-24 16:17:51.466 [TestNG-PoolService-5] Loggerload - Steps Failed
+[ERROR] 2023-02-24 16:17:51.467 [TestNG-PoolService-5] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-02-24 16:17:51.700 [TestNG-PoolService-4] Loggerload - ===============================================================================================
+[INFO ] 2023-02-24 16:17:51.701 [TestNG-PoolService-4] Loggerload - [@linkedlist] : user does Traversal
+[INFO ] 2023-02-24 16:17:51.701 [TestNG-PoolService-4] Loggerload - -----------------------------------------------------------------------------------------------
+[INFO ] 2023-02-24 16:17:51.744 [TestNG-PoolService-2] Loggerload - ===============================================================================================
+[INFO ] 2023-02-24 16:17:51.744 [TestNG-PoolService-2] Loggerload - [@linkedlist] : user does Implement Linked List in Python
+[INFO ] 2023-02-24 16:17:51.745 [TestNG-PoolService-2] Loggerload - -----------------------------------------------------------------------------------------------
+[INFO ] 2023-02-24 16:17:51.803 [TestNG-PoolService-6] Loggerload - ===============================================================================================
+[INFO ] 2023-02-24 16:17:51.803 [TestNG-PoolService-6] Loggerload - [@linkedlist] : user does Types of Linked Lists
+[INFO ] 2023-02-24 16:17:51.805 [TestNG-PoolService-6] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-02-24 16:17:51.818 [TestNG-PoolService-2] Loggerload - Steps Failed
+[ERROR] 2023-02-24 16:17:51.818 [TestNG-PoolService-2] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-02-24 16:17:51.831 [TestNG-PoolService-1] Loggerload - ===============================================================================================
+[INFO ] 2023-02-24 16:17:51.832 [TestNG-PoolService-1] Loggerload - [@linkedlist] : user does Insertion
+[INFO ] 2023-02-24 16:17:51.832 [TestNG-PoolService-1] Loggerload - -----------------------------------------------------------------------------------------------
+[INFO ] 2023-02-24 16:17:51.858 [TestNG-PoolService-5] Loggerload - ===============================================================================================
+[INFO ] 2023-02-24 16:17:51.859 [TestNG-PoolService-5] Loggerload - [@linkedlist] : user does Deletion
+[INFO ] 2023-02-24 16:17:51.859 [TestNG-PoolService-5] Loggerload - -----------------------------------------------------------------------------------------------
+[INFO ] 2023-02-24 16:17:51.919 [TestNG-PoolService-3] Loggerload - ===============================================================================================
+[INFO ] 2023-02-24 16:17:51.919 [TestNG-PoolService-3] Loggerload - [@stack] : user navigate to Stack page and works on Operations in Stack
+[INFO ] 2023-02-24 16:17:51.920 [TestNG-PoolService-3] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-02-24 16:17:51.924 [TestNG-PoolService-6] Loggerload - Steps Failed
+[ERROR] 2023-02-24 16:17:51.924 [TestNG-PoolService-6] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-02-24 16:17:51.943 [TestNG-PoolService-0] Loggerload - ===============================================================================================
+[INFO ] 2023-02-24 16:17:51.943 [TestNG-PoolService-0] Loggerload - [@linkedlist] : user does Creating Linked List
+[INFO ] 2023-02-24 16:17:51.944 [TestNG-PoolService-0] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-02-24 16:17:52.007 [TestNG-PoolService-5] Loggerload - Steps Failed
+[ERROR] 2023-02-24 16:17:52.008 [TestNG-PoolService-5] Loggerload - Steps Failed , Taking Screenshot
+[ERROR] 2023-02-24 16:17:52.022 [TestNG-PoolService-1] Loggerload - Steps Failed
+[ERROR] 2023-02-24 16:17:52.022 [TestNG-PoolService-1] Loggerload - Steps Failed , Taking Screenshot
+[ERROR] 2023-02-24 16:17:52.034 [TestNG-PoolService-4] Loggerload - Steps Failed
+[ERROR] 2023-02-24 16:17:52.035 [TestNG-PoolService-4] Loggerload - Steps Failed , Taking Screenshot
+[ERROR] 2023-02-24 16:17:52.040 [TestNG-PoolService-3] Loggerload - Steps Failed
+[ERROR] 2023-02-24 16:17:52.041 [TestNG-PoolService-3] Loggerload - Steps Failed , Taking Screenshot
+[ERROR] 2023-02-24 16:17:52.072 [TestNG-PoolService-0] Loggerload - Steps Failed
+[ERROR] 2023-02-24 16:17:52.072 [TestNG-PoolService-0] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-02-24 16:17:52.111 [TestNG-PoolService-7] Loggerload - ===============================================================================================
+[INFO ] 2023-02-24 16:17:52.112 [TestNG-PoolService-7] Loggerload - [@stack] : user does Applications
+[INFO ] 2023-02-24 16:17:52.112 [TestNG-PoolService-7] Loggerload - -----------------------------------------------------------------------------------------------
+[INFO ] 2023-02-24 16:17:52.146 [TestNG-PoolService-9] Loggerload - ===============================================================================================
+[INFO ] 2023-02-24 16:17:52.149 [TestNG-PoolService-9] Loggerload - [@queue] : user navigate to Queue page and works on Implementation Queue in Python
+[INFO ] 2023-02-24 16:17:52.149 [TestNG-PoolService-9] Loggerload - -----------------------------------------------------------------------------------------------
+[INFO ] 2023-02-24 16:17:52.190 [TestNG-PoolService-0] Loggerload - ===============================================================================================
+[INFO ] 2023-02-24 16:17:52.191 [TestNG-PoolService-0] Loggerload - [@queue] : user does Implementation Using Array
+[INFO ] 2023-02-24 16:17:52.191 [TestNG-PoolService-0] Loggerload - -----------------------------------------------------------------------------------------------
+[INFO ] 2023-02-24 16:17:52.314 [TestNG-PoolService-3] Loggerload - ===============================================================================================
+[INFO ] 2023-02-24 16:17:52.316 [TestNG-PoolService-3] Loggerload - [@queue] : user does Queue Operations
+[INFO ] 2023-02-24 16:17:52.317 [TestNG-PoolService-3] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-02-24 16:17:52.352 [TestNG-PoolService-0] Loggerload - Steps Failed
+[ERROR] 2023-02-24 16:17:52.352 [TestNG-PoolService-0] Loggerload - Steps Failed , Taking Screenshot
+[ERROR] 2023-02-24 16:17:52.358 [TestNG-PoolService-9] Loggerload - Steps Failed
+[ERROR] 2023-02-24 16:17:52.359 [TestNG-PoolService-9] Loggerload - Steps Failed , Taking Screenshot
+[ERROR] 2023-02-24 16:17:52.366 [TestNG-PoolService-7] Loggerload - Steps Failed
+[ERROR] 2023-02-24 16:17:52.366 [TestNG-PoolService-7] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-02-24 16:17:52.400 [TestNG-PoolService-8] Loggerload - ===============================================================================================
+[INFO ] 2023-02-24 16:17:52.400 [TestNG-PoolService-8] Loggerload - [@stack] : user does Implementation Stack
+[INFO ] 2023-02-24 16:17:52.400 [TestNG-PoolService-8] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-02-24 16:17:52.443 [TestNG-PoolService-3] Loggerload - Steps Failed
+[ERROR] 2023-02-24 16:17:52.444 [TestNG-PoolService-3] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-02-24 16:17:52.554 [TestNG-PoolService-5] Loggerload - ===============================================================================================
+[INFO ] 2023-02-24 16:17:52.554 [TestNG-PoolService-5] Loggerload - [@queue] : user does Implementation Using Collection.deque
+[INFO ] 2023-02-24 16:17:52.554 [TestNG-PoolService-5] Loggerload - -----------------------------------------------------------------------------------------------
+[INFO ] 2023-02-24 16:17:52.964 [TestNG-PoolService-7] Loggerload - ===============================================================================================
+[INFO ] 2023-02-24 16:17:52.989 [TestNG-PoolService-7] Loggerload - [@tree] : user does Traversal-Illustration
+[INFO ] 2023-02-24 16:17:52.992 [TestNG-PoolService-7] Loggerload - -----------------------------------------------------------------------------------------------
+[INFO ] 2023-02-24 16:17:53.060 [TestNG-PoolService-2] Loggerload - ===============================================================================================
+[INFO ] 2023-02-24 16:17:53.061 [TestNG-PoolService-2] Loggerload - [@tree] : user does Terminologies in Trees
+[INFO ] 2023-02-24 16:17:53.063 [TestNG-PoolService-2] Loggerload - -----------------------------------------------------------------------------------------------
+[INFO ] 2023-02-24 16:17:53.250 [TestNG-PoolService-0] Loggerload - ===============================================================================================
+[INFO ] 2023-02-24 16:17:53.270 [TestNG-PoolService-0] Loggerload - [@tree] : user does Types of Binary Trees
+[INFO ] 2023-02-24 16:17:53.292 [TestNG-PoolService-0] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-02-24 16:17:53.322 [TestNG-PoolService-2] Loggerload - Steps Failed
+[ERROR] 2023-02-24 16:17:53.323 [TestNG-PoolService-2] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-02-24 16:17:53.427 [TestNG-PoolService-6] Loggerload - ===============================================================================================
+[INFO ] 2023-02-24 16:17:53.427 [TestNG-PoolService-6] Loggerload - [@tree] : user does Tree Traversals
+[INFO ] 2023-02-24 16:17:53.427 [TestNG-PoolService-6] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-02-24 16:17:53.444 [TestNG-PoolService-8] Loggerload - Steps Failed
+[ERROR] 2023-02-24 16:17:53.445 [TestNG-PoolService-8] Loggerload - Steps Failed , Taking Screenshot
+[ERROR] 2023-02-24 16:17:53.451 [TestNG-PoolService-5] Loggerload - Steps Failed
+[ERROR] 2023-02-24 16:17:53.452 [TestNG-PoolService-5] Loggerload - Steps Failed , Taking Screenshot
+[ERROR] 2023-02-24 16:17:53.461 [TestNG-PoolService-6] Loggerload - Steps Failed
+[ERROR] 2023-02-24 16:17:53.461 [TestNG-PoolService-6] Loggerload - Steps Failed , Taking Screenshot
+[ERROR] 2023-02-24 16:17:53.470 [TestNG-PoolService-7] Loggerload - Steps Failed
+[ERROR] 2023-02-24 16:17:53.472 [TestNG-PoolService-7] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-02-24 16:17:53.510 [TestNG-PoolService-3] Loggerload - ===============================================================================================
+[INFO ] 2023-02-24 16:17:53.511 [TestNG-PoolService-3] Loggerload - [@tree] : user does Binary Trees
+[INFO ] 2023-02-24 16:17:53.512 [TestNG-PoolService-3] Loggerload - -----------------------------------------------------------------------------------------------
+[INFO ] 2023-02-24 16:17:53.521 [TestNG-PoolService-9] Loggerload - ===============================================================================================
+[INFO ] 2023-02-24 16:17:53.522 [TestNG-PoolService-9] Loggerload - [@tree] : user does Implementation in Python
+[INFO ] 2023-02-24 16:17:53.522 [TestNG-PoolService-9] Loggerload - -----------------------------------------------------------------------------------------------
+[INFO ] 2023-02-24 16:17:53.530 [TestNG-PoolService-7] Loggerload - ===============================================================================================
+[INFO ] 2023-02-24 16:17:53.531 [TestNG-PoolService-7] Loggerload - [@tree] : user does Applications of Binary Trees
+[INFO ] 2023-02-24 16:17:53.531 [TestNG-PoolService-7] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-02-24 16:17:53.562 [TestNG-PoolService-3] Loggerload - Steps Failed
+[ERROR] 2023-02-24 16:17:53.563 [TestNG-PoolService-3] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-02-24 16:17:53.594 [TestNG-PoolService-2] Loggerload - ===============================================================================================
+[INFO ] 2023-02-24 16:17:53.594 [TestNG-PoolService-2] Loggerload - [@tree] : user does Binary Tree Traversals
+[INFO ] 2023-02-24 16:17:53.595 [TestNG-PoolService-2] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-02-24 16:17:53.603 [TestNG-PoolService-0] Loggerload - Steps Failed
+[ERROR] 2023-02-24 16:17:53.605 [TestNG-PoolService-0] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-02-24 16:17:53.622 [TestNG-PoolService-1] Loggerload - ===============================================================================================
+[INFO ] 2023-02-24 16:17:53.622 [TestNG-PoolService-1] Loggerload - [@tree] : user navigate to Tree page and works on Overview of Trees 1st link in the Tree
+[INFO ] 2023-02-24 16:17:53.622 [TestNG-PoolService-1] Loggerload - -----------------------------------------------------------------------------------------------
+[INFO ] 2023-02-24 16:17:53.633 [TestNG-PoolService-6] Loggerload - ===============================================================================================
+[INFO ] 2023-02-24 16:17:53.637 [TestNG-PoolService-6] Loggerload - [@tree] : user does Binary Search Trees
+[INFO ] 2023-02-24 16:17:53.639 [TestNG-PoolService-6] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-02-24 16:17:53.650 [TestNG-PoolService-9] Loggerload - Steps Failed
+[ERROR] 2023-02-24 16:17:53.651 [TestNG-PoolService-9] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-02-24 16:17:53.666 [TestNG-PoolService-8] Loggerload - ===============================================================================================
+[INFO ] 2023-02-24 16:17:53.667 [TestNG-PoolService-8] Loggerload - [@tree] : user does Implementation of Binary Trees
+[INFO ] 2023-02-24 16:17:53.667 [TestNG-PoolService-8] Loggerload - -----------------------------------------------------------------------------------------------
+[INFO ] 2023-02-24 16:17:53.677 [TestNG-PoolService-4] Loggerload - ===============================================================================================
+[INFO ] 2023-02-24 16:17:53.678 [TestNG-PoolService-4] Loggerload - [@tree] : user does Types of Trees
+[INFO ] 2023-02-24 16:17:53.678 [TestNG-PoolService-4] Loggerload - -----------------------------------------------------------------------------------------------
+[INFO ] 2023-02-24 16:17:53.683 [TestNG-PoolService-5] Loggerload - ===============================================================================================
+[INFO ] 2023-02-24 16:17:53.683 [TestNG-PoolService-5] Loggerload - [@tree] : user does Implementation of BST
+[INFO ] 2023-02-24 16:17:53.684 [TestNG-PoolService-5] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-02-24 16:17:53.707 [TestNG-PoolService-5] Loggerload - Steps Failed
+[ERROR] 2023-02-24 16:17:53.708 [TestNG-PoolService-5] Loggerload - Steps Failed , Taking Screenshot
+[ERROR] 2023-02-24 16:17:53.820 [TestNG-PoolService-4] Loggerload - Steps Failed
+[ERROR] 2023-02-24 16:17:53.820 [TestNG-PoolService-4] Loggerload - Steps Failed , Taking Screenshot
+[ERROR] 2023-02-24 16:17:53.837 [TestNG-PoolService-2] Loggerload - Steps Failed
+[ERROR] 2023-02-24 16:17:53.837 [TestNG-PoolService-2] Loggerload - Steps Failed , Taking Screenshot
+[ERROR] 2023-02-24 16:17:53.848 [TestNG-PoolService-7] Loggerload - Steps Failed
+[ERROR] 2023-02-24 16:17:53.848 [TestNG-PoolService-7] Loggerload - Steps Failed , Taking Screenshot
+[ERROR] 2023-02-24 16:17:53.852 [TestNG-PoolService-6] Loggerload - Steps Failed
+[ERROR] 2023-02-24 16:17:53.853 [TestNG-PoolService-6] Loggerload - Steps Failed , Taking Screenshot
+[ERROR] 2023-02-24 16:17:53.855 [TestNG-PoolService-8] Loggerload - Steps Failed
+[ERROR] 2023-02-24 16:17:53.855 [TestNG-PoolService-8] Loggerload - Steps Failed , Taking Screenshot
+[ERROR] 2023-02-24 16:17:53.857 [TestNG-PoolService-1] Loggerload - Steps Failed
+[ERROR] 2023-02-24 16:17:53.857 [TestNG-PoolService-1] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-02-24 16:17:53.919 [TestNG-PoolService-3] Loggerload - ===============================================================================================
+[INFO ] 2023-02-24 16:17:53.919 [TestNG-PoolService-3] Loggerload - [@graph] : user does Graph Representations
+[INFO ] 2023-02-24 16:17:53.920 [TestNG-PoolService-3] Loggerload - -----------------------------------------------------------------------------------------------
+[INFO ] 2023-02-24 16:17:53.947 [TestNG-PoolService-9] Loggerload - ===============================================================================================
+[INFO ] 2023-02-24 16:17:53.951 [TestNG-PoolService-9] Loggerload - [@graph] : user navigate to Graph page and works on  Graph
+[INFO ] 2023-02-24 16:17:53.952 [TestNG-PoolService-9] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-02-24 16:17:53.965 [TestNG-PoolService-3] Loggerload - Steps Failed
+[ERROR] 2023-02-24 16:17:53.966 [TestNG-PoolService-3] Loggerload - Steps Failed , Taking Screenshot
+[ERROR] 2023-02-24 16:17:53.970 [TestNG-PoolService-9] Loggerload - Steps Failed
+[ERROR] 2023-02-24 16:17:53.971 [TestNG-PoolService-9] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-02-24 16:31:47.061 [main] Loggerload - Loading Config file
+[INFO ] 2023-02-24 16:31:47.077 [main] Loggerload - Get property BrowserType
+[INFO ] 2023-02-24 16:31:47.089 [main] Loggerload - Testing on chrome
+[INFO ] 2023-02-24 16:31:58.573 [main] Loggerload - Initializing driver for : chrome
+[INFO ] 2023-02-24 16:31:59.486 [TestNG-PoolService-1] Loggerload - ===============================================================================================
+[INFO ] 2023-02-24 16:31:59.486 [TestNG-PoolService-0] Loggerload - ===============================================================================================
+[INFO ] 2023-02-24 16:31:59.488 [TestNG-PoolService-0] Loggerload - [@graph] : user navigate to Graph page and works on  Graph
+[INFO ] 2023-02-24 16:31:59.488 [TestNG-PoolService-1] Loggerload - [@graph] : user does Graph Representations
+[INFO ] 2023-02-24 16:31:59.488 [TestNG-PoolService-0] Loggerload - -----------------------------------------------------------------------------------------------
+[INFO ] 2023-02-24 16:31:59.488 [TestNG-PoolService-1] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-02-24 16:32:20.676 [TestNG-PoolService-1] Loggerload - Steps Failed
+[ERROR] 2023-02-24 16:32:20.676 [TestNG-PoolService-1] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-02-24 16:32:25.804 [TestNG-PoolService-0] Loggerload - Expected result from Excel sheetname pythonCode and 0 : hello
+[INFO ] 2023-02-24 16:37:40.857 [main] Loggerload - Loading Config file
+[INFO ] 2023-02-24 16:37:40.868 [main] Loggerload - Get property BrowserType
+[INFO ] 2023-02-24 16:37:40.874 [main] Loggerload - Testing on chrome
+[INFO ] 2023-02-24 16:37:49.731 [main] Loggerload - Initializing driver for : chrome
+[INFO ] 2023-02-24 16:37:50.632 [TestNG-PoolService-1] Loggerload - ===============================================================================================
+[INFO ] 2023-02-24 16:37:50.632 [TestNG-PoolService-0] Loggerload - ===============================================================================================
+[INFO ] 2023-02-24 16:37:50.634 [TestNG-PoolService-1] Loggerload - [@graph] : user does Graph Representations
+[INFO ] 2023-02-24 16:37:50.634 [TestNG-PoolService-1] Loggerload - -----------------------------------------------------------------------------------------------
+[INFO ] 2023-02-24 16:37:50.634 [TestNG-PoolService-0] Loggerload - [@graph] : user navigate to Graph page and works on  Graph
+[INFO ] 2023-02-24 16:37:50.634 [TestNG-PoolService-0] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-02-24 16:38:12.181 [TestNG-PoolService-1] Loggerload - Steps Failed
+[ERROR] 2023-02-24 16:38:12.181 [TestNG-PoolService-1] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-02-24 16:38:18.144 [TestNG-PoolService-0] Loggerload - Expected result from Excel sheetname pythonCode and 0 : hello
