@@ -5,12 +5,7 @@
  <classes>
  <!--   <class name="mainPage">   -->
    <class name="runner.testRunner">  
-  <methods>
-  <include name="page1">
-  </include>
-  <include name="registerPage">
-  </include>
-    </methods>
+  
   </class>
  </classes>
  

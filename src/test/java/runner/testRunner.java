@@ -16,7 +16,7 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
  *DONE EXCEPTION HANDLING 
  *USED CONFIG.PROPERTIES FILE,CONFIG READER, EXCEL READER, CONSTANTS, LOG4J, HOOKS,CROSS BROWSER
  *GENERATED EXTENT PDF REPORT , EXTENT SPARK HTML REPORT AND CUCUMBER HTML REPORT    */
-	@RunWith(Cucumber.class)
+//	@RunWith(Cucumber.class)
 	@CucumberOptions(
 			//features = "src/test/resources/features/01_mainPage.feature",
 			//features = "src/test/resources/features/02_registerPage.feature",
