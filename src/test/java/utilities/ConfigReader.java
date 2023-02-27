@@ -84,6 +84,14 @@ public class ConfigReader {
 		else
 			throw new RuntimeException("url not specified in the Configuration.properties file.");
 	}
+	
+	public static String getPracticeUrl() {
+		String url = properties.getProperty("Practicepage");
+		if (url != null)
+			return url;
+		else
+			throw new RuntimeException("url not specified in the Configuration.properties file.");
+	}
 	public static String tryEditorURL() {
 		String tryeditorurl = properties.getProperty("tryeditorurl");
 		if (tryeditorurl != null)

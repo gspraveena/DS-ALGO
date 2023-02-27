@@ -12,6 +12,7 @@ import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -20,6 +21,7 @@ import constants.Constants;
 import crossBrowser.driverFactory;
 import utilities.ConfigReader;
 import utilities.ElementsUtils;
+import utilities.Loggerload;
 
 public class CollectionsPage {
 	public static WebDriver driver=driverFactory.getdriver();
@@ -40,7 +42,7 @@ public class CollectionsPage {
     By login_Button=By.xpath("//input[@value='Login']");    
   //******************************  DataStructure  ***************************************
     private static Properties properties;
-    ElementsUtils eleUtil = new ElementsUtils();
+    static ElementsUtils eleUtil = new ElementsUtils();
     String DataStructureURL="https://dsportalapp.herokuapp.com/data-structures-introduction/";
     //By getStartedDS=By.xpath("//a[@href='data-structures-introduction']");
 	String tryEditorURL=ConfigReader.tryEditorURL();	   
@@ -61,6 +63,13 @@ public class CollectionsPage {
 	@FindBy (xpath="//a[contains(text(),'Arrays Using List')]")WebElement arraysUsingList;
 	@FindBy (xpath="//a[contains(text(),'Basic Operations in Lists')]")WebElement arraysBasicOperationinList;
 	@FindBy (xpath="//a[contains(text(),'Applications of Array')]")WebElement arraysApplicationofArray;	
+	@FindBy (xpath="//a[contains(text(),'Practice Questions')]")WebElement practiceQuestionsinArray;	
+	@FindBy (xpath="//a[contains(text(),'Search the array')]")WebElement SearchTheAarray;	
+	@FindBy (xpath="//a[contains(text(),'Max Consecutive Ones')]")WebElement maxConsecutiveOnes;
+	//@FindBy (xpath="//a[contains(text(),'Practice Questions')]")WebElement inputBox;
+	@FindBy (xpath="//button[contains(text(),'Run')]")WebElement runButtoninPracticeQuestions;
+	//pre[@id='output']
+	@FindBy (xpath="//textarea[@id='editor']")WebElement enterPythontextArea;
   //******************************** Linked List *****************************************
 	@FindBy (xpath="//a[contains(@href,'linked-list')]")WebElement LinkedListLink;
 	@FindBy (xpath="//a[contains(text(),'Introduction')]")WebElement introduction;
@@ -100,7 +109,8 @@ public class CollectionsPage {
 	@FindBy (xpath="//a[contains(text(),'Applications of Binary trees')]")WebElement applicationOfBinaryTrees;
 	@FindBy (xpath="//a[contains(text(),'Binary Search Trees')]")WebElement binarySearchTrees ;
 	@FindBy (xpath="//a[contains(text(),'Implementation Of BST')]")WebElement implementationOfBST;
-
+	@FindBy (id="output")
+	static WebElement output; 
 //%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
 	public CollectionsPage()
 	{
@@ -147,8 +157,7 @@ public class CollectionsPage {
 
 	public static String errorMessage() {	
 			String error_Message = alert_msg.getText();
-			return error_Message;	
-	
+			return error_Message;		
 	}
 
 //******************************  Login  ***************************************
@@ -210,7 +219,7 @@ public class CollectionsPage {
 	public void clickArray() throws IOException {
 		ConfigReader.loadConfig();				
 		String URL=ConfigReader.getArrayUrl();
-		driver.get(URL);		
+		driver.get(URL);	
 	}
 	public void clickArraysInPython() {
 		arraysInPython.click();
@@ -235,52 +244,67 @@ public class CollectionsPage {
 		eleUtil.enterCode(code,editorInput);
 		driver.findElement(runButton).click();		
 	}
-	public String getExpectedResult(String sheetName, Integer rowNumber) throws InvalidFormatException, IOException {
+	public static String getExpectedResult(String sheetName, Integer rowNumber) throws InvalidFormatException, IOException {
 		String expectedResult = eleUtil.getResultfromExcel(sheetName, rowNumber);
 		return expectedResult;
 	}
-//******************************  Linked List  ***************************************
+	//&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+	public void clickPracticeQuestions() {
+		practiceQuestionsinArray.click();
+	}
+	public void clickSearchTheArray() {
+		SearchTheAarray.click();
+	}
+	public void clickPracticeQuestionArray() throws IOException {
+		ConfigReader.loadConfig();				
+		String URL=ConfigReader.getPracticeUrl();
+		driver.get(URL);	
+	}
+	
+	public void clickMaxConsecutiveOnes() {
+		maxConsecutiveOnes.click();
+	}
+	
+	public void clearCodeInTextEditorBox() {
+		driver.findElement(enterPythonText).sendKeys(Keys.CONTROL , "a");
+//	 enterPythontextArea.sendKeys(Keys.CONTROL + "x");
+		driver.findElement(enterPythonText).sendKeys(Keys.DELETE);
+//	 enterPythontextArea.clear();
+	}
+	
+	public void arrayPracticeQuestion(String pythoncode) throws InvalidFormatException, IOException {
+		//inputBox.click();
+		driver.findElement(enterPythonText).sendKeys(pythoncode);
+		runButtoninPracticeQuestions.click();
+	}
+	
+	public void clickRun() {
+	driver.findElement(runButton).click();	
+	}
+	
+	public static String getActualResult() {
+		eleUtil.WaitForElement(output);
+		return output.getText();
+	}
+	
+	public static String getErrorText() throws InterruptedException {
+	Thread.sleep(1000);
+	String errorMsg = driver.switchTo().alert().getText();
+	Loggerload.info("The Error Message is:" +errorMsg);
+	driver.switchTo().alert().accept();
+	return errorMsg;
+}
+	
 //	public String getOutput() {
-//		util.waitForElement(outputText);
-//		String output=outputText.getText();
-//		
-//		return output;
-//	}
-	
-//	@When("The user Enter valid python code")
-//	public void the_user_enter_valid_python_code(io.cucumber.datatable.DataTable pythonCode)
-//			throws InterruptedException {
-//		List<List<String>> data = pythonCode.cells();
-//		ll.Enter_PythonCode(data.get(0).get(0));
-//	}
-	
-//	@Then("The user should get the Run output")
-//	public void the_user_should_get_the_run_output() {
-//		String output = ll.Get_OutputString();
-//		LoggerLoad.info("The output is:" + output);
-//
-//	}
-	
-//	@When("The user Enter invalid python code")
-//	public void the_user_enter_invalid_python_code(io.cucumber.datatable.DataTable invalidCode)
-//			throws InterruptedException {
-//		List<List<String>> data = invalidCode.cells();
-//		ll.Enter_PythonCode(data.get(0).get(0));
-//	}
-//
-//	@Then("The user get the error message")
-//	public void the_user_get_the_error_message() {
-//		ll.Get_Errormsg();
-//	}
+//		ElementsUtils.waitForElement(outputText);
+//	   String output=outputText.getText();
+//	   return output;
+//}
 	
 	
-//	public String getErrorText() {
-//		String errorMsg = driver.switchTo().alert().getText();
-//		//LoggerLoad.info("The Error Message is:" +errorMsg);
-//		driver.switchTo().alert().accept();
-//		return errorMsg;
-//	}
+//******************************  Linked List  ***************************************
 	
+
 	public void clickLinkedList() throws IOException {
 		ConfigReader.loadConfig();				
 		String URL=ConfigReader.getLinkedListUrl();

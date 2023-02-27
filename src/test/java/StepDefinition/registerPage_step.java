@@ -44,7 +44,14 @@ public class registerPage_step {
 		rp.clickRegisterLink();
 		Loggerload.info("The user  enters username with other fields empty " );
 		rp.enterUsername(dataTable);
-		rp.clickSubmitRegister();		
+		rp.clickSubmitRegister();	
+		String Page_Title=rp.getPageTitle();
+		Loggerload.info("Page Title : "+Page_Title ); 
+		//assertEquals(Page_Title, "Login", "Title do not match");
+		
+//		String expectedmessage = dataTable.get(rownumber).get("username");
+//		String actualSuccMessg = contactUsPage.getSuccessMessg();
+//		Assert.assertEquals(actualSuccMessg, expSuccessMessage);
 	}
 	
 	@Then("It should display an error message {string} below Password textbox")
@@ -119,7 +126,9 @@ public class registerPage_step {
 	@When("The user clicks Register button after entering {string}, {string} and {string}")
 	public void the_user_clicks_register_button_after_entering_and(String username,String password,String confirm_password) throws InterruptedException {
 		rp.register_link(username, password, confirm_password);	
-		Loggerload.info("user   successfully   Registered"); 	
+		Loggerload.info("user   successfully   Registered"); 
+		String Page_Title=rp.getPageTitle();
+		Loggerload.info("Page Title : "+Page_Title ); 
 	}
 	
 	@Then("It should go to homepage and get message  {string}")
