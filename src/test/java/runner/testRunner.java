@@ -24,11 +24,10 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 			//features = "src/test/resources/features/01_mainPage.feature",
 			//features = "src/test/resources/features/02_registerPage.feature",
 			//features ="src/test/resources/features/03_signIn.feature",
-			//features = "src/test/resources/features/collections.feature",
 			//features = "src/test/resources/features/04_dataStructure.feature",
-			//features = "src/test/resources/features/05_array.feature",
+			features = "src/test/resources/features/05_array.feature",
 			//features = "src/test/resources/features/06_linkedList.feature",
-			features = "src/test/resources/features/07_stack.feature",
+			//features = "src/test/resources/features/07_stack.feature",
 			//features = "src/test/resources/features/08_queue.feature",
 			//features = "src/test/resources/features/10_graph.feature",
 			//features = "src/test/resources/features/09_tree.feature",
@@ -50,4 +49,4 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 			return super.scenarios();
 		}
 
-		}
+}

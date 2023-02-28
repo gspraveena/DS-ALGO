@@ -23,6 +23,7 @@ import utilities.ReadExcelNOTUSED;
 
 public class Collections_step {
 	 WebDriver driver;
+	 String expectedmessage;
 	//WebDriver driver=new FirefoxDriver();
 	CollectionsPage collection=new CollectionsPage();
 	String Excelpath = ConfigReader.getexcelfilepath();
@@ -63,6 +64,7 @@ public class Collections_step {
 	   catch(NoSuchElementException e){
 		   
 	   }
+		
 	}
 	@Then("user click on Data Structure {string} button")
 	public void user_click_on_data_structure_button(String string) {
@@ -76,11 +78,30 @@ public class Collections_step {
 		catch(NoSuchElementException e) {}
 	}
 	@Then("user is redirected to Sign In page")
-	public void user_is_redirected_to_sign_in_page() {
+	public void user_is_redirected_to_sign_in_page() throws InvalidFormatException, IOException {
 		String Page_Title=collection.getPageTitle();
 		Loggerload.info("Page Title : "+Page_Title ); 
 		assertEquals(Page_Title, "Login", "Title do not match");
+		
+//		String expectedmessage = dataTable.get(rowNumber).get("email");
+//		String actualSuccMessg = CollectionsPage.getExpectedResult(expectedResult);
+//		Assert.assertEquals(actualSuccMessg, expSuccessMessage);
+		
+//	
+//		try {
+//			expectedmessage = CollectionsPage.getExpectedResult(expectedmessage, null);
+//		} catch (InvalidFormatException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		} catch (IOException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+//		String actualSuccMessg = Page_Title;
+//		Assert.assertEquals(actualSuccMessg, expectedmessage);
+//		Loggerload.info(actualSuccMessg );
 	}
+	
 //	@Then("user click on register")
 //	public void user_click_on_register() {
 //		Loggerload.info("user click on register");
@@ -114,7 +135,7 @@ public class Collections_step {
 	
 	//******************************  Data Structure  ***************************************
 	
-	 // COMMON WHEN RUNNING INDIVIDUALLY FOR ARRAY, LINKED LIST , QUEUE, GRAPH  
+	 // COMMON WHEN RUNNING INDIVIDUALLY FOR ARRAY, LINKED LIST , QUEUE, GRAPH , TREE, STACK 
 	@Given("user login with username {string} and password {string}")
 	public void user_login_with_username_and_password(String username, String password) throws IOException, InterruptedException {
 		collection.LoginPage();
@@ -139,6 +160,10 @@ public class Collections_step {
 	{	
 		collection.enterPythonCode(sheetNumber, rowNumber);
 		expectedMesg=collection.getExpectedResult(sheetNumber, rowNumber);
+		
+		String actualSuccMessg = CollectionsPage.getActualResult();
+		Loggerload.info("Actual result: "+actualSuccMessg );
+		assertEquals(actualSuccMessg, expectedMesg," Results do not match");
 	}
 	
 //	@Then("user enters <code> and click run , code is printed")
@@ -155,8 +180,6 @@ public class Collections_step {
 	} 
 	
 	//******************************  Array  ***************************************
-
-
 	@Given("user clicks {string}  in Array field")
 	public void user_clicks_in_array_field(String string) throws IOException {
 		
@@ -173,7 +196,11 @@ public class Collections_step {
 	@Then("user enters code in tryEditor from {string} and {int}  then click run , output is printed")
 	public void user_enters_code_in_try_editor_from_sheet_number_and_then_click_run_output_is_printed(String sheetName, Integer rowNumber) throws InvalidFormatException, IOException {
 		collection.enterPythonCode(sheetName, rowNumber);
+		//expectedMesg=collection.getExpectedResult(sheetName, rowNumber);
 		expectedMesg=collection.getExpectedResult(sheetName, rowNumber);
+		String actualSuccMessg = CollectionsPage.getActualResult();
+		Loggerload.info("Actual result: "+actualSuccMessg );
+		assertEquals(actualSuccMessg, expectedMesg," Results do not match");
 	}
 	
 	@Given("user is in Array homepage")
@@ -192,6 +219,91 @@ public class Collections_step {
 	public void user_click_fourth_link_in_the_array_list(String string) {
 		collection.clickApplicationsOfArray();
 	}
+//******************************&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+	@When("user click practice question")
+	public void user_click_practice_question() {
+		collection.clickArraysInPython();
+		collection.clickPracticeQuestions();
+	}
+	
+	@Then("user clicks {string} in Practice questions 1")
+	public void user_clicks_in_practice_questions_int(String string) {
+		collection.clickSearchTheArray();
+	}
+	
+	@Then("user clears the text")
+	public void user_clears_the_text() {
+		collection.clearCodeInTextEditorBox();
+	}
+
+	@When("user enters valid Python Code")
+	//public void user_enters_valid_python_code(io.cucumber.datatable.DataTable dataTable) {	
+	public void user_enters_valid_python_code(DataTable Pythoncode ) throws InvalidFormatException, IOException {
+		List<List<String>> data = Pythoncode.cells();
+		collection.arrayPracticeQuestion(data.get(0).get(0));
+		
+	}	
+	@When("user clicks run button and captures output")
+	public void user_clicks_run_button_and_captures_output() throws IOException {
+//	   	String output = collection.getActualResult();
+//		Loggerload.info("The output is:" + output);
+		collection.clickRun();
+		String actualSuccMessg = CollectionsPage.getActualResult();
+		Loggerload.info("Actual result: "+actualSuccMessg );
+//		driver.navigate().back();
+		collection.clickPracticeQuestionArray();
+//		collection.clickSearchTheArray();
+//		collection.clearCodeInTextEditorBox();
+	}
+	@When("user enters invalid Python Code")
+	public void user_enters_invalid_python_code(DataTable Pythoncode) throws InvalidFormatException, IOException {
+		List<List<String>> data = Pythoncode.cells();
+		collection.arrayPracticeQuestion(data.get(0).get(0));
+	}
+
+	@Then("user clicks run button and captures error message")
+	public void user_clicks_run_button_and_captures_error_message() throws InterruptedException {
+		collection.clickRun();
+		String actualMsg = CollectionsPage.getErrorText();
+		Loggerload.info("Error message for invalid python code is -" + actualMsg);
+		Loggerload.info("Invalid code is taken  and clicked on run button");
+		//assertEquals(actualMsg,"NameError: name 'hello' is not defined on line 1", "Result do not match");
+	}
+	
+	@When("user click on {string} in Practice questions 2")
+	public void user_click_on_in_practice_questions_int(String string)  {
+		collection.clickMaxConsecutiveOnes();	
+		collection.clearCodeInTextEditorBox();
+	}	
+	@When("user enters Python Code {string}")
+	public void user_enters_python_code(String code) throws InvalidFormatException, IOException {
+//	@When("user enters Python Code print\\(Max Consecutive Ones)")
+//	public void user_enters_python_code_print_max_consecutive_ones(String code) throws InvalidFormatException, IOException {
+		collection.arrayPracticeQuestion(code);		
+	}
+
+	@When("user clicks run button and captures output and error message if any")
+	public void user_clicks_run_button_and_captures_output_and_error_message_if_any() throws InterruptedException, IOException {
+//		String output = collection.getActualResult();
+//		Loggerload.info("The output is:" + output);
+						
+		try{
+		Loggerload.info("User gets the error message in an Alert  ");
+		String fetchError = collection.getErrorText();
+		String ExpectedError="SyntaxError: bad input on line 1";
+		Loggerload.info("Displayed Error Message  is "+fetchError);
+		assertEquals(fetchError,ExpectedError,"Invalid Syntax error message");
+		}
+		catch(NoSuchElementException e){			   
+		   }
+		
+		//driver.navigate().back();
+		collection.clickPracticeQuestionArray();
+		//Loggerload.info("Invalid code is taken and clicked on run button");
+		//assertEquals(actualMsg,"NameError: name 'hello' is not defined on line 1", "Result do not match");
+	} 
+	
+//************************&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&	
 	//*************************** Linked List *************************************
 	
 	@Given("user clicks {string}  in Linked List field")
@@ -302,6 +414,7 @@ public class Collections_step {
 	public void user_login_with_username_and_password_given_through_config(String string, String string2) throws InterruptedException, IOException {
 		collection.LoginPage();
 		collection.loginWithUernamePwd(string, string2);
+		
 	}
 	
 	@Given("user clicks {string}  in Graph field")

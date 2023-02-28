@@ -18,9 +18,14 @@ public class ElementsUtils {
 	String code;
 	String result;
 
-	public void WaitForElement(WebElement element, Duration timeOutInSeconds) {
-		WebDriverWait wait=new WebDriverWait(driver,timeOutInSeconds);
-		wait.until(ExpectedConditions.visibilityOf(element));
+//	public void WaitForElement(WebElement element, Duration timeOutInSeconds) {
+//		WebDriverWait wait=new WebDriverWait(driver,timeOutInSeconds);
+//		wait.until(ExpectedConditions.visibilityOf(element));
+//	}
+	
+	public void WaitForElement(WebElement element) {
+		new WebDriverWait(driver, Duration.ofSeconds(10)).until(ExpectedConditions.visibilityOf(element));
+
 	}
 
 	public String getCodefromExcel(int sheetNumber, int rownumber) throws InvalidFormatException, IOException {
@@ -48,17 +53,17 @@ public class ElementsUtils {
 		//new Actions(driver).sendKeys(element, code).perform();
 	}
 
-	public void enterCodePractice(String code, WebElement element) {
-		new Actions(driver).keyDown(Keys.COMMAND).sendKeys("a").sendKeys(Keys.DELETE).keyUp(Keys.COMMAND).perform();
-		String[] str1 = code.split("\n");
-		for (int i = 0; i < str1.length; i++) {
-			if (str1[i].equalsIgnoreCase("\\b")) {
-				element.sendKeys(Keys.BACK_SPACE);
-			} else {
-				element.sendKeys(str1[i]);
-				element.sendKeys(Keys.RETURN);
-			}
-		}
+//	public void enterCodePractice(String code, WebElement element) {
+//		new Actions(driver).keyDown(Keys.COMMAND).sendKeys("a").sendKeys(Keys.DELETE).keyUp(Keys.COMMAND).perform();
+//		String[] str1 = code.split("\n");
+//		for (int i = 0; i < str1.length; i++) {
+//			if (str1[i].equalsIgnoreCase("\\b")) {
+//				element.sendKeys(Keys.BACK_SPACE);
+//			} else {
+//				element.sendKeys(str1[i]);
+//				element.sendKeys(Keys.RETURN);
+//			}
+//		}
 		/*
 		 * element.sendKeys(code); element.sendKeys(str1[0]);
 		 * element.sendKeys(Keys.ENTER); element.sendKeys(str1[1]);
@@ -70,7 +75,7 @@ public class ElementsUtils {
 		 * Loggerload.info("enterCodePractice is " + code);
 		 */
 
-	}
+	//}
 
 	public String getResultfromExcel(Integer sheetNumber, int rownumber) throws InvalidFormatException, IOException {
 		ExcelReader reader = new ExcelReader();

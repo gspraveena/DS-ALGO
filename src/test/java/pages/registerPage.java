@@ -51,6 +51,10 @@ public class registerPage
 		
 		driver.findElement(registerSubmitButton).click();
 	}
+	public String getPageTitle() {
+		String title = driver.getTitle();
+		return title; 
+	}
 	
 	public String getEmptyfieldErrormsgUser() {
 		return user_Name.getAttribute("validationMessage");
