@@ -303,6 +303,56 @@ public class Collections_step {
 		//assertEquals(actualMsg,"NameError: name 'hello' is not defined on line 1", "Result do not match");
 	} 
 	
+	
+	//##############  Array Practice Page #############
+	
+//		@When("User is in Array Practice homepage")
+//		public void user_is_in_array_practice_homepage() throws IOException {
+//			collection.clickArraysInPython();
+//			collection.clickPracticeQuestions();
+//		}
+//
+//		@When("User clicks {string} first link in the Array Practice list")
+//		public void user_clicks_first_link_in_the_array_practice_list(String string) {
+//			collection.clicksearchTheArray();
+//		}
+//
+//		@When("user clears the text and enter python code")
+//		public void user_clears_the_text_and_enter_python_code() {
+//		   collection.clearCodeInTextEditor();
+//		}
+//		
+//		@Then("user enters Python Code {string} from config")
+//		public void user_enters_python_code_from_config(String string) throws IOException, InterruptedException {
+//			collection.pythonCode(string );
+//		}
+//		
+//		@When("User clicks {string} second link in the Array Practice list")
+//		public void user_clicks_second_link_in_the_array_practice_list(String string) {
+//		   collection.MaxconsecutiveOnes();
+//		}
+//
+//		@Then("user gets the error message")
+//		public void user_gets_the_error_message() throws InterruptedException {
+//		    collection.getErrorText();
+//		}	
+//
+//	    @When("User clicks {string} third link in the Array Practice list")
+//	     public void user_clicks_third_link_in_the_array_practice_list(String string) {
+//	    	collection.clickFindNumbersWithEvenNumberOfDigits();
+//	      }
+//
+//	    @Then("user enters Python code")
+//	     public void user_enters_python_code(io.cucumber.datatable.DataTable dataTable) throws IOException {
+//	              List<List<String>> data = dataTable.cells();
+//	              collection.pythonCode(data.get(0).get(0));
+//	     }
+//
+//	    @When("User clicks {string} fourth link in the Array Practice list")
+//	    public void user_clicks_fourth_link_in_the_array_practice_list(String string) {
+//	           collection.clickSquaresOfASortedArray();
+//	    }
+	
 //************************&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&	
 	//*************************** Linked List *************************************
 	
