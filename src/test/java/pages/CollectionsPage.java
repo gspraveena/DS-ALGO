@@ -66,11 +66,20 @@ public class CollectionsPage {
 	@FindBy (xpath="//a[contains(text(),'Practice Questions')]")WebElement practiceQuestionsinArray;	
 	@FindBy (xpath="//a[contains(text(),'Search the array')]")WebElement SearchTheAarray;	
 	@FindBy (xpath="//a[contains(text(),'Max Consecutive Ones')]")WebElement maxConsecutiveOnes;
-	//@FindBy (xpath="//a[contains(text(),'Practice Questions')]")WebElement inputBox;
+	@FindBy (xpath="//a[contains(text(),'Practice Questions')]")WebElement inputBox;
 //	@FindBy (xpath="//button[contains(text(),'Run')]")WebElement runButtoninPracticeQuestions;
 	@FindBy (xpath="/html/body/div/div[2]/form/button")WebElement runButtoninPracticeQuestions;
 	//pre[@id='output']
-//	@FindBy (xpath="//textarea[@id='editor']")WebElement enterPythontextArea;
+	@FindBy (xpath="//textarea[@id='editor']")WebElement enterPythontextArea;
+	// ************** Array  Page Practice Questions ***************
+    
+    @FindBy(xpath = "//a[contains(text(),'Practice Questions')]")WebElement practiceQuestions;
+    @FindBy(xpath = "/html/body/div[2]/a") WebElement searchTheArray;
+    @FindBy(xpath = "//textarea[@tabindex='0']") WebElement textEditorInput;
+    By runButtonPractice = By.xpath("//*[@id=\"answer_form\"]/button");
+//    @FindBy(xpath = "/html/body/div[3]/a")WebElement maxConsecutiveOnes;
+    @FindBy(xpath = "/html/body/div[4]/a")WebElement findNumbersWithEvenNumberOfDigits;
+    @FindBy(xpath = "/html/body/div[5]/a") WebElement squaresOfASortedArray;
   //******************************** Linked List *****************************************
 	@FindBy (xpath="//a[contains(@href,'linked-list')]")WebElement LinkedListLink;
 	@FindBy (xpath="//a[contains(text(),'Introduction')]")WebElement introduction;
@@ -311,7 +320,7 @@ public class CollectionsPage {
 	
 	 // ************** Array  Page Practice Questions ***************
     
-//    public void clickPracticeQuestions() throws IOException
+//    public void clickPracticeQuestions1() throws IOException
 //    {
 // 	   practiceQuestions.click();
 //    }
@@ -323,7 +332,7 @@ public class CollectionsPage {
 //    
 //    public void clearCodeInTextEditor()
 //    {
-// 	   textEditorInput.sendKeys(Keys.CONTROL,"a");
+// 	   textEditorInput.sendKeys(Keys.COMMAND,"a");
 // 	   textEditorInput.sendKeys(Keys.DELETE);
 //    }
 //    
@@ -333,15 +342,15 @@ public class CollectionsPage {
 //        driver.findElement(runButtonPractice).click();
 //    }
 //    
-//    public static String getErrorText() throws InterruptedException
-//    {
-// 	   Thread.sleep(2000);
-// 	   String errorMsg = driver.switchTo().alert().getText();
-// 	   Loggerload.info("Error Message Is : "+errorMsg);
-// 	   driver.switchTo().alert().accept();
-// 	   return errorMsg;
-//    }
-    
+////    public static String getErrorText() throws InterruptedException
+////    {
+//// 	   Thread.sleep(2000);
+//// 	   String errorMsg = driver.switchTo().alert().getText();
+//// 	   Loggerload.info("Error Message Is : "+errorMsg);
+//// 	   driver.switchTo().alert().accept();
+//// 	   return errorMsg;
+////    }
+//    
 //    public void MaxconsecutiveOnes()
 //    {
 // 	   maxConsecutiveOnes.click();
@@ -356,7 +365,65 @@ public class CollectionsPage {
 //    {
 // 	   squaresOfASortedArray.click();
 //    }
+//	
 	
+	
+	 
+//    public void clickPracticeQuestions() throws IOException
+//    {
+//      practiceQuestions.click();
+//    }
+    
+    public void clicksearchTheArray()
+    {
+      searchTheArray.click();
+    }
+    
+    public void clearCodeInTextEditor()
+    {
+      textEditorInput.sendKeys(Keys.COMMAND,"a");
+      textEditorInput.sendKeys(Keys.DELETE);
+    }
+    
+    public void pythonCode(String PythonCode) throws IOException {
+        Constants.python_Code=properties.getProperty("PythonCode");
+        textEditorInput.sendKeys(properties.getProperty("PythonCode"));
+       driver.findElement(runButtonPractice).click();
+       }
+    
+    public void pythonCode1(String PythonCode) throws IOException {
+       Constants.python_Code1=properties.getProperty("PythonCode1");
+       textEditorInput.sendKeys(properties.getProperty("PythonCode1"));
+          driver.findElement(runButtonPractice).click();
+      }
+    public void pythoncode(String pythoncode) throws InvalidFormatException, IOException {
+    textEditorInput.sendKeys(pythoncode);
+    driver.findElement(runButtonPractice).click();
+  }
+    
+//    public static String getErrorText() throws InterruptedException
+//    {
+//      Thread.sleep(2000);
+//      String errorMsg = driver.switchTo().alert().getText();
+//      Loggerload.info("Error Message Is : "+errorMsg);
+//      driver.switchTo().alert().accept();
+//      return errorMsg;
+//    }
+    
+    public void MaxconsecutiveOnes()
+    {
+      maxConsecutiveOnes.click();
+    }
+    
+    public void clickFindNumbersWithEvenNumberOfDigits()
+    {
+      findNumbersWithEvenNumberOfDigits.click();
+    }
+     
+    public void clickSquaresOfASortedArray()
+    {
+      squaresOfASortedArray.click();
+    }
 //******************************  Linked List  ***************************************
 	
 

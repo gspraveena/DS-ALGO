@@ -358,7 +358,68 @@ public class Collections_step {
 //	    public void user_clicks_fourth_link_in_the_array_practice_list(String string) {
 //	           collection.clickSquaresOfASortedArray();
 //	    }
+//	
+	//##############  Array Practice Page #############
 	
+	 @When("User is in Array Practice homepage")
+	  public void user_is_in_array_practice_homepage() throws IOException {
+	    collection.clickArraysInPython();
+	    collection.clickPracticeQuestions();
+	  }
+
+	  @When("User clicks {string} first link in the Array Practice list")
+	  public void user_clicks_first_link_in_the_array_practice_list(String string) {
+	    collection.clicksearchTheArray();
+	  }
+
+	  @When("user clears the text and enter python code")
+	  public void user_clears_the_text_and_enter_python_code() {
+	     collection.clearCodeInTextEditor();
+	  }
+	  
+	  @Then("user enters Python Code {string} from config")
+	  public void user_enters_python_code_from_config(String string) throws IOException, InterruptedException {
+	    collection.pythonCode(string );
+	  }
+	  
+	  @Then("user enters Python Code1 {string} from config")
+	  public void user_enters_python_code1_from_config(String string) throws IOException, InterruptedException {
+	    collection.pythonCode1(string );
+	  }
+	  @When("User clicks {string} second link in the Array Practice list")
+	  public void user_clicks_second_link_in_the_array_practice_list(String string) {
+	     collection.MaxconsecutiveOnes();
+	  }
+
+	  @Then("user gets the error message")
+	  public void user_gets_the_error_message() throws InterruptedException {
+	      try{
+	      Loggerload.info("User gets the error message in an Alert  ");
+	      String fetchError = collection.getErrorText();
+	      String ExpectedError="SyntaxError: bad input on line 1";
+	      Loggerload.info("Displayed Error Message  is "+fetchError);
+	      assertEquals(fetchError,ExpectedError,"Invalid Syntax error message");
+	      }
+	      catch(NoSuchElementException e){         
+	         }
+	  }  
+
+	    @When("User clicks {string} third link in the Array Practice list")
+	     public void user_clicks_third_link_in_the_array_practice_list(String string) {
+	      collection.clickFindNumbersWithEvenNumberOfDigits();
+	      }
+
+	    @Then("user enters python code")
+	     public void user_enters_python_code(io.cucumber.datatable.DataTable dataTable) throws IOException, InvalidFormatException {
+	              List<List<String>> data = dataTable.cells();
+	              collection.pythoncode(data.get(0).get(0));
+	     }
+	    
+
+	    @When("User clicks {string} fourth link in the Array Practice list")
+	    public void user_clicks_fourth_link_in_the_array_practice_list(String string) {
+	           collection.clickSquaresOfASortedArray();
+	    }
 //************************&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&	
 	//*************************** Linked List *************************************
 	
