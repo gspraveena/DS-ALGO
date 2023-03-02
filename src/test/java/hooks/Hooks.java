@@ -14,7 +14,7 @@ import io.cucumber.java.AfterStep;
 import io.cucumber.java.Before;
 import io.cucumber.java.BeforeAll;
 import io.cucumber.java.Scenario;
-import io.qameta.allure.Allure;
+//import io.qameta.allure.Allure;
 import utilities.ConfigReader;
 import utilities.Loggerload;
 import utilities.ConfigReader;
@@ -56,8 +56,8 @@ public class Hooks {
 			Loggerload.error("Steps Failed , Taking Screenshot");                  //***************************
 			final byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);    //***************************
 			scenario.attach(screenshot, "image/png", "My screenshot");     //***************************
-			Allure.addAttachment("Myscreenshot",      //***************************
-			new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));     //***************************		
+//			Allure.addAttachment("Myscreenshot",      //***************************
+//			new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));     //***************************		
 		}
 	}
 

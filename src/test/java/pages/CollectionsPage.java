@@ -54,7 +54,7 @@ public class CollectionsPage {
 	By enterPythonText=By.xpath("//form[@id='answer_form']/div/div/div[1]/textarea");
 	//By whiteBox=By.xpath("//span[@class='cm-builtin']");
 	By runButton=By.xpath("//button[contains(text(),'Run')]");
-	By runBtn=By.xpath("//form[@id='answer_form']//button");
+//	By runBtn=By.xpath("//form[@id='answer_form']//button");
 	By pythonOutPut=By.id("output");	
   //******************************  Array  ***************************************	
 	@FindBy (xpath="//a[contains(@href,'array')]")WebElement arrayLink;
@@ -67,9 +67,10 @@ public class CollectionsPage {
 	@FindBy (xpath="//a[contains(text(),'Search the array')]")WebElement SearchTheAarray;	
 	@FindBy (xpath="//a[contains(text(),'Max Consecutive Ones')]")WebElement maxConsecutiveOnes;
 	//@FindBy (xpath="//a[contains(text(),'Practice Questions')]")WebElement inputBox;
-	@FindBy (xpath="//button[contains(text(),'Run')]")WebElement runButtoninPracticeQuestions;
+//	@FindBy (xpath="//button[contains(text(),'Run')]")WebElement runButtoninPracticeQuestions;
+	@FindBy (xpath="/html/body/div/div[2]/form/button")WebElement runButtoninPracticeQuestions;
 	//pre[@id='output']
-	@FindBy (xpath="//textarea[@id='editor']")WebElement enterPythontextArea;
+//	@FindBy (xpath="//textarea[@id='editor']")WebElement enterPythontextArea;
   //******************************** Linked List *****************************************
 	@FindBy (xpath="//a[contains(@href,'linked-list')]")WebElement LinkedListLink;
 	@FindBy (xpath="//a[contains(text(),'Introduction')]")WebElement introduction;
@@ -265,21 +266,26 @@ public class CollectionsPage {
 		maxConsecutiveOnes.click();
 	}
 	
-	public void clearCodeInTextEditorBox() {
-		driver.findElement(enterPythonText).sendKeys(Keys.CONTROL , "a");
-//	 enterPythontextArea.sendKeys(Keys.CONTROL + "x");
+	public void clearCodeInTextEditorBox() throws InterruptedException {
+		Thread.sleep(2000);
+		driver.findElement(enterPythonText).sendKeys(Keys.COMMAND + "a");
+		Thread.sleep(2000);
+//		driver.findElement(enterPythonText).sendKeys(Keys.CONTROL + "x");
 		driver.findElement(enterPythonText).sendKeys(Keys.DELETE);
 //	 enterPythontextArea.clear();
 	}
 	
-	public void arrayPracticeQuestion(String pythoncode) throws InvalidFormatException, IOException {
+	public void arrayPracticeQuestion(String pythoncode) throws InvalidFormatException, IOException, InterruptedException {
 		//inputBox.click();
 		driver.findElement(enterPythonText).sendKeys(pythoncode);
-		runButtoninPracticeQuestions.click();
+		Thread.sleep(2000);
+//		runButtoninPracticeQuestions.click();
+//		driver.navigate().back();
 	}
 	
 	public void clickRun() {
-	driver.findElement(runButton).click();	
+	driver.findElement(runButton).click();
+//	runButtoninPracticeQuestions.click();
 	}
 	
 	public static String getActualResult() {
@@ -294,6 +300,7 @@ public class CollectionsPage {
 	driver.switchTo().alert().accept();
 	return errorMsg;
 }
+	 
 	
 //	public String getOutput() {
 //		ElementsUtils.waitForElement(outputText);

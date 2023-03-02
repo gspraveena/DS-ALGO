@@ -20,12 +20,12 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
  *GENERATED EXTENT PDF REPORT , EXTENT SPARK HTML REPORT AND CUCUMBER HTML REPORT    */
 	@RunWith(Cucumber.class)    //***************  junit
 	@CucumberOptions(           //***************  junit
-    //  @CucumberOptions(            //***************  testng
+//      @CucumberOptions(            //***************  testng
 			//features = "src/test/resources/features/01_mainPage.feature",
 			//features = "src/test/resources/features/02_registerPage.feature",
 			//features ="src/test/resources/features/03_signIn.feature",
 			//features = "src/test/resources/features/04_dataStructure.feature",
-			features = "src/test/resources/features/05_array.feature",
+//			features = "src/test/resources/features/05_array.feature",
 			//features = "src/test/resources/features/06_linkedList.feature",
 			//features = "src/test/resources/features/07_stack.feature",
 			//features = "src/test/resources/features/08_queue.feature",
@@ -33,11 +33,13 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 			//features = "src/test/resources/features/09_tree.feature",
 	       
 		    //tags=  "@homepage,@signIn,@dataStructure,@array ,@graph",
-			//features = "src/test/resources/features/",
+			features = "src/test/resources/features/",
 			glue =  { "StepDefinition", "hooks" },
 			plugin = { "pretty",
+					
              "html:target/cucumber-reports/dsalgo.html",
-             "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"	 },
+             "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
+//             "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"},
 			dryRun=false,
 			monochrome = true			 
 	)

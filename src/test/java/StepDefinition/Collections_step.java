@@ -119,7 +119,7 @@ public class Collections_step {
 	public void user_login_using_username_and_password_from_given_and(String sheetName, Integer rowNumber) throws IOException, InvalidFormatException, InterruptedException {
 		ExcelReader reader = new ExcelReader();
 		Loggerload.info("User enter login credentials ");
-		List<Map<String, String>> testData=reader.getData("C:/Users/Reka/Desktop/NumpyNinja/DS ALGO/LoginDsAlgo.xlsx", 0);
+		List<Map<String, String>> testData=reader.getData("src/test/resources/Exceldata/LoginDsAlgo.xlsx", 0);
 		String User_name=testData.get(rowNumber).get("username");  // heading 
 		String Pass_word=testData.get(rowNumber).get("password");  // heading 
 		collection.loginWithCredentials(User_name, Pass_word);
@@ -232,13 +232,13 @@ public class Collections_step {
 	}
 	
 	@Then("user clears the text")
-	public void user_clears_the_text() {
+	public void user_clears_the_text() throws InterruptedException {
 		collection.clearCodeInTextEditorBox();
 	}
 
 	@When("user enters valid Python Code")
 	//public void user_enters_valid_python_code(io.cucumber.datatable.DataTable dataTable) {	
-	public void user_enters_valid_python_code(DataTable Pythoncode ) throws InvalidFormatException, IOException {
+	public void user_enters_valid_python_code(DataTable Pythoncode ) throws InvalidFormatException, IOException, InterruptedException {
 		List<List<String>> data = Pythoncode.cells();
 		collection.arrayPracticeQuestion(data.get(0).get(0));
 		
@@ -255,38 +255,42 @@ public class Collections_step {
 //		collection.clickSearchTheArray();
 //		collection.clearCodeInTextEditorBox();
 	}
-	@When("user enters invalid Python Code")
-	public void user_enters_invalid_python_code(DataTable Pythoncode) throws InvalidFormatException, IOException {
-		List<List<String>> data = Pythoncode.cells();
-		collection.arrayPracticeQuestion(data.get(0).get(0));
-	}
-
-	@Then("user clicks run button and captures error message")
-	public void user_clicks_run_button_and_captures_error_message() throws InterruptedException {
-		collection.clickRun();
-		String actualMsg = CollectionsPage.getErrorText();
-		Loggerload.info("Error message for invalid python code is -" + actualMsg);
-		Loggerload.info("Invalid code is taken  and clicked on run button");
+//	@When("user enters invalid Python Code")
+//	public void user_enters_invalid_python_code(DataTable Pythoncode) throws InvalidFormatException, IOException, InterruptedException {
+//		List<List<String>> data = Pythoncode.cells();
+//		collection.arrayPracticeQuestion(data.get(0).get(0));
+//	}
+//
+//	@Then("user clicks run button and captures error message")
+//	public void user_clicks_run_button_and_captures_error_message() throws InterruptedException, IOException {
+//		collection.clickRun();
+//		String actualMsg = CollectionsPage.getErrorText();
+//		Loggerload.info("Error message for invalid python code is -" + actualMsg);
+//		Loggerload.info("Invalid code is taken  and clicked on run button");
+//		collection.clickPracticeQuestionArray();
 		//assertEquals(actualMsg,"NameError: name 'hello' is not defined on line 1", "Result do not match");
-	}
+//	}
 	
 	@When("user click on {string} in Practice questions 2")
-	public void user_click_on_in_practice_questions_int(String string)  {
+	public void user_click_on_in_practice_questions_int(String string) throws InterruptedException  {
 		collection.clickMaxConsecutiveOnes();	
 		collection.clearCodeInTextEditorBox();
 	}	
 	@When("user enters Python Code {string}")
-	public void user_enters_python_code(String code) throws InvalidFormatException, IOException {
+	public void user_enters_python_code(String code) throws InvalidFormatException, IOException, InterruptedException {
 //	@When("user enters Python Code print\\(Max Consecutive Ones)")
 //	public void user_enters_python_code_print_max_consecutive_ones(String code) throws InvalidFormatException, IOException {
-		collection.arrayPracticeQuestion(code);		
+		collection.arrayPracticeQuestion(code);	
+		collection.clickRun();
+		
 	}
 
 	@When("user clicks run button and captures output and error message if any")
 	public void user_clicks_run_button_and_captures_output_and_error_message_if_any() throws InterruptedException, IOException {
 //		String output = collection.getActualResult();
 //		Loggerload.info("The output is:" + output);
-						
+//		collection.clickRun();
+		
 		try{
 		Loggerload.info("User gets the error message in an Alert  ");
 		String fetchError = collection.getErrorText();
@@ -298,7 +302,9 @@ public class Collections_step {
 		   }
 		
 		//driver.navigate().back();
-		collection.clickPracticeQuestionArray();
+//		collection.clickPracticeQuestionArray();
+		collection.backToHome();
+//		.navigate().back();
 		//Loggerload.info("Invalid code is taken and clicked on run button");
 		//assertEquals(actualMsg,"NameError: name 'hello' is not defined on line 1", "Result do not match");
 	} 
