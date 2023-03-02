@@ -309,6 +309,54 @@ public class CollectionsPage {
 //}
 	
 	
+	 // ************** Array  Page Practice Questions ***************
+    
+//    public void clickPracticeQuestions() throws IOException
+//    {
+// 	   practiceQuestions.click();
+//    }
+//    
+//    public void clicksearchTheArray()
+//    {
+// 	   searchTheArray.click();
+//    }
+//    
+//    public void clearCodeInTextEditor()
+//    {
+// 	   textEditorInput.sendKeys(Keys.CONTROL,"a");
+// 	   textEditorInput.sendKeys(Keys.DELETE);
+//    }
+//    
+//    public void pythonCode(String PythonCode) throws IOException {
+//	    Constants.python_Code=properties.getProperty("PythonCode");
+//	    textEditorInput.sendKeys(Constants.python_Code);
+//        driver.findElement(runButtonPractice).click();
+//    }
+//    
+//    public static String getErrorText() throws InterruptedException
+//    {
+// 	   Thread.sleep(2000);
+// 	   String errorMsg = driver.switchTo().alert().getText();
+// 	   Loggerload.info("Error Message Is : "+errorMsg);
+// 	   driver.switchTo().alert().accept();
+// 	   return errorMsg;
+//    }
+    
+//    public void MaxconsecutiveOnes()
+//    {
+// 	   maxConsecutiveOnes.click();
+//    }
+//    
+//    public void clickFindNumbersWithEvenNumberOfDigits()
+//    {
+// 	   findNumbersWithEvenNumberOfDigits.click();
+//    }
+//     
+//    public void clickSquaresOfASortedArray()
+//    {
+// 	   squaresOfASortedArray.click();
+//    }
+	
 //******************************  Linked List  ***************************************
 	
 
