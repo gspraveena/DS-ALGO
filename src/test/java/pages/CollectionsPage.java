@@ -25,6 +25,7 @@ import utilities.Loggerload;
 
 public class CollectionsPage {
 	public static WebDriver driver=driverFactory.getdriver();
+	
 	private final static String propertyFilePath = "./src/test/resources/config.properties";
   //******************************  Main Page  ***************************************
 	By getStarted=By.xpath("//a[@href='/home']");
@@ -189,11 +190,7 @@ public class CollectionsPage {
 	}
 	
 //******************************  Data Structure  ***************************************
-	//	public void dataStructPage() throws IOException {	
-	//		//String url = properties.getProperty("DataStructuresIntroduction");		
-	//		driver.get(DataStructureURL);
-	//	}
-		
+ 		
 	public void dataStructure()
 	{
 		//driver.findElement(getStartedDS).click();	
@@ -226,6 +223,8 @@ public class CollectionsPage {
 	
 //******************************  Array  ***************************************
 
+	
+	
 	public void clickArray() throws IOException {
 		ConfigReader.loadConfig();				
 		String URL=ConfigReader.getArrayUrl();
@@ -273,28 +272,51 @@ public class CollectionsPage {
 	
 	public void clickMaxConsecutiveOnes() {
 		maxConsecutiveOnes.click();
+	}	
+	
+	public void clickfindNumbersWithEvenNumberOfDigits()
+	{
+	findNumbersWithEvenNumberOfDigits.click();
+	}
+
+	public void squaresOfASortedArray()
+	{
+	squaresOfASortedArray.click();
 	}
 	
-	public void clearCodeInTextEditorBox() throws InterruptedException {
-		Thread.sleep(2000);
-		driver.findElement(enterPythonText).sendKeys(Keys.COMMAND + "a");
-		Thread.sleep(2000);
-//		driver.findElement(enterPythonText).sendKeys(Keys.CONTROL + "x");
-		driver.findElement(enterPythonText).sendKeys(Keys.DELETE);
+	public void clearCodeInTextEditorBox() {
+		driver.findElement(enterPythonText).sendKeys(Keys.COMMAND , "a");
+ 		driver.findElement(enterPythonText).sendKeys(Keys.DELETE);
 //	 enterPythontextArea.clear();
 	}
 	
-	public void arrayPracticeQuestion(String pythoncode) throws InvalidFormatException, IOException, InterruptedException {
+	public void pythonCode(String string) throws IOException {
+		FileInputStream stream = new FileInputStream(propertyFilePath);
+		properties = new Properties();
+		properties.load(stream);
+		Constants.python_Code=properties.getProperty("PythonCode");
+        driver.findElement(enterPythonText).sendKeys(Constants.python_Code);
+        runButtoninPracticeQuestions.click();      
+       }
+
+		
+	public void errorCode(String PythonCode) throws IOException {
+		FileInputStream stream = new FileInputStream(propertyFilePath);
+		properties = new Properties();		
+		properties.load(stream);
+		Constants.error_Code=properties.getProperty("PythonCode1");
+        driver.findElement(enterPythonText).sendKeys(Constants.error_Code);
+        runButtoninPracticeQuestions.click();      
+       }
+	
+	public void arrayPracticeQuestion(String pythoncode) throws InvalidFormatException, IOException {
 		//inputBox.click();
 		driver.findElement(enterPythonText).sendKeys(pythoncode);
-		Thread.sleep(2000);
-//		runButtoninPracticeQuestions.click();
-//		driver.navigate().back();
+		runButtoninPracticeQuestions.click();
 	}
 	
 	public void clickRun() {
-	driver.findElement(runButton).click();
-//	runButtoninPracticeQuestions.click();
+	driver.findElement(runButton).click();	
 	}
 	
 	public static String getActualResult() {
@@ -309,121 +331,8 @@ public class CollectionsPage {
 	driver.switchTo().alert().accept();
 	return errorMsg;
 }
-	 
 	
-//	public String getOutput() {
-//		ElementsUtils.waitForElement(outputText);
-//	   String output=outputText.getText();
-//	   return output;
-//}
-	
-	
-	 // ************** Array  Page Practice Questions ***************
-    
-//    public void clickPracticeQuestions1() throws IOException
-//    {
-// 	   practiceQuestions.click();
-//    }
-//    
-//    public void clicksearchTheArray()
-//    {
-// 	   searchTheArray.click();
-//    }
-//    
-//    public void clearCodeInTextEditor()
-//    {
-// 	   textEditorInput.sendKeys(Keys.COMMAND,"a");
-// 	   textEditorInput.sendKeys(Keys.DELETE);
-//    }
-//    
-//    public void pythonCode(String PythonCode) throws IOException {
-//	    Constants.python_Code=properties.getProperty("PythonCode");
-//	    textEditorInput.sendKeys(Constants.python_Code);
-//        driver.findElement(runButtonPractice).click();
-//    }
-//    
-////    public static String getErrorText() throws InterruptedException
-////    {
-//// 	   Thread.sleep(2000);
-//// 	   String errorMsg = driver.switchTo().alert().getText();
-//// 	   Loggerload.info("Error Message Is : "+errorMsg);
-//// 	   driver.switchTo().alert().accept();
-//// 	   return errorMsg;
-////    }
-//    
-//    public void MaxconsecutiveOnes()
-//    {
-// 	   maxConsecutiveOnes.click();
-//    }
-//    
-//    public void clickFindNumbersWithEvenNumberOfDigits()
-//    {
-// 	   findNumbersWithEvenNumberOfDigits.click();
-//    }
-//     
-//    public void clickSquaresOfASortedArray()
-//    {
-// 	   squaresOfASortedArray.click();
-//    }
-//	
-	
-	
-	 
-//    public void clickPracticeQuestions() throws IOException
-//    {
-//      practiceQuestions.click();
-//    }
-    
-    public void clicksearchTheArray()
-    {
-      searchTheArray.click();
-    }
-    
-    public void clearCodeInTextEditor()
-    {
-      textEditorInput.sendKeys(Keys.COMMAND,"a");
-      textEditorInput.sendKeys(Keys.DELETE);
-    }
-    
-    public void pythonCode(String PythonCode) throws IOException {
-        Constants.python_Code=properties.getProperty("PythonCode");
-        textEditorInput.sendKeys(properties.getProperty("PythonCode"));
-       driver.findElement(runButtonPractice).click();
-       }
-    
-    public void pythonCode1(String PythonCode) throws IOException {
-       Constants.python_Code1=properties.getProperty("PythonCode1");
-       textEditorInput.sendKeys(properties.getProperty("PythonCode1"));
-          driver.findElement(runButtonPractice).click();
-      }
-    public void pythoncode(String pythoncode) throws InvalidFormatException, IOException {
-    textEditorInput.sendKeys(pythoncode);
-    driver.findElement(runButtonPractice).click();
-  }
-    
-//    public static String getErrorText() throws InterruptedException
-//    {
-//      Thread.sleep(2000);
-//      String errorMsg = driver.switchTo().alert().getText();
-//      Loggerload.info("Error Message Is : "+errorMsg);
-//      driver.switchTo().alert().accept();
-//      return errorMsg;
-//    }
-    
-    public void MaxconsecutiveOnes()
-    {
-      maxConsecutiveOnes.click();
-    }
-    
-    public void clickFindNumbersWithEvenNumberOfDigits()
-    {
-      findNumbersWithEvenNumberOfDigits.click();
-    }
-     
-    public void clickSquaresOfASortedArray()
-    {
-      squaresOfASortedArray.click();
-    }
+ 
 //******************************  Linked List  ***************************************
 	
 
@@ -496,9 +405,7 @@ public class CollectionsPage {
 //********************************** Graph *******************************************	
 	
 	public void clickGraphLink() throws IOException  {
-//		ConfigReader.loadConfig();				
-//		String URL=ConfigReader.getGraphUrl();
-//		driver.get(URL);
+ 
 		JavascriptExecutor executor= (JavascriptExecutor) driver;
 	    executor.executeScript("window.scrollBy(0,750)", "");
 		graphLink.click();
@@ -515,9 +422,7 @@ public class CollectionsPage {
 		FileInputStream stream = new FileInputStream(propertyFilePath);
 		properties = new Properties();		
 			properties.load(stream);
-			//stream.close();
-		//properties.load(getClass().getResourceAsStream("/config.properties"));
-		//PageFactory.initElements(driver, CollectionsPage.class);
+		 
 		Constants.user_name=properties.getProperty("USERNAME");
 		Constants.pass_word=properties.getProperty("PASSWORD");
 		driver.findElement(login_Username).sendKeys(Constants.user_name);	
