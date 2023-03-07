@@ -1,5 +1,4 @@
-
-	#USING DATA DRIVEN THROUGH EXCEL FILE  AND HARDCODED USERNAME AND PASSSOWRD
+ #USING DATA DRIVEN THROUGH EXCEL FILE  AND HARDCODED USERNAME AND PASSSOWRD
 	@array
 	Feature:  Array page
 	Scenario Outline: user navigate to array page and works on Arrays in Python
@@ -74,7 +73,7 @@
 	   #When User is in Array Practice homepage 
 	   When user click  "Find Numbers with Even Number of Digits" 3rd Practice questions 
 	   And  user clears the text 
-	   When user enters valid Python Code "PythonCode" from config 
+	   When user enters valid python Code "pythonCode" from config 
 	   Then user clicks run button and captures output
 	   
 	   
@@ -84,10 +83,11 @@
 	   #When User is in Array Practice homepage 
 	   When user click on "Squares of  a Sorted Array"  Practice questions four
 	   And  user clears the text  
-	   Then user enters invalid Python Code "PythonCode1" from config 
+	   Then user enters invalid python Code "errorCode" from config 
 	   And user clicks run button and captures output and error message if any
 	   Then user navigate to homepage
 		
 		  
 
 
+ 

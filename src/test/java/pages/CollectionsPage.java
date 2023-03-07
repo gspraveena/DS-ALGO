@@ -26,6 +26,7 @@ import utilities.Loggerload;
 public class CollectionsPage {
 	public static WebDriver driver=driverFactory.getdriver();
 	
+	
 	private final static String propertyFilePath = "./src/test/resources/config.properties";
   //******************************  Main Page  ***************************************
 	By getStarted=By.xpath("//a[@href='/home']");
@@ -56,32 +57,27 @@ public class CollectionsPage {
 	//By whiteBox=By.xpath("//span[@class='cm-builtin']");
 	By runButton=By.xpath("//button[contains(text(),'Run')]");
 //	By runBtn=By.xpath("//form[@id='answer_form']//button");
-	By pythonOutPut=By.id("output");	
+	By pythonOutPut=By.id("output");
+	
   //******************************  Array  ***************************************	
 	@FindBy (xpath="//a[contains(@href,'array')]")WebElement arrayLink;
-	@FindBy (xpath="//a[contains(text(),'Arrays in Python')]")WebElement arraysInPython;
-	@FindBy (xpath="//a[contains(text(),'Try here>>>')]")WebElement tryHere;
+	@FindBy (xpath="//body/div[2]/ul[1]")WebElement arraysInPython;
+	@FindBy (xpath="//body/div[2]/div/div[2]/a")WebElement tryHere;
 	@FindBy (xpath="//a[contains(text(),'Arrays Using List')]")WebElement arraysUsingList;
 	@FindBy (xpath="//a[contains(text(),'Basic Operations in Lists')]")WebElement arraysBasicOperationinList;
 	@FindBy (xpath="//a[contains(text(),'Applications of Array')]")WebElement arraysApplicationofArray;	
 	@FindBy (xpath="//a[contains(text(),'Practice Questions')]")WebElement practiceQuestionsinArray;	
 	@FindBy (xpath="//a[contains(text(),'Search the array')]")WebElement SearchTheAarray;	
-	@FindBy (xpath="//a[contains(text(),'Max Consecutive Ones')]")WebElement maxConsecutiveOnes;
-	@FindBy (xpath="//a[contains(text(),'Practice Questions')]")WebElement inputBox;
-//	@FindBy (xpath="//button[contains(text(),'Run')]")WebElement runButtoninPracticeQuestions;
-	@FindBy (xpath="/html/body/div/div[2]/form/button")WebElement runButtoninPracticeQuestions;
+	@FindBy (xpath="/html/body/div[3]/a")WebElement maxConsecutiveOnes;
+	//@FindBy (xpath="//a[contains(text(),'Practice Questions')]")WebElement inputBox;
+	@FindBy (xpath="//button[contains(text(),'Run')]")WebElement runButtoninPracticeQuestions;
 	//pre[@id='output']
 	@FindBy (xpath="//textarea[@id='editor']")WebElement enterPythontextArea;
-	// ************** Array  Page Practice Questions ***************
-    
-    @FindBy(xpath = "//a[contains(text(),'Practice Questions')]")WebElement practiceQuestions;
-    @FindBy(xpath = "/html/body/div[2]/a") WebElement searchTheArray;
-    @FindBy(xpath = "//textarea[@tabindex='0']") WebElement textEditorInput;
-    By runButtonPractice = By.xpath("//*[@id=\"answer_form\"]/button");
-//    @FindBy(xpath = "/html/body/div[3]/a")WebElement maxConsecutiveOnes;
-    @FindBy(xpath = "/html/body/div[4]/a")WebElement findNumbersWithEvenNumberOfDigits;
-    @FindBy(xpath = "/html/body/div[5]/a") WebElement squaresOfASortedArray;
-  //******************************** Linked List *****************************************
+	
+	  @FindBy(xpath="//a[contains(text(),'Find Numbers with Even Number of Digits')]")WebElement findNumbersWithEvenNumberOfDigits;
+      @FindBy(xpath="//body/div[5]/a") WebElement squaresOfASortedArray;
+      
+      //******************************** Linked List *****************************************
 	@FindBy (xpath="//a[contains(@href,'linked-list')]")WebElement LinkedListLink;
 	@FindBy (xpath="//a[contains(text(),'Introduction')]")WebElement introduction;
 	@FindBy (xpath="//a[contains(text(),'Creating Linked LIst')]")WebElement creatingLinkedList;
@@ -136,9 +132,10 @@ public class CollectionsPage {
 		String URL=ConfigReader.getApplicationUrl();
 		driver.get(URL);		
 	 }
-	public void clickOngetStarted()
+	public void clickOngetStarted() throws InterruptedException
 	{	
 		driver.findElement(getStarted).click();
+		Thread.sleep(500);
 	}
 	public void clickOndropDownDS()
 	{
@@ -283,34 +280,37 @@ public class CollectionsPage {
 	{
 	squaresOfASortedArray.click();
 	}
-	
 	public void clearCodeInTextEditorBox() {
 		driver.findElement(enterPythonText).sendKeys(Keys.COMMAND , "a");
- 		driver.findElement(enterPythonText).sendKeys(Keys.DELETE);
+//	 enterPythontextArea.sendKeys(Keys.CONTROL + "x");
+		driver.findElement(enterPythonText).sendKeys(Keys.DELETE);
 //	 enterPythontextArea.clear();
 	}
 	
-	public void pythonCode(String string) throws IOException {
+	public void pythonCode(String string) throws IOException, InterruptedException {
 		FileInputStream stream = new FileInputStream(propertyFilePath);
 		properties = new Properties();
 		properties.load(stream);
-		Constants.python_Code=properties.getProperty("PythonCode");
+		Thread.sleep(500);
+		Constants.python_Code=properties.getProperty("pythonCode");
         driver.findElement(enterPythonText).sendKeys(Constants.python_Code);
-        runButtoninPracticeQuestions.click();      
+        //runButtoninPracticeQuestions.click();      
        }
 
 		
-	public void errorCode(String PythonCode) throws IOException {
+	public void errorCode(String PythonCode) throws IOException, InterruptedException {
 		FileInputStream stream = new FileInputStream(propertyFilePath);
 		properties = new Properties();		
 		properties.load(stream);
-		Constants.error_Code=properties.getProperty("PythonCode1");
+		Thread.sleep(500);
+		Constants.error_Code=properties.getProperty("errorCode");
         driver.findElement(enterPythonText).sendKeys(Constants.error_Code);
         runButtoninPracticeQuestions.click();      
        }
 	
-	public void arrayPracticeQuestion(String pythoncode) throws InvalidFormatException, IOException {
+	public void arrayPracticeQuestion(String pythoncode) throws InvalidFormatException, IOException, InterruptedException {
 		//inputBox.click();
+		Thread.sleep(500);
 		driver.findElement(enterPythonText).sendKeys(pythoncode);
 		runButtoninPracticeQuestions.click();
 	}
@@ -325,12 +325,19 @@ public class CollectionsPage {
 	}
 	
 	public static String getErrorText() throws InterruptedException {
-	Thread.sleep(1000);
+	Thread.sleep(500);
 	String errorMsg = driver.switchTo().alert().getText();
 	Loggerload.info("The Error Message is:" +errorMsg);
 	driver.switchTo().alert().accept();
 	return errorMsg;
 }
+	
+//	public String getOutput() {
+//		ElementsUtils.waitForElement(outputText);
+//	   String output=outputText.getText();
+//	   return output;
+//
+	
 	
  
 //******************************  Linked List  ***************************************
@@ -345,7 +352,8 @@ public class CollectionsPage {
 		introduction.click();
 	}
 	
-	public void clickcreatingLinkedList() {
+	public void clickcreatingLinkedList() throws InterruptedException {
+		Thread.sleep(500);
 		creatingLinkedList.click();
 	}
 	
@@ -365,7 +373,8 @@ public class CollectionsPage {
 		deletion.click();
 	}
 //********************************** Stack *******************************************	
-	public void clickStack() throws IOException {
+	public void clickStack() throws IOException, InterruptedException {
+		Thread.sleep(500);
 		ConfigReader.loadConfig();				
 		String URL=ConfigReader.getStackUrl();
 		driver.get(URL);		
@@ -383,7 +392,8 @@ public class CollectionsPage {
 	}	
 //********************************** Queue *******************************************	
 	
-	public void clickQueue() throws IOException {
+	public void clickQueue() throws IOException, InterruptedException {
+		Thread.sleep(500);
 		ConfigReader.loadConfig();				
 		String URL=ConfigReader.getQueueUrl();
 		driver.get(URL);		
@@ -411,9 +421,10 @@ public class CollectionsPage {
 		graphLink.click();
 	}
 	
-	public void clickGraphPage() throws IOException {
+	public void clickGraphPage() throws IOException, InterruptedException {
 		ConfigReader.loadConfig();				
 		String URL=ConfigReader.getGraphGraphUrl();
+		Thread.sleep(500);
 		driver.get(URL);		
 	}
 	
@@ -425,6 +436,7 @@ public class CollectionsPage {
 		 
 		Constants.user_name=properties.getProperty("USERNAME");
 		Constants.pass_word=properties.getProperty("PASSWORD");
+		Thread.sleep(500);
 		driver.findElement(login_Username).sendKeys(Constants.user_name);	
 		driver.findElement(login_Password).sendKeys(Constants.pass_word);
 		driver.findElement(login_Button).click();
@@ -438,9 +450,10 @@ public class CollectionsPage {
 		graphRepresentations.click();
 	}
 	//********************************** Tree *******************************************			
-	public void clickTree() throws IOException {
+	public void clickTree() throws IOException, InterruptedException {
 		ConfigReader.loadConfig();				
 		String URL=ConfigReader.getTreeUrl();
+		Thread.sleep(500);
 		driver.get(URL);		
 	}
 	

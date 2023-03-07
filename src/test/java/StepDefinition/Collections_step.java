@@ -12,6 +12,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.PageFactory;
 import constants.Constants;
+import org.openqa.selenium.TakesScreenshot;
+
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -41,7 +43,7 @@ public class Collections_step {
 	}
 	
 	@When("user clicks {string} button")
-	public void user_clicks_button(String string) {
+	public void user_clicks_button(String string) throws InterruptedException {
 		collection.clickOngetStarted();
 	}
 	@Then("user should be redirected to the homepage and see {int} different collections")
@@ -211,25 +213,27 @@ public class Collections_step {
 
 	@When("user enters valid Python Code")
 	//public void user_enters_valid_python_code(io.cucumber.datatable.DataTable dataTable) {	
-	public void user_enters_valid_python_code(DataTable Pythoncode ) throws InvalidFormatException, IOException {
+	public void user_enters_valid_python_code(DataTable Pythoncode ) throws InvalidFormatException, IOException, InterruptedException {
 		List<List<String>> data = Pythoncode.cells();
 		collection.arrayPracticeQuestion(data.get(0).get(0));		
 	}	
 	
 	@When("user clicks run button and captures output")
 	public void user_clicks_run_button_and_captures_output() throws Exception {
- 
+//	   	String output = collection.getActualResult();
+//		Loggerload.info("The output is:" + output);
 		collection.clickRun();
- 
+//		collection.ScreenShot();
 		String actualSuccMessg = CollectionsPage.getActualResult();
 		Loggerload.info("Actual result: "+actualSuccMessg );
 //		driver.navigate().back();
 		collection.clickPracticeQuestionArray();
- 
+//		collection.clickSearchTheArray();
+//		collection.clearCodeInTextEditorBox();
 	}
 	
 	@When("user enters invalid Python Code")
-	public void user_enters_invalid_python_code(DataTable Pythoncode) throws InvalidFormatException, IOException {
+	public void user_enters_invalid_python_code(DataTable Pythoncode) throws InvalidFormatException, IOException, InterruptedException {
 		List<List<String>> data = Pythoncode.cells();
 		collection.arrayPracticeQuestion(data.get(0).get(0));
 	}
@@ -250,8 +254,10 @@ public class Collections_step {
 	}	
 	
 	@When("user enters Python Code {string}")
-	public void user_enters_python_code(String code) throws InvalidFormatException, IOException {
- 		collection.arrayPracticeQuestion(code);		
+	public void user_enters_python_code(String code) throws InvalidFormatException, IOException, InterruptedException {
+//	@When("user enters Python Code print\\(Max Consecutive Ones)")
+//	public void user_enters_python_code_print_max_consecutive_ones(String code) throws InvalidFormatException, IOException {
+		collection.arrayPracticeQuestion(code);		
 	}
 
 	@When("user clicks run button and captures output and error message if any")
@@ -273,8 +279,9 @@ public class Collections_step {
 		//assertEquals(actualMsg,"NameError: name 'hello' is not defined on line 1", "Result do not match");
 		} 
 		
-		@When("user click  {string} 3rd Practice questions")
-		public void user_click_3rd_practice_questions(String string) {
+	@When("user click  {string} 3rd Practice questions")
+	public void user_click_3rd_practice_questions(String string) {
+
 			collection.clickfindNumbersWithEvenNumberOfDigits();	
 			collection.clearCodeInTextEditorBox();					
 		}
@@ -286,16 +293,19 @@ public class Collections_step {
 			collection.clearCodeInTextEditorBox();			
 		}
 		
-		@When("user enters valid Python Code {string} from config")
-		public void user_enters_valid_python_code_from_config(String string) throws IOException {
-			  collection.pythonCode(string );			  	
+		@When("user enters valid python Code {string} from config")
+		public void user_enters_valid_python_code_from_config(String string) throws IOException, InterruptedException {
+			collection.pythonCode(string );			  	
 		}
 		
-		@When("user enters invalid Python Code {string} from config")
-		public void user_enters_invalid_python_code_from_config(String string) throws Exception {
-			  collection.errorCode(string);	
+
+     @Then("user enters invalid python Code {string} from config")
+     public void user_enters_invalid_python_code_from_config(String string) throws IOException, InterruptedException {
+	collection.errorCode(string);	
 			  
 		}
+		
+		
  	//*************************** Linked List *************************************
 	
 	@Given("user clicks {string}  in Linked List field")
@@ -316,7 +326,7 @@ public class Collections_step {
 		collection.clickLinkedList();
 	}
 	@When("user click {string} second link  in the Linked list")
-	public void user_click_second_link_in_the_linked_list(String string) {
+	public void user_click_second_link_in_the_linked_list(String string) throws InterruptedException {
 	    collection.clickcreatingLinkedList();
 	}
 	@When("user click {string} third link in the Linked list")
@@ -343,7 +353,7 @@ public class Collections_step {
 	//*************************** Stack *************************************
 
 	@Given("user clicks {string}  in Stack field")
-	public void user_clicks_in_stack_field(String string) {
+	public void user_clicks_in_stack_field(String string) throws InterruptedException {
 	    try {
 			collection.clickStack();
 		} catch (IOException e) {
@@ -356,7 +366,7 @@ public class Collections_step {
 	   collection.clickOperationInStack();
 	}
 	@Given("user is in Stack homepage")
-	public void user_is_in_stack_homepage() throws IOException {
+	public void user_is_in_stack_homepage() throws IOException, InterruptedException {
 		collection.clickStack();
 	}
 	@When("user click {string} second link  in the Stack")
@@ -372,7 +382,7 @@ public class Collections_step {
 	//*************************** Queue *************************************
 	
 	@Given("user clicks {string}  in Queue field")
-	public void user_clicks_in_queue_field(String string) {
+	public void user_clicks_in_queue_field(String string) throws InterruptedException {
 		try {
 			collection.clickQueue();
 		} catch (IOException e) {
@@ -384,7 +394,7 @@ public class Collections_step {
 		collection.clickImplementationOfQueueInPython();
 	}
 	@Given("user is in Queue homepage")
-	public void user_is_in_queue_homepage() throws IOException {
+	public void user_is_in_queue_homepage() throws IOException, InterruptedException {
 		collection.clickQueue();
 	}
 	@When("user click {string} second link  in the Queue")
@@ -419,7 +429,7 @@ public class Collections_step {
 	    collection.clickGraph();
 	}
 	@Given("user is in Graph homepage")
-	public void user_is_in_graph_homepage() throws IOException {
+	public void user_is_in_graph_homepage() throws IOException, InterruptedException {
 		collection.clickGraphPage();
 		
 	}
@@ -431,7 +441,7 @@ public class Collections_step {
 	//*************************** Tree *************************************
 	
 	@Given("user clicks {string}  in Tree field")
-	public void user_clicks_in_tree_field(String string) {
+	public void user_clicks_in_tree_field(String string) throws InterruptedException {
 	    try {
 			collection.clickTree();
 		} catch (IOException e) {
@@ -445,7 +455,7 @@ public class Collections_step {
 	}
 
 	@Given("user is in Tree homepage")
-	public void user_is_in_tree_homepage() throws IOException {
+	public void user_is_in_tree_homepage() throws IOException, InterruptedException {
 		collection.clickTree();
 	}
 	@When("user click {string} 2nd link in the Tree")
