@@ -135,7 +135,7 @@ public class CollectionsPage {
 	public void clickOngetStarted() throws InterruptedException
 	{	
 		driver.findElement(getStarted).click();
-		Thread.sleep(500);
+		 
 	}
 	public void clickOndropDownDS()
 	{
@@ -290,8 +290,7 @@ public class CollectionsPage {
 	public void pythonCode(String string) throws IOException, InterruptedException {
 		FileInputStream stream = new FileInputStream(propertyFilePath);
 		properties = new Properties();
-		properties.load(stream);
-		Thread.sleep(500);
+		properties.load(stream); 
 		Constants.python_Code=properties.getProperty("pythonCode");
         driver.findElement(enterPythonText).sendKeys(Constants.python_Code);
         //runButtoninPracticeQuestions.click();      
@@ -301,8 +300,7 @@ public class CollectionsPage {
 	public void errorCode(String PythonCode) throws IOException, InterruptedException {
 		FileInputStream stream = new FileInputStream(propertyFilePath);
 		properties = new Properties();		
-		properties.load(stream);
-		Thread.sleep(500);
+		properties.load(stream);		 
 		Constants.error_Code=properties.getProperty("errorCode");
         driver.findElement(enterPythonText).sendKeys(Constants.error_Code);
         runButtoninPracticeQuestions.click();      
@@ -310,7 +308,7 @@ public class CollectionsPage {
 	
 	public void arrayPracticeQuestion(String pythoncode) throws InvalidFormatException, IOException, InterruptedException {
 		//inputBox.click();
-		Thread.sleep(500);
+		 
 		driver.findElement(enterPythonText).sendKeys(pythoncode);
 		runButtoninPracticeQuestions.click();
 	}
@@ -325,7 +323,7 @@ public class CollectionsPage {
 	}
 	
 	public static String getErrorText() throws InterruptedException {
-	Thread.sleep(500);
+	 
 	String errorMsg = driver.switchTo().alert().getText();
 	Loggerload.info("The Error Message is:" +errorMsg);
 	driver.switchTo().alert().accept();
@@ -353,7 +351,7 @@ public class CollectionsPage {
 	}
 	
 	public void clickcreatingLinkedList() throws InterruptedException {
-		Thread.sleep(500);
+		 
 		creatingLinkedList.click();
 	}
 	
@@ -374,7 +372,7 @@ public class CollectionsPage {
 	}
 //********************************** Stack *******************************************	
 	public void clickStack() throws IOException, InterruptedException {
-		Thread.sleep(500);
+		 
 		ConfigReader.loadConfig();				
 		String URL=ConfigReader.getStackUrl();
 		driver.get(URL);		
@@ -393,7 +391,7 @@ public class CollectionsPage {
 //********************************** Queue *******************************************	
 	
 	public void clickQueue() throws IOException, InterruptedException {
-		Thread.sleep(500);
+		 
 		ConfigReader.loadConfig();				
 		String URL=ConfigReader.getQueueUrl();
 		driver.get(URL);		
@@ -424,7 +422,7 @@ public class CollectionsPage {
 	public void clickGraphPage() throws IOException, InterruptedException {
 		ConfigReader.loadConfig();				
 		String URL=ConfigReader.getGraphGraphUrl();
-		Thread.sleep(500);
+		 
 		driver.get(URL);		
 	}
 	
@@ -436,7 +434,7 @@ public class CollectionsPage {
 		 
 		Constants.user_name=properties.getProperty("USERNAME");
 		Constants.pass_word=properties.getProperty("PASSWORD");
-		Thread.sleep(500);
+	 
 		driver.findElement(login_Username).sendKeys(Constants.user_name);	
 		driver.findElement(login_Password).sendKeys(Constants.pass_word);
 		driver.findElement(login_Button).click();
@@ -453,7 +451,7 @@ public class CollectionsPage {
 	public void clickTree() throws IOException, InterruptedException {
 		ConfigReader.loadConfig();				
 		String URL=ConfigReader.getTreeUrl();
-		Thread.sleep(500);
+		 
 		driver.get(URL);		
 	}
 	
